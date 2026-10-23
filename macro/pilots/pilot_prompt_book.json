@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb001_v32_render_pending_visual_review",
+  "status": "bb001_v32_endpoint_approved_ready_for_bb002",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -19,9 +19,9 @@
       "scene_number": 1,
       "transition_in": "Gradual upper-left rim-light sweep and focus reveal from black into the iris.",
       "duration_seconds": 10,
-      "status": "v32_fixed_camera_render_pending",
+      "status": "v32_approved_endpoint_saved_bb002_ready",
       "image_asset_uri": null,
-      "video_asset_uri": null,
+      "video_asset_uri": "0bae5c1a-83d7-4f0c-a9e7-5b38d32654d5",
       "actual_credits": null,
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
@@ -34,7 +34,9 @@
         "61e23ee8-24a8-446b-adf2-74cb15ee8c7c",
         "0bae5c1a-83d7-4f0c-a9e7-5b38d32654d5"
       ],
-      "qa_observation": "Both v3 candidates were reviewed in VideoExpress. 6.17 MB candidate: final 0:10 frame soft/defocused. 4.73 MB candidate: same progressive push-in ends with droplet and petal visibly soft, insufficient detail for BB-002 chain start. Neither added to timeline; no endpoint saved. Do not continue chain from either candidate. Prompt correction queued: greatly reduce push-in, lock focus through 8–10s, and place exit light effect in background only. Targeted v3.1 retry submitted after prompt correction: minimal push-in, locked focus, background-only exit light. Job 61e23ee8-24a8-446b-adf2-74cb15ee8c7c; pending Media Library visual review. Source image BB-001_IRIS_LAST_FRAME_10S.png, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s. The targeted v3.1 retry completed (6.25 MB, 10s, 1920x1080; job 61e23ee8-24a8-446b-adf2-74cb15ee8c7c). At 0:10 the frame is nearly black and the droplet/petal lack sufficient visible detail, despite focus-lock instructions. Rejected as BB-002 starting reference; not added to timeline and no endpoint saved. Do not generate another candidate until BB-001 motion/exit plan is revised. Based on failed v3.1 endpoint, the scene plan is revised for v3.2: fixed camera, no zoom/focus rack, stable subject exposure, and localized background-only light transitions. Pending review before further generation. Approved v3.2 trial submitted with fixed camera, locked focus/exposure, localized light-only transitions, existing BB-001 reference image, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s. Job 0bae5c1a-83d7-4f0c-a9e7-5b38d32654d5 is pending."
+      "qa_observation": "Both v3 candidates were reviewed in VideoExpress. 6.17 MB candidate: final 0:10 frame soft/defocused. 4.73 MB candidate: same progressive push-in ends with droplet and petal visibly soft, insufficient detail for BB-002 chain start. Neither added to timeline; no endpoint saved. Do not continue chain from either candidate. Prompt correction queued: greatly reduce push-in, lock focus through 8–10s, and place exit light effect in background only. Targeted v3.1 retry submitted after prompt correction: minimal push-in, locked focus, background-only exit light. Job 61e23ee8-24a8-446b-adf2-74cb15ee8c7c; pending Media Library visual review. Source image BB-001_IRIS_LAST_FRAME_10S.png, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s. The targeted v3.1 retry completed (6.25 MB, 10s, 1920x1080; job 61e23ee8-24a8-446b-adf2-74cb15ee8c7c). At 0:10 the frame is nearly black and the droplet/petal lack sufficient visible detail, despite focus-lock instructions. Rejected as BB-002 starting reference; not added to timeline and no endpoint saved. Do not generate another candidate until BB-001 motion/exit plan is revised. Based on failed v3.1 endpoint, the scene plan is revised for v3.2: fixed camera, no zoom/focus rack, stable subject exposure, and localized background-only light transitions. Pending review before further generation. Approved v3.2 trial submitted with fixed camera, locked focus/exposure, localized light-only transitions, existing BB-001 reference image, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s. Job 0bae5c1a-83d7-4f0c-a9e7-5b38d32654d5 is pending. Review passed for endpoint: at 0:10 the attached droplet and violet petal remain bright and detailed enough to continue the chain. Camera composition shifts more than intended, but no clear subject deformation is visible. Saved last frame as BB-001_IRIS_LAST_FRAME_10S_V3_2 in My AI Images.",
+      "video_size_mb": 6.55,
+      "saved_last_frame": "BB-001_IRIS_LAST_FRAME_10S_V3_2"
     },
     {
       "id": "BB-002",
@@ -321,10 +323,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-001",
-    "next_action": "Wait for VideoExpress job 0bae5c1a-83d7-4f0c-a9e7-5b38d32654d5 in My AI Videos, review the 0:10 frame, and save it/use for BB-002 only if the droplet and petal remain bright, sharp, and stable.",
+    "current_scene": "BB-002",
+    "next_action": "BB-001 v3.2 endpoint BB-001_IRIS_LAST_FRAME_10S_V3_2 was saved and visually approved for chain continuity. Use it as the sole starting image for BB-002; review output before proceeding.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "Approved v3.2 job submitted; waiting for completed candidate in My AI Videos."
+    "browser_status": "BB-001 v3.2 render (job 0bae5c1a-83d7-4f0c-a9e7-5b38d32654d5), 6.55 MB, 10s 1920x1080; final frame visually checked and saved as BB-001_IRIS_LAST_FRAME_10S_V3_2 in My AI Images. Cleared as BB-002 chain source."
   }
 }
