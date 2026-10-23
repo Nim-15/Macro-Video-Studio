@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "target_duration_seconds": 3600,
+  "chapters": [],
+  "scenes": [
+    {
+      "scene_id": "C01-S001",
+      "chapter_id": "C01",
+      "duration_seconds": 10,
+      "subject": "user_defined",
+      "image_prompt": "",
+      "video_prompt": "",
+      "entry_frame_reference": null,
+      "entry_state": {
+        "framing": "",
+        "lighting": "",
+        "focus": "",
+        "motion": ""
+      },
+      "exit_state": {
+        "framing": "",
+        "lighting": "",
+        "focus": "",
+        "motion": ""
+      },
+      "transition_in": {
+        "type": "direct_or_editor",
+        "duration_seconds": 0
+      },
+      "transition_out": {
+        "type": "matched_frame",
+        "duration_seconds": 0
+      },
+      "image_asset_uri": null,
+      "video_asset_uri": null,
+      "tool_job_id": null,
+      "batch_id": null,
+      "status": "not_started",
+      "verified": false,
+      "qa_notes": []
+    }
+  ],
+  "duration_accounting": {
+    "raw_clip_seconds": 3600,
+    "overlap_seconds": 0,
+    "trim_seconds": 0,
+    "expected_timeline_seconds": 3600
+  }
+}
