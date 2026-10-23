@@ -1,11 +1,11 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "two_clip_chain_rendered_review_required",
+  "status": "three_clip_chain_rendered_review_required",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
-  "reference_frame_handoff": "verified_manual_save_last_frame_from_media_library_then_use_from_library; BB-002 endpoint selected in next prompt form",
+  "reference_frame_handoff": "verified_manual_save_last_frame_from_media_library_then_use_from_library; BB-003 endpoint confirmed in My AI Images",
   "default_negative": "No text, watermark, logos, CGI plastic texture, anatomical deformity, unrealistic morph, jumping composition, subject duplication, erratic camera motion, floating water, flicker.",
   "scenes": [
     {
@@ -53,10 +53,13 @@
       "scene_number": 3,
       "transition_in": "Preserve prior clip exit geometry via true frame-reference if supported; otherwise editor-side match cut/dissolve.",
       "duration_seconds": 10,
-      "status": "not_generated",
-      "image_asset_uri": null,
-      "video_asset_uri": null,
-      "actual_credits": null
+      "status": "test_render_quality_review_required",
+      "image_asset_uri": "BB-002_ORCHID_LAST_FRAME_10S.png",
+      "video_asset_uri": "d7b72c78-d88c-4d95-9aa1-b83ab6e98392",
+      "actual_credits": null,
+      "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S.png",
+      "video_size_mb": 3.17,
+      "qa_observation": "10s, 1920x1080; contiguous on timeline at 00:20–00:30. The opening matches the violet dew-drop endpoint. Cream layered petal forms appear later, but are soft-focus and the rose identity is only partly legible. Saved endpoint BB-003_ROSE_LAST_FRAME_10S.png (545.04 KB) is confirmed in My AI Images. Keep quality review open before continuing to BB-004."
     },
     {
       "id": "BB-004",
@@ -139,6 +142,18 @@
       "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S.png",
       "saved_last_frame_size_kb": 831.19,
       "result": "Timeline confirms 10 seconds and clip is contiguous with BB-001. Violet dew-drop opening carries through. Body is very soft lilac macro; orchid identity unclear. Endpoint is available and selected as next prompt reference; quality review pending."
+    },
+    {
+      "scene_id": "BB-003",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reference BB-002 saved endpoint",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "video_asset_id": "d7b72c78-d88c-4d95-9aa1-b83ab6e98392",
+      "file_size_mb": 3.17,
+      "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S.png",
+      "saved_last_frame_size_kb": 545.04,
+      "result": "Opening frame matches reference. Body reveals ivory/cream layered petals but remains soft focus; rose identity only partly legible. Added contiguously after BB-002, endpoint verified in My AI Images."
     }
   ]
 }
