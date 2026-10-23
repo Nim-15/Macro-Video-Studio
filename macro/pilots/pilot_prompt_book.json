@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v32_five_clip_chain_assembled_review_pending",
+  "status": "bb_v32_workflow_and_chain_approved_prompt_refinement_next",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -326,7 +326,7 @@
     "subject_lock": "Preserve the main subject's identity, species, silhouette, anatomy, proportions, texture, and position; no morphing or deformation.",
     "change_rule": "A color or subject change may happen gradually inside the clip through a realistic light, refraction, bokeh, focus, or shadow reveal. Reveal a different subject as distinct, never transform one subject into another.",
     "applies_to_existing_renders": false,
-    "note": "This v3 prompt structure updates the production instructions only. Existing renders are historical and have not been regenerated.",
+    "note": "The user confirmed the five-clip chain and joins are correct. Keep this production and handoff workflow fixed during future iterations; improve only scene composition/content through targeted prompts. Existing renders are historical and have not been regenerated.",
     "entry_reference": "Every clip begins on the exact supplied image: BB-001 master still or the immediately previous clip's saved last frame.",
     "exit_reference": "End on a clean, stable, detailed frame explicitly designed to be saved and used as the next clip's starting image."
   },
@@ -337,10 +337,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "FINAL_REVIEW",
-    "next_action": "Review the saved Black Bloom Pilot 01 - v3.2 Chained timeline at 00:10, 00:20, 00:30, and 00:40 and confirm adjacent clips remain directly contiguous with no editor-side transitions. Overall timecode is verified at 00:00:50. Record final pilot scores and whether weak orchid readability and flower overlap require targeted revisions.",
+    "current_scene": "CONTENT_PROMPT_REFINEMENT",
+    "next_action": "Preserve the validated five-clip, 10-second chained workflow and direct-adjacency timeline. Improve only the per-scene prompts for stronger subject readability and composition, using each actual preceding saved endpoint. Review each prompt revision and render one targeted change at a time; avoid rerunning unchanged prompts.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "Five v3.2 renders added contiguously to a separate new project, Black Bloom Pilot 01 - v3.2 Chained, with no added transition clips. Save success confirmed. Timeline timecode reaches 00:00:50. Existing first-pass project was saved before creating the new timeline and was not overwritten."
+    "browser_status": "The user confirmed the complete production workflow and all clip joins are correct. The saved Black Bloom Pilot 01 - v3.2 Chained timeline contains five contiguous 10-second clips and reaches 00:00:50. The production process is accepted; remaining work is creative prompt refinement for composition and content. The initial first-pass project remains preserved."
   }
 }
