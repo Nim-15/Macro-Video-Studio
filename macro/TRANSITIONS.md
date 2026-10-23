@@ -2,11 +2,11 @@
 
 ## Required transition model
 
-Every generated clip carries its own visible **transition-in** at the opening and **transition-out** at the ending. Both effects live inside the clip's requested duration. For a 10-second clip, use this default rhythm:
+Every generated clip carries its own visible **transition-in** at the opening and **transition-out** at the ending. Both effects live inside the clip's requested duration. For the first clip, use the approved master still. Each later clip must begin from the immediately preceding clip's actual saved last frame; do not generate a separate still for it. For a 10-second clip, use this default rhythm:
 
 - **0–2s — entry:** a soft optical or lighting effect reveals the incoming composition.
-- **2–7s — macro observation:** keep the main subject stable and legible. A gradual color or subject shift may happen here when the shot calls for it.
-- **7–10s — exit:** transform light, focus, refraction, or bokeh into the next clip's opening cue.
+- **2–8s — macro observation:** keep the main subject stable and legible. A gradual color or subject shift may happen here when the shot calls for it.
+- **8–10s — exit:** transform light, focus, refraction, or bokeh into the next clip's opening cue.
 
 Place clips directly adjacent on the timeline. The paired in-clip effects mark the boundary. Do not add editor-side cuts, dissolves, wipes, fades, or separate transition clips between scenes. This keeps the assembled duration unchanged and reduces edit work.
 
@@ -48,4 +48,4 @@ The tested route is **Create Video From Prompt → add the finished clip to the 
 
 ## Black Bloom v2 correction status
 
-The user's revised direction requires an in-clip optical/light transition at the beginning and end of every clip, stable principal subjects, gradual realistic changes, and direct clip adjacency without added editor transitions. Existing BB-001–BB-005 renders predate these rules. Their prompt book is being revised for a corrected render pass; the current rendered assets must not be described as already satisfying this new standard.
+The user's revised direction requires one generated master image for the chain, then saved-last-frame references for all later clips; a visible in-clip transition at the beginning and end of every clip; stable principal subjects; gradual realistic changes; and direct clip adjacency without added editor transitions. Use the 0–2 / 2–8 / 8–10 second prompt structure. Existing BB-001–BB-005 renders predate these rules. Their prompt book is being revised for a corrected render pass; the current rendered assets must not be described as already satisfying this new standard.
