@@ -1,6 +1,6 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
-  "run_status": "three_clip_chain_with_BB004_candidates_rejected_for_visual_continuity",
+  "run_status": "four_clip_chain_with_BB004_provisional",
   "membership_policy": {
     "existing_membership_generations_authorized": true,
     "credit_topups_or_upgrades_authorized": false,
@@ -81,6 +81,18 @@
       "saved_last_frame": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
       "saved_last_frame_size_mb": 1.36,
       "result": "Retrieved from My AI Videos after closing creator. Opening matches violet droplet; rose is recognizable and focused mid/end. Exit is a warm close rose, not planned creamy crescent. Replaced original BB-003 at 00:20–00:30; project saved."
+    },
+    {
+      "scene_id": "BB-004-R1",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; BB-003 endpoint from My AI Images",
+      "requested_seconds": 10,
+      "measured_seconds": 10,
+      "resolution": "1920x1080",
+      "video_asset_id": "9725abe9-0160-4b10-a305-770a5f2ef303",
+      "video_size_mb": 2.36,
+      "source_image": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
+      "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S",
+      "result": "Targeted prompt used full-black separation before revealing one orange flower. Preview at 00:02 and 00:06 showed a single flower with clear radial grooves and no rose overlap. At 00:10 the exit is a small dark orange-green bud, not the planned amber bokeh. Added at 00:30–00:40; endpoint-save toast confirmed My AI Images; project saved."
     }
   ],
   "production_scene_status": {
@@ -128,26 +140,25 @@
       "retry_video_candidate": "8ebacb3e-4a65-496f-b12c-357270cf3eb5"
     },
     "BB-004": {
-      "status": "two_candidates_rejected_for_visual_continuity",
+      "status": "provisional_test_render_on_timeline",
       "start_image": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
-      "video": null,
-      "saved_last_frame": null,
+      "video": "9725abe9-0160-4b10-a305-770a5f2ef303",
+      "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S",
       "measured_runtime_seconds": 10,
       "visible_credits_used": null,
-      "retry_count": 2,
+      "retry_count": 3,
       "qa_score": null,
       "observations": [
-        "Two 10-second 1920x1080 files in My AI Videos: 3.88 MB and 3.35 MB",
-        "3.88 MB preview showed rose and orange calendula-like tissue overlaid around 00:06",
-        "3.35 MB preview held rose longer, then began an orange edge; calendula not clearly resolved in observed preview",
-        "Neither candidate added to timeline or used as endpoint",
-        "Two job IDs observed: 18ce2235-8041-4ce5-b6fd-3f1f274af87a and bfb5d5dc-4cee-4d49-9e08-ed54bcac3b0d; exact mapping to files unavailable",
-        "Revise prompt for one distinct non-overlapping calendula specimen before another generation"
+        "1920x1080; 2.36 MB",
+        "revised prompt separated rose and calendula with a full-black cut",
+        "00:02 shows one orange flower; 00:06 has clear radial grooves and no rose overlap",
+        "00:10 closes on a small dark orange-green bud rather than planned amber bokeh",
+        "added at 00:30–00:40; last-frame save confirmed in My AI Images; project saved"
       ]
     },
     "BB-005": {
-      "status": "not_generated",
-      "start_image": null,
+      "status": "ready_to_plan_from_actual_BB004_endpoint",
+      "start_image": "BB-004_CALENDULA_LAST_FRAME_10S",
       "video": null,
       "saved_last_frame": null,
       "measured_runtime_seconds": null,
@@ -158,5 +169,5 @@
   },
   "estimated_credits": null,
   "actual_credits": null,
-  "next_safe_action": "Revise the BB-004 transition prompt to request a distinct calendula reveal with no overlap; review image/reference and prompt before a single targeted generation. Keep the three-clip timeline unchanged until visual approval."
+  "next_safe_action": "Prepare BB-005 from BB-004_CALENDULA_LAST_FRAME_10S.png, explicitly matching the dark bud's low-center scale and black negative space into one burgundy dahlia petal. Review the opening reference and prompt, then submit one 10-second render and retrieve it via My AI Videos."
 }
