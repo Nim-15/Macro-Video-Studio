@@ -1,21 +1,45 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** prompts prepared only. No image/video generation, spending, tool authentication, or renders have occurred.
+**Status:** workflow preflight verified; two BB-001 test renders completed. The prompt-to-video route produced a verified 10-second clip and a reusable end-frame handoff. BB-002–BB-005 production clips have not been generated.
 
 ## Goal
-Produce five ten-second macro clips with precise transition entry/exit descriptions, on pure black background. Theme is premium botanical studio macro, realistic water droplets, very shallow focus, professional upper-left lighting, restrained movement. Final nominal film length: **50 seconds** before editing overlaps.
+Produce five connected 10-second macro clips with intentional entry and exit transitions on a pure black background. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct cuts; timeline dissolves reduce runtime by their overlap.
 
-## Preflight and approval
-1. In signed-in Artistly, manually verify image dimensions, photo-realistic model and image-reference support. Record credit price.
-2. In signed-in VideoExpress, verify 10-second generation, image-to-video input, last-frame export and first-frame reference, batch and queue limits, and cost. Do not assume any feature is supported.
-3. Record user-approved total maximum credits and get explicit **GO** before launching paid generations.
-4. Generate stills for BB-001 through BB-005 (see `pilot_prompt_book.json`). For strongest frame continuity, replace next still's prompt with actual previous end-frame reference only after tool feature verification.
-5. Generate 5 clips one by one for the pilot; batch only if tool capacity is verified. Inspect first and last frames; capture actual last frame after each render.
-6. Assemble in order and measure timing; exact 50 s requires butt cuts or extension/compensation for overlapped dissolves.
-7. Document observed spending, visual artifacts, rejected generations, editor steps and exported file location in `pilot_state.example.json`.
+## Verified VideoExpress route
+Use **Create Video From Prompt** for the 10-second target. In Advanced Mode, enable **Manual Video Length, sec** and set it to **10**. The BB-001 prompt-mode test played at 0:10 / 0:10 in 16:9 at 1920×1080.
 
-## Evaluation scorecard
-Rate each axis 0–5 for each clip: (1) botanical realism, (2) water physics, (3) camera steadiness, (4) lighting consistency, (5) transition entry/exit alignment, (6) temporal stability. Fail any clip with conspicuous anatomy glitches, sudden morphing, floating droplets or motion discontinuities. **Gate:** review all clips before moving to 60-minute production.
+For each dependent clip, use the preceding clip's saved last frame as the next input image:
+1. In My AI Videos, open the finished clip's context menu and choose **Add to Timeline**.
+2. Move the playhead to the displayed end time. Use **Save current frame**, name it `BB-00N_LAST_FRAME`, and confirm it appears in **My AI Images**.
+3. Start **Create Video From Prompt**. Choose **Use from Library → My AI Images** and select the previous scene's saved endpoint.
+4. Confirm the correct image is visible, set 16:9 and **Photorealistic (Cinematic)**, enable Advanced Mode and Manual Video Length = 10, and replace both sample prompts.
+5. State in the image/video prompt that the selected image is the exact opening composition. Describe only plausible motion and the planned exit state. Do not ask the model to morph one flower species into another.
+6. Generate one clip. When complete, play it and verify actual runtime, opening continuity, visual stability and exit frame. Add it to the timeline, save its endpoint, and continue to the next scene.
 
-## Operational caveat
-Files in this folder are planning and production instructions, **not a functioning Artistly/VideoExpress integration**. A browser-operating agent and authenticated sessions would be needed to execute them. Do not save private credentials in this public repository.
+The editor frame-save and library-reuse steps were verified for BB-001. Reuse of the endpoint as the next prompt-video reference is verified; exact first-frame adherence throughout a second rendered clip is still a quality check for the pilot.
+
+## Generation discipline
+- Use assets already present in My AI Images/My AI Videos before creating replacements.
+- Generate only the missing source image for the first clip. For later clips, reuse the preceding saved endpoint as the starting reference; create a new still only when the next scene cannot be reached with a controlled, plausible visual transition.
+- Run one clip at a time because each next input depends on the actual preceding output. Do not queue dependent scenes in advance.
+- Review each prompt and selected reference before submitting. Catch wrong aspect ratio, placeholder text, incorrect frame, wrong species, or a non-10-second setting before rendering.
+- Never rerun an unchanged prompt. For a failed clip, record the specific defect, change only the relevant prompt or reference, then allow at most one targeted retry before revising the scene plan.
+- Keep a checkpoint after every completed clip: scene ID, prompt version, source image, video asset, measured runtime, last-frame asset, observed credit use if exposed, QA scores and next scene.
+- Existing membership credits may be used for this pilot. Do not purchase top-ups, upgrades or another subscription without explicit user authorization. Track usage where the account exposes it.
+
+## Transition chain and scene order
+The prompt book remains authoritative. Preserve each authored entry/exit shape, color, focus and lighting cue:
+
+1. **BB-001 Iris:** iris detail and left-third droplet → soft violet highlight on left third.
+2. **BB-002 Orchid:** open on the violet highlight; resolve into orchid detail → pale lilac glint near upper center.
+3. **BB-003 Rose:** enter on the glint; resolve into ivory rose petal → creamy crescent at right.
+4. **BB-004 Calendula:** enter on the crescent; resolve into amber petal → small amber bokeh lower center.
+5. **BB-005 Dahlia:** enter on the amber point; resolve into burgundy petal → stable dark silhouette/fade.
+
+If generated endpoint and next opening do not match, use an editor-side match cut or short dissolve guided by the continuity card. Keep the subject transition physically plausible; avoid literal flower morphing. Count all overlaps in final timing.
+
+## Pilot review
+Rate each clip 0–5 on botanical realism, water physics, camera stability, lighting continuity, entry/exit match and temporal stability. Reject obvious anatomy defects, floating droplets, conspicuous morphing, flicker or motion jumps. Review every clip before expanding to the 60-minute workflow.
+
+## Run records
+Update `pilot_state.example.json` (or a project-local copy) after every clip. Record measured durations and actual credit use only when visible in the account. Planning files do not represent an Artistly/VideoExpress API integration; keep credentials out of this repository.
