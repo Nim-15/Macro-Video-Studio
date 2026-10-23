@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v37_fixed_scale_render_pending",
+  "status": "bb_v37_rejected_scale_strategy_revision_needed",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -453,15 +453,16 @@
       "scene_id": "BB-005-V3.7-TRIAL",
       "route": "VideoExpress Create Video From Prompt; source BB-004 saved endpoint; Photorealistic (Cinematic); Advanced Mode; Video Only; Manual Video Length=10s; prompt enhancement off",
       "requested_seconds": 10,
-      "observed_seconds": null,
-      "resolution": null,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
       "source_image": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
       "generation_job_ids": [
         "f5921870-e16e-489f-a2ab-e5c3468b635a"
       ],
       "prompt_version": "v3.7_locked_camera_constant_dahlia_scale",
       "prompt": "Animate the supplied BB-004 final frame as the exact opening composition: bright amber calendula and dim rose remnant against black. Hold exact composition for 0–2s with locked camera/focus/exposure and subtle amber rim shimmer. From 2–8s, with no camera movement or zoom, reveal a separate burgundy dahlia in open black space at left by localized edge light; let the rose remnant recede and soften the calendula illumination. Keep dahlia a consistent 20–25% of frame width from reveal through end, fully inside generous margins, separated from the calendula by black. At 8–10s settle a restrained burgundy rim light and hold the same small, sharp full-bloom composition. Negative: morphing, species replacement, overlap, growing/oversized dahlia, cropped petals, bright competing calendula, duplication, flicker, exposure pumping, focus breathing, camera movement, flash, full-frame fade, glitter, text, watermark.",
-      "result": "Submitted; currently rendering in My AI Videos. Review opening, mid-clip scale, and final frame before saving an endpoint or assembling another seam test."
+      "result": "Completed at 10 seconds, 1920x1080, 5.60 MB. Opening at 00:00 matches the BB-004 calendula/rose-remnant endpoint. At 00:05 the dahlia and calendula both occupy much of the frame, with the dahlia clipped at frame left. At 00:09 the dahlia again grows oversized and is cropped at the left/bottom; the calendula remains a large, dim competing subject. Rejected: no endpoint saved and not added to any timeline. Repeated prompt-only scale constraints did not solve the framing issue.",
+      "file_size_mb": 5.6
     }
   ],
   "transition_policy_v2": {
@@ -487,10 +488,9 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB_005_V3_7_RENDER_PENDING",
-    "next_action": "Wait for VideoExpress job f5921870-e16e-489f-a2ab-e5c3468b635a. Review its opening, 00:06, and 00:09–00:10 for exact BB-004 continuity, constant small dahlia scale, separation from the calendula, and a clean endpoint. Only save its endpoint if it passes; otherwise revise once more. Keep the accepted v3.2 project unchanged.",
+    "current_scene": "BB_005_V3_7_REJECTED",
+    "next_action": "Do not submit another prompt-only scale retry. Choose a materially different strategy before spending another generation: use a wider source frame/composition created as an image, or consider a non-generative editor scale/position treatment on a separately duplicated clip. First confirm the available editor transform workflow, then make a separate test. Keep the approved v3.2 chain and the v3.6 seam-test project untouched.",
     "do_not_generate_before_review": true,
-    "source_image": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
-    "browser_status": "BB-005 v3.6 seam test is saved separately and passes for visual continuity; its crop/scale issue remains. A targeted v3.7 fixed-camera/constant-scale retry was submitted from the same BB-004 endpoint (job f5921870-e16e-489f-a2ab-e5c3468b635a); it is rendering in My AI Videos. The accepted v3.2 project remains untouched."
+    "browser_status": "BB-005 v3.7 (job f5921870-e16e-489f-a2ab-e5c3468b635a) completed at 10s, 1920x1080, 5.60 MB from the BB-004 v3.4 endpoint. Opening matches the source, but at 00:05 the dahlia and calendula both fill much of the image; at 00:09 the dahlia is oversized and cropped left/bottom. Rejected, no endpoint saved, no timeline insertion. v3.6 remains only a continuity candidate. Prompt-only scale instructions have now failed repeatedly; change the strategy before another paid render."
   }
 }
