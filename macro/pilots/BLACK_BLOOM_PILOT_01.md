@@ -1,6 +1,6 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** BB-001–BB-004 están encadenados en el timeline de `Black Bloom Pilot 01` de 00:00 a 00:40. BB-003 usa el reintento enfocado; BB-004 usa un único render corregido con corte a negro y flor naranja aislada. Sus endpoints están guardados en My AI Images. BB-005 queda pendiente.
+**Status:** Five 10-second clips are chained contiguously on `Black Bloom Pilot 01` from 00:00 to 00:50. BB-003 uses its focused retry, BB-004 uses the corrected isolated-flower render, and BB-005 closes on a fade to black. All five endpoints are saved in My AI Images. The timeline project is saved; full-sequence quality review remains.
 
 ## Goal
 Produce five connected 10-second macro clips with intentional entry and exit transitions on a pure black background. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct cuts; timeline dissolves reduce runtime by their overlap.
@@ -54,3 +54,6 @@ Two completed 10-second, 1920×1080 renders appeared in **Media Library → My A
 
 ### BB-004 targeted correction
 After rejecting two rose/calendula overlay candidates, one revised render was submitted with an explicit full-black separation and a single flower reveal. VideoExpress job `9725abe9-0160-4b10-a305-770a5f2ef303` completed as a 10-second, 1920×1080 file (2.36 MB). Preview at 00:02 shows a single orange flower on black; at 00:06 the radial petal grooves are clear and no rose overlaps it. At 00:10 the subject has closed into a small, dark orange-green bud rather than the planned amber bokeh point. The clip was added at 00:30–00:40, its endpoint was saved as `BB-004_CALENDULA_LAST_FRAME_10S` to My AI Images, and `Black Bloom Pilot 01` was saved. BB-004 is a provisional continuity pass; assess the BB-005 opening against this actual endpoint.
+
+### BB-005 final clip
+Job `47376f6e-b3ce-445b-9829-4e270846ae0e` rendered as a 10-second, 1920×1080 file (1.39 MB), sourced from `BB-004_CALENDULA_LAST_FRAME_10S.png`. Preview at 00:00 matches the saved dark orange-green bud, around 00:05 shows a recognizable burgundy dahlia against black, and 00:10 is nearly black after the planned fade. Added contiguously at 00:40–00:50. Endpoint `BB-005_DAHLIA_LAST_FRAME_10S` saved to My AI Images. The project now contains five 10-second clips / 00:50 and is saved.
