@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "four_clip_chain_with_BB004_provisional",
+  "status": "five_clip_chain_complete_full_sequence_review_pending",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -19,7 +19,7 @@
       "scene_number": 1,
       "transition_in": "Open on velvet black and iris detail",
       "duration_seconds": 10,
-      "status": "not_generated",
+      "status": "test_render_needs_visual_approval",
       "image_asset_uri": null,
       "video_asset_uri": null,
       "actual_credits": null
@@ -95,10 +95,13 @@
       "scene_number": 5,
       "transition_in": "Open from the actual BB-004_CALENDULA_LAST_FRAME_10S endpoint; match the low-center scale and black negative space, then resolve into a separate burgundy dahlia petal without morphing.",
       "duration_seconds": 10,
-      "status": "not_generated",
-      "image_asset_uri": null,
-      "video_asset_uri": null,
-      "actual_credits": null
+      "status": "test_render_on_timeline",
+      "image_asset_uri": "BB-004_CALENDULA_LAST_FRAME_10S.png",
+      "video_asset_uri": "47376f6e-b3ce-445b-9829-4e270846ae0e",
+      "actual_credits": null,
+      "saved_last_frame": "BB-005_DAHLIA_LAST_FRAME_10S",
+      "video_size_mb": 1.39,
+      "qa_observation": "10s, 1920x1080; opening at 00:00 matches BB-004's saved dark orange-green bud, ~00:05 resolves into a recognizable burgundy dahlia against black, 00:10 is nearly black after fade. Added at 00:40–00:50; endpoint save confirmed in My AI Images; project saved."
     }
   ],
   "production_generation_strategy": {
@@ -204,6 +207,18 @@
       "source_image": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
       "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S",
       "result": "One isolated orange flower appears after a black cut; radial grooves clear by 00:06. Exit becomes a small dark orange-green bud at 00:10. Added to timeline 00:30–00:40 and endpoint saved to My AI Images."
+    },
+    {
+      "scene_id": "BB-005",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reused BB-004 saved endpoint",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "video_asset_id": "47376f6e-b3ce-445b-9829-4e270846ae0e",
+      "file_size_mb": 1.39,
+      "source_image": "BB-004_CALENDULA_LAST_FRAME_10S.png",
+      "saved_last_frame": "BB-005_DAHLIA_LAST_FRAME_10S",
+      "result": "Opening matches saved bud; mid-clip resolves to burgundy dahlia; final frame fades almost to black. Added contiguously at 00:40–00:50 and endpoint saved."
     }
   ]
 }
