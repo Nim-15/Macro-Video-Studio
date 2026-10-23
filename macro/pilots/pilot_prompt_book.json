@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v34_bb004_bb005_trials_complete_endpoints_saved",
+  "status": "bb_v34_seam_pass_framing_revision_required",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -386,6 +386,23 @@
       ],
       "prompt_version": "v3.4_dahlia_isolated_from_calendula_endpoint",
       "result": "Completed, 5.50 MB. At 0:06 a distinct burgundy dahlia with layered petals and visible center is legible at frame left as the calendula recedes separately at right. By 0:09–0:10 the dahlia is dominant and sharp; slight top-edge crop remains. Endpoint saved as BB-005_DAHLIA_LAST_FRAME_10S_V3_4. Separate trial only, not added to approved v3.2 timeline."
+    },
+    {
+      "scene_id": "BB-004-TO-BB-005-SEAM-TEST",
+      "route": "VideoExpress separate project; Add to Timeline; manual scrub review",
+      "project_name": "Black Bloom - Seam Test BB-004 to BB-005 v3.4",
+      "requested_seconds": 20,
+      "observed_seconds": 20,
+      "resolution": "1920x1080 source clips",
+      "source_video_jobs": [
+        "6d834f3d-2154-4d75-b3ba-78d0463ec529",
+        "6a288ce0-53ef-425e-93f8-b381c9092d27"
+      ],
+      "sequence": [
+        "BB-004 v3.4",
+        "BB-005 v3.4"
+      ],
+      "result": "Saved as a separate project; Open Project lists it independently from Black Bloom Pilot 01 - v3.2 Chained. Clips are adjacent with no editor-side transition; 10-second boundary verified. At 00:09 (BB-004 end) and 00:10 (BB-005 start), calendula/rose-remnant composition carries across without a visible jump. At 00:16, the dahlia is recognizable but overscales and crops beyond the left and upper frame edges. Seam passes; revise BB-005 framing before considering replacement of any approved clip."
     }
   ],
   "transition_policy_v2": {
@@ -411,10 +428,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB_V34_CLIP_TRIALS_COMPLETE",
-    "next_action": "Review the updated v3.3/v3.4 trial clips as a separate chain, using their saved endpoints and checking all four joins, timing, exposure, and framing. Preserve the approved v3.2 timeline; do not replace it unless the user explicitly chooses the revised chain after review.",
+    "current_scene": "BB_V34_SEAM_REVIEW_COMPLETE",
+    "next_action": "Keep the saved seam-test project separate from the accepted v3.2 timeline. The BB-004→BB-005 join passes at 00:10. Refine BB-005 framing so the full dahlia silhouette has clear margins, then review that targeted result before any replacement decision. Preserve the approved v3.2 project.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-004 v3.4 completed with a distinct readable calendula and saved endpoint BB-004_CALENDULA_LAST_FRAME_10S_V3_4. BB-005 v3.4 completed from that actual endpoint; the burgundy dahlia becomes distinct by 0:06 and dominates at 0:09–0:10, with slight top-edge crop. Endpoint BB-005_DAHLIA_LAST_FRAME_10S_V3_4 is saved. Both renders are separate tests and the accepted v3.2 timeline remains untouched. Next, review the updated chain in a separate trial project."
+    "browser_status": "The separate project Black Bloom - Seam Test BB-004 to BB-005 v3.4 is saved and appears separately from Black Bloom Pilot 01 - v3.2 Chained in Open Project. BB-004 and BB-005 are adjacent 10-second clips (20 seconds total) with no editor-side transition. Manual review at 00:09/00:10 shows the calendula and dim rose remnant carry across without an obvious jump. At 00:16 the dahlia is recognizable but cropped at the left and upper frame edges; seam passes, but BB-005 needs a framing revision before replacement consideration."
   }
 }
