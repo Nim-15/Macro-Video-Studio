@@ -20,6 +20,6 @@ For pure cuts and 360 clips × 10s, runtime = 3,600s. For overlapping dissolves,
 
 ## Verified chained handoff · VideoExpress
 
-The tested pilot route is **Create Video From Prompt → Add to Timeline → seek to the clip end → Save current frame → select that saved still from My AI Images for the next prompt-video form**. A 10-second BB-001 output was observed at 0:10 / 0:10 and the saved frame was selectable in the next form.
+The tested route is **Create Video From Prompt → add the finished clip to the timeline → save the endpoint with the clip's Media Library context menu → Save Last Frame → select that still from My AI Images in the next prompt-video form**. BB-001 and BB-002 were both 10-second, 1920×1080 clips; BB-002 followed BB-001 contiguously and its 831 KB saved endpoint was selectable for the next prompt. Using Save Last Frame is simpler and avoids seeking to the exact timeline boundary, which showed black at the 20-second boundary. The BB-002 render retained the violet-droplet palette, but the orchid remained indistinct and mostly soft focus.
 
 Treat this as a reusable start-frame handoff, not proof that the next generated clip will reproduce it pixel-perfectly. Verify the opening frame on every render. If the scene change would require implausible flower morphing, use a controlled optical match cut or short editor dissolve while keeping the authored transition shape, color, and light cue.
