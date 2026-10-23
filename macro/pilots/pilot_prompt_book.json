@@ -73,19 +73,19 @@
       "scene_number": 3,
       "transition_in": "Soft droplet refraction and rack focus reveal a distinct ivory rose.",
       "duration_seconds": 10,
-      "status": "v3_prompt_ready_after_previous_endpoint",
-      "image_asset_uri": "BB-002_ORCHID_LAST_FRAME_10S.png",
-      "video_asset_uri": "8ebacb3e-4a65-496f-b12c-357270cf3eb5",
+      "status": "v32_render_pending_visual_review",
+      "image_asset_uri": "BB-002_ORCHID_LAST_FRAME_10S_V3_2",
+      "video_asset_uri": "59555434-96aa-4a5d-84f7-df39577de405",
       "actual_credits": null,
       "saved_last_frame": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
       "video_size_mb": 3.82,
-      "qa_observation": "10s, 1920x1080; retrieved via Media Library → My AI Videos after closing creator. Opening matches violet droplet; mid/end show recognizable focused ivory rose. Warm close-rose exit differs from planned creamy crescent. Replaced original at 00:20–00:30; endpoint saved in My AI Images.",
+      "qa_observation": "Submitted BB-003 from the exact saved BB-002 v3.2 endpoint, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s; automatic prompt enhancement off. Job 59555434-96aa-4a5d-84f7-df39577de405. Awaiting render and visual QA.",
       "retry_video_asset_uri": null,
       "retry_count": 1,
       "retry_status": "reviewed_and_selected_on_timeline",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v3_user_example_single_image_chain",
+      "revised_prompt_version": "v3.2_locked_camera_light_reveal",
       "target_visual": "High-end extreme macro photography of pristine ivory rose petal edge with botanically realistic layered tissue and miniature condensation beads, pure black seamless background, a tiny specular highlight at upper center matching preceding isolated lilac light, natural pearl-cream and pale violet cool reflections, precise angled studio edge lighting from upper left, cinematic shallow focus, 16:9, no lettering.",
       "image_generation_required": false
     },
@@ -338,9 +338,9 @@
   },
   "resume_checkpoint": {
     "current_scene": "BB-003",
-    "next_action": "Use BB-002_ORCHID_LAST_FRAME_10S_V3_2 from My AI Images as BB-003's exact reference, preserve the sharp iris/droplet, and make any rose reveal distinctly readable through in-clip lighting while maintaining the stable camera/focus/exposure behavior.",
+    "next_action": "Wait for BB-003 job 59555434-96aa-4a5d-84f7-df39577de405 in My AI Videos. Review the opening against BB-002 endpoint and check 0:10 sharpness/continuity before saving endpoint or proceeding to BB-004.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-002 job b9530504-825c-4ac9-ab32-9601322c2194 completed, reviewed at opening/mid/end, 10s 1920x1080 (6.19 MB); saved endpoint verified in My AI Images. BB-003 is ready to generate from that exact endpoint."
+    "browser_status": "BB-003 job 59555434-96aa-4a5d-84f7-df39577de405 submitted from the verified BB-002 endpoint; pending render."
   }
 }
