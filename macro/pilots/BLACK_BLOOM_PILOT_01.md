@@ -155,3 +155,12 @@ The BB-004 v3.4 prompt now calls for a complete, unmistakable calendula by mid-c
 BB-004 v3.4 job `6d834f3d-2154-4d75-b3ba-78d0463ec529` completed at 10 seconds, 1920×1080, 4.04 MB, from `BB-003_ROSE_LAST_FRAME_10S_V3_3`. The first seconds retain the centered rose. By 0:03 a separate orange radial flower begins to appear; at 0:07–0:10 its central disk and ray petals are clearly legible as a calendula, while the rose recedes as a distinct dim bloom. A restrained dolly-back creates separation without visible flower morphing. The light dips during the exit transition, then the final frame settles bright with the full calendula silhouette inside the frame and narrow margins. Saved the actual endpoint as `BB-004_CALENDULA_LAST_FRAME_10S_V3_4` in My AI Images.
 
 This v3.4 render remains a separate test and was not added to the user-approved v3.2 timeline. BB-004 v3.3 failed and no endpoint was saved from it. Next, prepare BB-005 from the saved v3.4 calendula endpoint; reveal a distinct burgundy dahlia while preserving flower separation, full margins, and a stable bright endpoint.
+
+
+## BB-005 v3.4 trial and endpoint review
+
+Prepared the BB-005 prompt from the actual `BB-004_CALENDULA_LAST_FRAME_10S_V3_4` endpoint. The prompt holds the calendula at the opening, lets the dim rose remnant recede first, then reveals a separate burgundy dahlia at frame left with a controlled macro dolly-back and no flower morphing.
+
+BB-005 job `6a288ce0-53ef-425e-93f8-b381c9092d27` completed at 10 seconds, 1920×1080, 5.50 MB. At 0:06, the dahlia's layered burgundy petals and center are clearly recognizable; the calendula recedes separately at frame right. By 0:09–0:10 the dahlia dominates in a sharp macro close-up. The upper petals have a slight top-edge crop, but there is no clear species morphing or bloom overlap. Saved the actual last frame as `BB-005_DAHLIA_LAST_FRAME_10S_V3_4` in My AI Images.
+
+This is a separate test, not a replacement for the accepted v3.2 timeline. BB-004 v3.4 and BB-005 v3.4 now form the latest endpoint chain for those scenes; the next quality check is to review the revised clips and joins together in a separate trial project before choosing whether to replace anything in the approved project.
