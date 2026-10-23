@@ -108,3 +108,10 @@ Submitted the final pilot clip, BB-005 job `33e10c28-01e7-4371-95cd-b84a43c04a2d
 BB-005 job `33e10c28-01e7-4371-95cd-b84a43c04a2d` completed at 10 seconds, 1920×1080, 4.77 MB. Its opening broadly retains the BB-004 violet petal/droplet and orange/cream layers, with some composition drift. At 0:09 the droplet and foreground petal are readable and a small burgundy dahlia-like form appears separately at far right. Several flower layers still overlap visually, and the ivory flower remains prominent; no clear subject morphing is visible. Saved `BB-005_DAHLIA_LAST_FRAME_10S_V3_2` in My AI Images.
 
 All five v3.2 clips now have reviewed saved endpoints and can be assembled in sequence. Their continuity is visually workable, but BB-002's orchid identity is soft, BB-003/004 drift in composition, and BB-004/005 show overlapping layers. The five updated renders are **not yet assembled on the timeline**. Next, create a separate v3.2 timeline or project copy, preserve the existing first-pass project, place BB-001–BB-005 contiguously with no editor-side transitions, then review the full 50-second chain at all four boundaries.
+
+
+## v3.2 chain assembled
+
+Created and saved a separate VideoExpress project named **Black Bloom Pilot 01 - v3.2 Chained**, after saving the pre-existing first-pass project. Added the five reviewed v3.2 videos in order using **Add to Timeline** at 00:00, 00:10, 00:20, 00:30, and 00:40. The timeline shows five adjacent 10-second clips, with no editor-side transition clips, and its timecode reaches 00:00:50. The BB-001→BB-002 and BB-002→BB-003 placements were visually checked at 00:10 and 00:20; all five clip placements are visible contiguously in the saved timeline. Project save succeeded.
+
+The chain is assembled, but final boundary-by-boundary playback review and quality scoring remain. Known issues: BB-002's orchid identity is soft/unclear; BB-003 reframes relative to its input; BB-004 has visually overlapping flower layers and a darker droplet; BB-005 retains multiple overlapping layers. Review the four boundaries before treating the sequence as a quality-approved master or expanding toward a longer production.
