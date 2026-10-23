@@ -1,10 +1,10 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** Five 10-second clips are chained contiguously on `Black Bloom Pilot 01` from 00:00 to 00:50. BB-003 uses its focused retry, BB-004 uses the corrected isolated-flower render, and BB-005 closes on a fade to black. All five endpoints are saved in **My AI Images**. The timeline project is saved; full-sequence quality review and export decision remain pending.
+**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v2 prompt pass is prepared; the existing renders have not yet been regenerated under the new rules.
 
 ## Goal
 
-Produce five connected 10-second macro clips with intentional entry and exit transitions on a pure black background. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct cuts. Timeline overlaps reduce runtime.
+Produce five connected 10-second macro clips with visible in-clip entry and exit effects on a pure black background. Keep each effect within its clip duration. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct cuts. Timeline overlaps reduce runtime.
 
 ## Verified VideoExpress route
 
@@ -30,7 +30,7 @@ For each dependent clip:
 
 ## Transition chain and current observations
 
-The prompt book remains authoritative for the authored transition cues. Preserve each entry/exit shape, color, focus, and lighting cue where the generated footage allows it. Use an editor-side match cut or short dissolve when the saved endpoint differs; count any overlap in the final duration.
+The revised v2 prompt book is authoritative. Every clip must begin and end with a gradual in-clip light or optical effect; place clips directly adjacent with no editor-side cut, dissolve, wipe, fade, or separate transition duration. Preserve each subject's identity, species, silhouette, anatomy, proportions, texture, and position. Any color or subject change must happen gradually through plausible light, focus, refraction, bokeh, or shadow; reveal a new subject as distinct, never morph one into another. All effects fit inside the 10-second clip.
 
 | Clip | Timeline | Current result | QA note |
 |---|---:|---|---|
@@ -53,3 +53,15 @@ A 60-minute timeline made only from contiguous 10-second clips would require 360
 ## Records
 
 `pilot_state.example.json` contains the render IDs, current statuses, endpoint names, and verified workflow. This pilot is managed through the Artistly and VideoExpress interfaces; the repository does not contain an API integration. Keep credentials out of the repository.
+
+
+## User correction · transition standard v2
+
+The first-pass review identified four requirements for the corrected run:
+
+1. Every clip visibly opens with a transition-in effect and closes with a transition-out effect.
+2. Keep principal subjects stable and recognizable. Avoid extreme changes, deformation, stretching, duplication, or species morphing; show only gradual, plausible macro-photography changes.
+3. A subject or color change may occur within a clip through a creative but realistic light/optical effect.
+4. The paired in-clip effects alone mark adjacent scene boundaries. Place clips directly together and add no editor-side transition or extra duration.
+
+The default 10-second pacing is 0–2s entry effect, 2–7s stable macro observation (with an optional gradual subject/color reveal), and 7–10s exit effect. The existing v1 renders do not satisfy this new rule consistently. The updated prompts are in `pilot_prompt_book.json`; re-render only after the user chooses which clips to correct first. Resume with one dependent clip at a time and save each actual endpoint.
