@@ -73,13 +73,13 @@
       "scene_number": 3,
       "transition_in": "Soft droplet refraction and rack focus reveal a distinct ivory rose.",
       "duration_seconds": 10,
-      "status": "v32_render_pending_visual_review",
+      "status": "v32_endpoint_saved_bb004_ready_with_composition_deviation",
       "image_asset_uri": "BB-002_ORCHID_LAST_FRAME_10S_V3_2",
       "video_asset_uri": "59555434-96aa-4a5d-84f7-df39577de405",
       "actual_credits": null,
-      "saved_last_frame": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
-      "video_size_mb": 3.82,
-      "qa_observation": "Submitted BB-003 from the exact saved BB-002 v3.2 endpoint, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s; automatic prompt enhancement off. Job 59555434-96aa-4a5d-84f7-df39577de405. Awaiting render and visual QA.",
+      "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S_V3_2",
+      "video_size_mb": 4.27,
+      "qa_observation": "10s, 1920x1080, 4.27 MB. Opened in VideoExpress and checked at start and 0:10. Start preserves the violet iris petal and attached droplet but reinterprets the low-angle composition rather than exactly matching BB-002's saved endpoint. An ivory flower is already visible behind the iris; by 0:10 the droplet and violet petal remain detailed, with the cream flower still distinct but soft. No clear species morphing. Endpoint saved in My AI Images as BB-003_ROSE_LAST_FRAME_10S_V3_2. Usable for continuity, with composition drift recorded.",
       "retry_video_asset_uri": null,
       "retry_count": 1,
       "retry_status": "reviewed_and_selected_on_timeline",
@@ -337,10 +337,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-003",
-    "next_action": "Wait for BB-003 job 59555434-96aa-4a5d-84f7-df39577de405 in My AI Videos. Review the opening against BB-002 endpoint and check 0:10 sharpness/continuity before saving endpoint or proceeding to BB-004.",
+    "current_scene": "BB-004",
+    "next_action": "Prepare BB-004 from BB-003_ROSE_LAST_FRAME_10S_V3_2. Treat the actual endpoint as the source of truth: preserve its violet petal/droplet and cream background flower, keep camera/focus/exposure stable, and use localized warm amber light to introduce a distinct calendula without morphing or abrupt composition change.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-003 job 59555434-96aa-4a5d-84f7-df39577de405 submitted from the verified BB-002 endpoint; pending render."
+    "browser_status": "BB-003 job 59555434-96aa-4a5d-84f7-df39577de405 completed and was checked at opening/end, 10s 1920x1080, 4.27 MB. Saved verified endpoint BB-003_ROSE_LAST_FRAME_10S_V3_2. BB-004 can proceed from this actual endpoint; composition drift is noted."
   }
 }
