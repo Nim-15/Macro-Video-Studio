@@ -26,3 +26,6 @@ Treat this as a reusable start-frame handoff, not proof that the next generated 
 
 
 BB-003 rendered at 10 seconds / 1920×1080 from `BB-002_ORCHID_LAST_FRAME_10S.png` and was added at 00:20–00:30. Opening continuity is strong; the later ivory petal forms remain soft focus and the rose identity is only partly legible. The endpoint `BB-003_ROSE_LAST_FRAME_10S.png` (545.04 KB) is available in My AI Images. Review before continuing; an editor-side optical match cut to the amber calendula crescent may avoid carrying the soft endpoint as an image reference.
+
+
+BB-003 targeted retry `8ebacb3e-4a65-496f-b12c-357270cf3eb5` completed according to VideoExpress notification, but remains unreviewed because it did not appear in the library's `My AI Videos` or `Videos` folders. Keep the existing 00:20–00:30 clip until this candidate can be inspected; do not propagate another generation before review.
