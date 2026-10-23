@@ -1,6 +1,6 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** workflow preflight verified; BB-001, BB-002 and BB-003 chained renders completed at 10 seconds each. All three clips are on the timeline in sequence at 00:00–00:30, with saved endpoints confirmed in My AI Images. BB-002’s orchid is indistinct, and BB-003’s ivory petal forms remain soft focus; review before propagating to BB-004.
+**Status:** BB-001–BB-003 are chained on the timeline at 00:00–00:30. The focused BB-003 retry now occupies 00:20–00:30; its endpoint is saved in My AI Images, and the project `Black Bloom Pilot 01` is saved. Two BB-004 candidates rendered at 10 seconds / 1920×1080, but both are rejected for the rose-to-calendula overlay and are not on the timeline.
 
 ## Goal
 Produce five connected 10-second macro clips with intentional entry and exit transitions on a pure black background. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct cuts; timeline dissolves reduce runtime by their overlap.
@@ -47,3 +47,7 @@ Update `pilot_state.example.json` (or a project-local copy) after every clip. Re
 
 ### BB-003 targeted retry
 A single targeted retry was submitted from `BB-002_ORCHID_LAST_FRAME_10S.png` with explicit instructions to keep a recognizable layered ivory rose in focus. VideoExpress reported successful completion for job `8ebacb3e-4a65-496f-b12c-357270cf3eb5`, but the file was not exposed in the library’s `My AI Videos` or `Videos` folders during retrieval. It has not been visually reviewed or added to the timeline. Do not generate another retry; retrieve and inspect this candidate first.
+
+
+### BB-004 render review
+Two completed 10-second, 1920×1080 renders appeared in **Media Library → My AI Videos** after the creator was closed. The 3.88 MB preview shows rose and orange calendula-like tissue visibly overlaid around 00:06. The 3.35 MB preview holds the rose longer, then begins introducing an orange petal edge, but did not present a clearly resolved calendula in the observed preview. Neither candidate was added to the timeline or used as an endpoint. Two generation identifiers were observed in the creator (`18ce2235-8041-4ce5-b6fd-3f1f274af87a`, `bfb5d5dc-4cee-4d49-9e08-ed54bcac3b0d`), but the UI did not expose a reliable mapping from those IDs to the two files. Revise the BB-004 prompt to request a distinct calendula cut/reveal with one non-overlapping specimen before another generation.
