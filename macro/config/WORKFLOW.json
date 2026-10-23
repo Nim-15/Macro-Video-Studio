@@ -21,27 +21,39 @@
     "video": "VideoExpress",
     "voice": "CloneVoice (optional)",
     "soundtrack": "licensed ambient music",
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   "automation": {
-    "mode": "conditional browser agent",
-    "require_go_before_paid_generation": true,
+    "mode": "sequential_browser_assisted_generation",
+    "require_go_before_paid_generation": false,
     "proof_of_concept_clips": 5,
-    "desired_batch_size": 5,
-    "batch_size_requires_verification": true,
+    "desired_batch_size": 1,
+    "batch_size_requires_verification": false,
     "max_retries_per_scene": 1,
-    "checkpoint_after_each_batch": true
+    "checkpoint_after_each_batch": true,
+    "generation_policy": {
+      "use_existing_membership_credits": true,
+      "require_explicit_authorization_for_credit_purchase_or_upgrade": true,
+      "generate_missing_stills_only": true,
+      "video_route": "VideoExpress Create Video From Prompt",
+      "advanced_mode": true,
+      "manual_video_length_seconds": 10,
+      "chain_via_editor_saved_last_frame": true,
+      "preflight_gate": "verify reference, prompt fields, aspect ratio, image type and duration before each render",
+      "retry_rule": "one targeted retry after diagnosing a specific defect; never repeat an unchanged prompt"
+    }
   },
   "transitions": {
-    "preferred": "matched_frame",
-    "last_frame_reuse_requires_verification": true,
+    "preferred": "editor_saved_last_frame_reference",
+    "last_frame_reuse_requires_verification": false,
     "preserve": [
       "lighting direction",
       "focal plane",
       "palette",
       "subject geometry",
       "camera motion"
-    ]
+    ],
+    "next_clip_adherence": "verify visually on each render"
   },
   "quality_control": {
     "check_photorealism": true,
@@ -55,7 +67,8 @@
     "visual_bible",
     "scene_plan",
     "prompt_book",
-    "budget_approval",
+    "membership_allowance_check",
+    "sequential_generation_checkpoint",
     "pilot_generation",
     "pilot_review",
     "batch_generation",
