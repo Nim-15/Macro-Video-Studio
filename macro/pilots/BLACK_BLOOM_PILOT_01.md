@@ -91,3 +91,8 @@ BB-003 job `59555434-96aa-4a5d-84f7-df39577de405` completed at 10 seconds, 1920Ã
 ## BB-004 v3.2 render in progress
 
 Submitted BB-004 job `ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7` from the exact saved `BB-003_ROSE_LAST_FRAME_10S_V3_2` reference. Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length = 10 seconds; automatic prompt enhancement off. The prompt follows the actual iris/rose composition and aims to reveal a separate calendula through localized amber light while preserving the subjects and locked camera/focus/exposure. Review the opening and final frame before continuing.
+
+
+## BB-004 v3.2 endpoint review
+
+BB-004 job `ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7` completed at 10 seconds, 1920Ã—1080, 5.56 MB. The opening retains the violet petal, droplet, and ivory flower with a slight warm glow already present. At 0:10 a distinct orange radial-petal flower appears, but visually overlaps/blends with the ivory rose, and the droplet darkens significantly. The iris remains recognizable. Saved `BB-004_CALENDULA_LAST_FRAME_10S_V3_2` in My AI Images for continuity, with these limitations recorded. BB-005 should use this actual endpoint and avoid overlapping flower silhouettes while keeping the droplet bright and legible.
