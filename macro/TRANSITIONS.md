@@ -25,7 +25,7 @@ Do not use abrupt black cuts, hard flashes, glitch effects, liquid morphs, subje
 
 ## Subject and scene-change continuity
 
-Lock the principal subject's species/material, silhouette, anatomy, proportions, texture, and location. A different subject may appear within a clip, but reveal it as a separate subject through gradual focus, light, refraction, bokeh, or a plausible foreground occlusion. Do not morph one subject into another.
+Preserve the principal subject's species/material, identity, anatomy, proportions and physical texture. Composition, visible area and screen position may change freely when motivated by a macro camera move; extreme crops and partial exits from frame are acceptable. A different subject may appear within a clip, but reveal it as a separate subject through gradual focus, light, refraction, bokeh or plausible foreground occlusion. Do not morph one subject into another.
 
 The exit effect of clip N should lead visually into the entry effect of clip N+1 through a matching cue such as shape, color, highlight position, focus distance, motion direction, or light direction. Use the actual saved endpoint as the next prompt's reference when available; verify the generated opening because reference adherence is not exact.
 
@@ -34,7 +34,7 @@ The exit effect of clip N should lead visually into the entry effect of clip N+1
 - Clip N's actual saved last-frame asset and description.
 - Exit effect, location in frame, color, focus and light direction.
 - Clip N+1's entry effect and matching cue.
-- Principal-subject stability constraints for both clips.
+- Principal-subject identity and anatomy constraints for both clips; intended scale, angle, crop and off-frame movement.
 - Measured clip durations and timeline boundary.
 - QA result for visual continuity and whether the transition stays within clip duration.
 
