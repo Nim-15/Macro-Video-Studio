@@ -1,6 +1,6 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v3 prompt pass now follows the user's copy-ready structure and one-image chaining rule. Two BB-001 v3 candidates were generated and reviewed; both failed endpoint-focus QA. A single targeted v3.1 retry is now pending.
+**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v3 prompt pass now follows the user's copy-ready structure and one-image chaining rule. Two BB-001 v3 candidates were reviewed and failed endpoint-focus QA. A single targeted v3.1 retry was also reviewed and failed endpoint-visibility QA.
 
 ## Goal
 
@@ -68,6 +68,6 @@ The copy-ready video prompt uses the exact section order and timing the user sup
 
 The Artistly master still generated for BB-001 is visible in Artistly Personal Designs, but the VideoExpress **My Artistly Images** folder was empty, so it was not available as a source for the video render. The two v3 jobs instead used the already available `BB-001_IRIS_LAST_FRAME_10S.png` in **My AI Images**.
 
-Two v3 candidates are present in **My AI Videos** (6.17 MB and 4.73 MB; the UI did not map their IDs to file sizes). The 6.17 MB candidate was reviewed first; its 0:10 frame was too soft/defocused to use. The 4.73 MB candidate was then played in VideoExpress; it also progressively pushed into the droplet but ended with the droplet/petal visibly soft and lacking sufficient detail for a chain endpoint. Neither candidate was added to the timeline, and no endpoint was saved. The duplicate submission resulted in two paid renders; no further render has been submitted.
+Two v3 candidates are present in **My AI Videos** (6.17 MB and 4.73 MB; the UI did not map their IDs to file sizes). The 6.17 MB candidate was reviewed first; its 0:10 frame was too soft/defocused to use. The 4.73 MB candidate was then played in VideoExpress; it also progressively pushed into the droplet but ended with the droplet/petal visibly soft and lacking sufficient detail for a chain endpoint. Neither candidate was added to the timeline, and no endpoint was saved. The duplicate submission resulted in two renders. A single planned targeted retry also completed; no further generation is authorized under the current pilot retry rule.
 
-**Resume:** one v3.1 retry has been submitted with minimal push-in, locked droplet focus, and a background-only exit light. Job `61e23ee8-24a8-446b-adf2-74cb15ee8c7c` is pending in My AI Videos. Inspect its 0:10 frame before proceeding to BB-002.
+**Resume:** the v3.1 retry (job `61e23ee8-24a8-446b-adf2-74cb15ee8c7c`, 6.25 MB) completed at 10 seconds but its 0:10 frame is nearly black and lacks useful droplet/petal detail. It was rejected, not added to the timeline, and no endpoint was saved. Replan BB-001 to keep the subject visibly detailed at 0:10 and avoid a whole-frame exposure fade. Pause further generation until that plan is reviewed.
