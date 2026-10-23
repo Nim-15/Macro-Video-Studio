@@ -1,6 +1,6 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
-  "run_status": "three_clip_chain_rendered_review_required",
+  "run_status": "three_clip_chain_plus_BB003_retry_pending_visual_review",
   "membership_policy": {
     "existing_membership_generations_authorized": true,
     "credit_topups_or_upgrades_authorized": false,
@@ -68,6 +68,16 @@
       "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S.png",
       "saved_last_frame_size_kb": 545.04,
       "result": "Added contiguously after BB-002 at 00:20–00:30. Opening matches the violet droplet reference. Mid/late frames show cream petal forms, but focus is soft and the rose identity is only partially legible. Endpoint saved and verified in My AI Images; not approved as a quality target for propagating more detail."
+    },
+    {
+      "scene_id": "BB-003-R1",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reference BB-002 saved endpoint",
+      "requested_seconds": 10,
+      "measured_seconds": null,
+      "resolution": null,
+      "video_asset_id": "8ebacb3e-4a65-496f-b12c-357270cf3eb5",
+      "source_image": "BB-002_ORCHID_LAST_FRAME_10S.png",
+      "result": "VideoExpress displayed its successful-completion notification. Retrieval/visual review is pending because the item was not listed in My AI Videos or Videos; not added to the timeline."
     }
   ],
   "production_scene_status": {
@@ -104,15 +114,17 @@
       "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S.png",
       "measured_runtime_seconds": 10,
       "visible_credits_used": null,
-      "retry_count": 0,
+      "retry_count": 1,
       "qa_score": null,
       "observations": [
         "1920x1080; 3.17 MB",
         "opening matches the saved violet droplet endpoint and continues contiguously at 00:20",
         "cream ivory layered petal forms appear by about 00:28 but remain soft focus; rose identity is only partly legible",
         "Save Last Frame succeeded; endpoint appears in My AI Images at 545.04 KB",
-        "timeline boundary at 00:30 displays black after the clip ends"
-      ]
+        "timeline boundary at 00:30 displays black after the clip ends",
+        "One targeted re-render submitted from BB-002 endpoint with revised focus/rose-identity prompt; VideoExpress reported successful completion, but the generated media item was not exposed in My AI Videos or Videos during retrieval, so it remains unreviewed and has not been added to the timeline."
+      ],
+      "retry_video_candidate": "8ebacb3e-4a65-496f-b12c-357270cf3eb5"
     },
     "BB-004": {
       "status": "not_generated",
@@ -137,5 +149,5 @@
   },
   "estimated_credits": null,
   "actual_credits": null,
-  "next_safe_action": "Review BB-003 quality and endpoint. Before generating BB-004, revise the shot plan or prompt so its amber calendula crescent is reached through an explicit editor-side match cut if needed; do not propagate the soft-focus BB-003 endpoint as a quality reference without review."
+  "next_safe_action": "Retrieve the completed BB-003 retry by job ID 8ebacb3e-4a65-496f-b12c-357270cf3eb5 from My Media, verify duration, opening, rose focus and endpoint; only then choose whether to replace the soft-focus BB-003 timeline clip and proceed to BB-004. Do not generate another replacement."
 }
