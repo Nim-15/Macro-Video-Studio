@@ -120,3 +120,10 @@ The chain is assembled, but final boundary-by-boundary playback review and quali
 ## User acceptance and next iteration
 
 The user confirmed that the production process is complete and correct, including the five-clip chain and its joins. Keep the validated workflow unchanged: one 10-second render per clip, the immediately preceding saved last frame as the next clip's starting image, entry and exit effects contained inside each clip, and direct adjacency on the timeline without extra editor transitions. The next work is limited to improving prompt-driven composition and subject readability. Make targeted prompt revisions one scene at a time and review before spending further generation credits; do not rerun unchanged prompts. The existing first-pass project remains preserved.
+
+
+## Targeted prompt refinement: BB-002 v3.3
+
+Reviewed the documented v3.2 QA and prepared one targeted prompt revision for the orchid reveal. The observed issue was that the orchid remained soft and unrecognizable, while the incoming iris and droplet stayed sharp. The v3.3 prompt now specifies the Phalaenopsis lip, broad rounded petals, central column, natural veins, and visible surface detail; fixes the bloom to frame right at roughly 45–55% of the frame; locks camera, focus, and exposure; and uses a narrow lilac light reveal with black negative space separating the incoming iris from the orchid. It also lets the outgoing iris recede into shadow without morphing.
+
+This is a prompt-only revision; no new video has been generated. The approved v3.2 project and joins remain untouched. Next validation, if the prompt is accepted, is one 10-second BB-002 render from the existing BB-001 v3.2 saved last frame, followed by endpoint review before any other generation.
