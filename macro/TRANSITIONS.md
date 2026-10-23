@@ -1,36 +1,51 @@
 # Macro Film Transitions
 
-**Default preference:** a continuous-frame handoff. Each clip has an authored entry and exit state; do not assume the model or editor implements it.
+## Required transition model
 
-## Transition types
-1. **Direct continuation:** same reference frame, subtle movement continues; use only after first/last-frame capability test.
-2. **Optical match cut:** match droplet positions, petal contours, highlights or micro-patterns, even with a different subject.
-3. **Rack-focus handoff:** scene N ends in defocus, scene N+1 begins near the same focal color/shapes and resolves gradually.
-4. **Editor dissolve:** 0.5–2 seconds when justified, with timeline overlap counted.
-5. **Chapter blackout:** deliberate dark pause for a new visual family; count time toward final runtime.
+Every generated clip carries its own visible **transition-in** at the opening and **transition-out** at the ending. Both effects live inside the clip's requested duration. For a 10-second clip, use this default rhythm:
+
+- **0–2s — entry:** a soft optical or lighting effect reveals the incoming composition.
+- **2–7s — macro observation:** keep the main subject stable and legible. A gradual color or subject shift may happen here when the shot calls for it.
+- **7–10s — exit:** transform light, focus, refraction, or bokeh into the next clip's opening cue.
+
+Place clips directly adjacent on the timeline. The paired in-clip effects mark the boundary. Do not add editor-side cuts, dissolves, wipes, fades, or separate transition clips between scenes. This keeps the assembled duration unchanged and reduces edit work.
+
+## Approved effect language
+
+Choose effects that could plausibly occur in professional macro photography:
+
+- Controlled rim-light sweep or gradual exposure reveal.
+- Slow rack focus that resolves an actual subject rather than changing its anatomy.
+- Realistic lens bloom, optical bokeh, or a restrained flare.
+- Refraction or caustic light through a real droplet or translucent petal.
+- Gentle color-temperature shift across the subject or background.
+- A soft shadow or defocused highlight that passes through frame and reveals a distinct new subject.
+
+Do not use abrupt black cuts, hard flashes, glitch effects, liquid morphs, subject warping, or transformations that change a flower species. Keep one coherent lighting direction, camera pace and photographic texture.
+
+## Subject and scene-change continuity
+
+Lock the principal subject's species/material, silhouette, anatomy, proportions, texture, and location. A different subject may appear within a clip, but reveal it as a separate subject through gradual focus, light, refraction, bokeh, or a plausible foreground occlusion. Do not morph one subject into another.
+
+The exit effect of clip N should lead visually into the entry effect of clip N+1 through a matching cue such as shape, color, highlight position, focus distance, motion direction, or light direction. Use the actual saved endpoint as the next prompt's reference when available; verify the generated opening because reference adherence is not exact.
 
 ## Continuity card for every adjacent pair
-- A final frame URI, if available.
-- A frame description (subject coordinates, scale, motion, illumination, focus distance and color).
-- B opening reference URI/description and matching restrictions.
-- Transition type, proposed overlap and independently measured final timing.
+
+- Clip N's actual saved last-frame asset and description.
+- Exit effect, location in frame, color, focus and light direction.
+- Clip N+1's entry effect and matching cue.
+- Principal-subject stability constraints for both clips.
+- Measured clip durations and timeline boundary.
+- QA result for visual continuity and whether the transition stays within clip duration.
 
 ## Timing
-For pure cuts and 360 clips × 10s, runtime = 3,600s. For overlapping dissolves, actual timeline is **sum of clip lengths minus overlap duration**, plus other edits/holds. Do not promise exactly 60 minutes until the timeline is measured.
 
-## Verified chained handoff · VideoExpress
+For pure adjacency and 360 generated clips × 10 seconds, raw runtime is 3,600 seconds. In-clip effects do not add time. If clips are trimmed or overlapped, calculate the actual runtime as the sum of clip lengths minus overlap, plus any holds. Verify the assembled timeline before promising an exact 60:00.
 
-The tested route is **Create Video From Prompt → add the finished clip to the timeline → save the endpoint with the clip's Media Library context menu → Save Last Frame → select that still from My AI Images in the next prompt-video form**. BB-001 and BB-002 were both 10-second, 1920×1080 clips; BB-002 followed BB-001 contiguously and its 831 KB saved endpoint was selectable for the next prompt. Using Save Last Frame is simpler and avoids seeking to the exact timeline boundary, which showed black at the 20-second boundary. The BB-002 render retained the violet-droplet palette, but the orchid remained indistinct and mostly soft focus.
+## Verified VideoExpress chained handoff
 
-Treat this as a reusable start-frame handoff, not proof that the next generated clip will reproduce it pixel-perfectly. Verify the opening frame on every render. If the scene change would require implausible flower morphing, use a controlled optical match cut or short editor dissolve while keeping the authored transition shape, color, and light cue.
+The tested route is **Create Video From Prompt → add the finished clip to the timeline → Media Library → My AI Videos → clip context menu → Save Last Frame → verify in My AI Images → select that image for the next prompt**. BB-001 through BB-005 demonstrated a 10-second, 1920×1080 clip chain up to 00:50. The saved-frame handoff worked, but generated content did not always match the authored subject or endpoint exactly. BB-002's orchid identity was indistinct; BB-003's exit differed from plan; BB-004 resolved to a dark bud; BB-005 used that actual bud at its opening.
 
+## Black Bloom v2 correction status
 
-BB-003 rendered at 10 seconds / 1920×1080 from `BB-002_ORCHID_LAST_FRAME_10S.png` and was added at 00:20–00:30. Opening continuity is strong; the later ivory petal forms remain soft focus and the rose identity is only partly legible. The endpoint `BB-003_ROSE_LAST_FRAME_10S.png` (545.04 KB) is available in My AI Images. Review before continuing; an editor-side optical match cut to the amber calendula crescent may avoid carrying the soft endpoint as an image reference.
-
-
-BB-003 targeted retry `8ebacb3e-4a65-496f-b12c-357270cf3eb5` was retrieved from **Media Library → My AI Videos** after closing the creator. It is 10 seconds / 1920×1080 / 3.82 MB, opens on the violet droplet, and resolves into a recognizable focused ivory rose. Its warm close-rose exit differs from the planned creamy crescent. `BB-003_ROSE_RETRY_LAST_FRAME_10S.png` (1.36 MB) is confirmed in My AI Images. The retry replaced the soft original at 00:20–00:30; project saved as `Black Bloom Pilot 01` with a 00:30 duration.
-
-BB-004 first produced two 10-second candidates (3.88 MB and 3.35 MB), both rejected for rose/orange tissue overlap or unclear calendula resolution. A single revised job `9725abe9-0160-4b10-a305-770a5f2ef303` (10s, 1920×1080, 2.36 MB) used an explicit full-black separation. Its 00:02–00:06 preview shows one orange flower with clear radial grooves and no rose overlap. The 00:10 endpoint is a small, dark orange-green bud rather than the planned amber bokeh. It is on the timeline at 00:30–00:40, and `BB-004_CALENDULA_LAST_FRAME_10S` was saved to My AI Images. Use this actual endpoint to plan BB-005; do not rely on the earlier bokeh description.
-
-## BB-005 chained pilot completion
-BB-005 job `47376f6e-b3ce-445b-9829-4e270846ae0e` rendered at 10 seconds / 1920×1080 / 1.39 MB from `BB-004_CALENDULA_LAST_FRAME_10S.png`. Its opening matches the saved dark bud, the middle resolves into a recognizable burgundy dahlia, and the end fades nearly to black. `BB-005_DAHLIA_LAST_FRAME_10S` was saved to My AI Images. The complete five-clip sequence is contiguous on the timeline from 00:00–00:50, and the project is saved. Review clip boundaries and earlier subject-legibility issues before treating the pilot as approved for 60-minute production.
+The user's revised direction requires an in-clip optical/light transition at the beginning and end of every clip, stable principal subjects, gradual realistic changes, and direct clip adjacency without added editor transitions. Existing BB-001–BB-005 renders predate these rules. Their prompt book is being revised for a corrected render pass; the current rendered assets must not be described as already satisfying this new standard.
