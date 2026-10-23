@@ -1,6 +1,6 @@
 {
   "workflow_name": "Macro Video Studio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "source_attribution": {
     "repository": "https://github.com/ai-playbooks/nursery_rhyme_music_video",
     "relationship": "independent macro adaptation"
@@ -50,20 +50,52 @@
       "preflight_gate": "verify selected reference thumbnail against source endpoint, replace sample text in both prompt fields, and verify aspect ratio, image type and duration before each render",
       "retry_rule": "one targeted retry after diagnosing a specific defect; never repeat an unchanged prompt",
       "save_endpoint_action": "Media Library > My Videos > clip context menu > Save Last Frame > verify My AI Images; avoids seeking the timeline boundary",
-      "batch_size": 1
+      "batch_size": 1,
+      "visual_rules": [
+        "require a visible in-clip transition-in in the opening seconds",
+        "require a visible in-clip transition-out in the closing seconds",
+        "lock the principal subject identity and geometry; forbid morphing, deforming, stretching, melting, duplication or species replacement",
+        "allow gradual subject or color changes only through a plausible light, focus, refraction, bokeh or shadow reveal",
+        "place adjacent clips directly together with no editor-side transition or added duration"
+      ],
+      "transition_timing_10s": {
+        "entry": "0-2s",
+        "stable_macro_or_gradual_reveal": "2-7s",
+        "exit": "7-10s"
+      }
     }
   },
   "transitions": {
-    "preferred": "editor_saved_last_frame_reference",
-    "last_frame_reuse_requires_verification": true,
+    "preferred": "paired_in_clip_optical_light_effects",
+    "effects_are_inside_clip": true,
+    "clip_entry_window_seconds": [
+      0,
+      2
+    ],
+    "stable_observation_window_seconds": [
+      2,
+      7
+    ],
+    "clip_exit_window_seconds": [
+      7,
+      10
+    ],
+    "inter_clip_edit": "direct_adjacent_placement_no_added_transition",
     "preserve": [
+      "subject identity",
+      "species or material",
+      "silhouette",
+      "anatomy",
+      "proportions",
+      "texture",
       "lighting direction",
       "focal plane",
-      "palette",
-      "subject geometry",
-      "camera motion"
+      "palette logic",
+      "camera pace"
     ],
-    "next_clip_adherence": "BB-002 retained violet droplet palette but orchid identity was unclear; visually inspect start and endpoint on each render"
+    "subject_or_color_change": "gradual physically plausible optical or lighting reveal of a separate subject; never morph or deform the principal subject",
+    "last_frame_reuse_requires_verification": true,
+    "next_clip_adherence": "use the saved actual endpoint and pair its light/shape/color cue with the next in-clip entry; generated adherence must be reviewed"
   },
   "quality_control": {
     "check_photorealism": true,
