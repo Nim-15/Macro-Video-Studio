@@ -188,3 +188,13 @@ BB-005 v3.5 (job `8203cf15-829b-443d-865d-02be9b21650e`) completed at 10 seconds
 ## BB-005 v3.6 wide-macro test submitted
 
 To address the repeated crop, the scene plan now uses a wide macro composition from a moderate working distance, with the camera stationary and the complete dahlia kept small in frame (about 20–25% of frame width) against broad black negative space. Submitted one render from the same `BB-004_CALENDULA_LAST_FRAME_10S_V3_4` endpoint (job `8561d318-fbed-415f-b224-fe158aaed617`). Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Video Only, Manual Video Length = 10 seconds, prompt enhancement off. The render is pending in My AI Videos; inspect the opening, 00:06, 00:09, and 00:10 before accepting it. Keep it out of the timeline if the flower is still cropped, and preserve the approved v3.2 project.
+
+
+
+## BB-005 v3.6 wide-macro result and separate seam test
+
+BB-005 v3.6 (job `8561d318-fbed-415f-b224-fe158aaed617`) completed at 10 seconds, 1920×1080, 7.26 MB from `BB-004_CALENDULA_LAST_FRAME_10S_V3_4`. The opening continues the incoming calendula/rose-remnant composition without an obvious jump. Around 00:06 the burgundy dahlia grows too large and is cropped; by 00:09–00:10 its silhouette is mostly/fully inside frame, while the calendula remains bright and cropped at frame right. Saved the actual endpoint as `BB-005_DAHLIA_LAST_FRAME_10S_V3_6` in My AI Images. This is a candidate, not an approved replacement.
+
+Created and saved a separate 20-second VideoExpress project named **Black Bloom - Seam Test BB-004 to BB-005 v3.6**, with BB-004 v3.4 followed directly by BB-005 v3.6 and no editor-side transition. At 00:09–00:10 the flower composition carries into the new clip without an obvious abrupt jump; at 00:11 the dahlia becomes dominant while the outgoing flower composition remains visible. **The seam passes for continuity.** The v3.6 crop/scale issue remains in the clip itself, so do not promote it into the approved timeline without a separate selection decision. The accepted **Black Bloom Pilot 01 - v3.2 Chained** project remains unchanged.
+
+Next: compare the v3.6 framing candidate in the saved test project. If it is accepted, promote it only into a new pilot iteration; otherwise refine the prompt to keep the dahlia small throughout and reduce the bright cropped calendula at frame right.
