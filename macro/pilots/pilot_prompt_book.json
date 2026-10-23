@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v34_bb004_endpoint_saved_bb005_ready",
+  "status": "bb_v34_bb004_bb005_trials_complete_endpoints_saved",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -134,13 +134,13 @@
       "scene_number": 5,
       "transition_in": "Amber light sweep over the actual bud endpoint; focus reveals a separate burgundy dahlia.",
       "duration_seconds": 10,
-      "status": "v34_prompt_ready",
+      "status": "v34_trial_rendered_endpoint_saved_not_yet_on_approved_timeline",
       "image_asset_uri": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
-      "video_asset_uri": "33e10c28-01e7-4371-95cd-b84a43c04a2d",
+      "video_asset_uri": "6a288ce0-53ef-425e-93f8-b381c9092d27",
       "actual_credits": null,
-      "saved_last_frame": "BB-005_DAHLIA_LAST_FRAME_10S_V3_2",
-      "video_size_mb": 4.77,
-      "qa_observation": "BB-005 v3.4 prompt is prepared from the actual BB-004 v3.4 calendula endpoint. It now lets the dim incoming rose recede before the burgundy dahlia appears at frame left, reducing overlap risk while preserving the calendula as the exact opening subject.",
+      "saved_last_frame": "BB-005_DAHLIA_LAST_FRAME_10S_V3_4",
+      "video_size_mb": 5.5,
+      "qa_observation": "BB-005 v3.4 completed as a 10-second, 1920x1080 render (5.50 MB; job 6a288ce0-53ef-425e-93f8-b381c9092d27) from BB-004_CALENDULA_LAST_FRAME_10S_V3_4. At 0:04 the calendula remains the main subject while the burgundy dahlia is only a dark silhouette. By 0:06 the dahlia's layered petals and central disk are clearly recognizable at frame left; the calendula recedes separately into shadow at right. At 0:09–0:10 the dahlia dominates in a sharp, rich macro close-up with a small top-edge crop; no clear morphing or overlap is visible. Saved the actual last frame as BB-005_DAHLIA_LAST_FRAME_10S_V3_4. This is a separate trial and was not added to the approved v3.2 timeline.",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
       "revised_prompt_version": "v3.4_dahlia_isolated_from_calendula_endpoint",
@@ -373,6 +373,19 @@
       ],
       "prompt_version": "v3.4_calendula_clear_single_subject_light_handoff",
       "result": "Completed, 4.04 MB. At 0:03 a separate orange radial flower begins appearing beside the centered rose. At 0:07–0:10 the calendula's disk and ray petals are clear, the rose recedes separately, and the final subject is bright and fully in frame with narrow margins. A light dip is visible in the exit-transition portion before the image stabilizes at the end. Saved BB-004_CALENDULA_LAST_FRAME_10S_V3_4. Not added to the accepted v3.2 timeline."
+    },
+    {
+      "scene_id": "BB-005-V3.4-TRIAL",
+      "route": "VideoExpress Create Video From Prompt; source BB-004_CALENDULA_LAST_FRAME_10S_V3_4; prompt v3.4 sequential rose fade then separate dahlia reveal",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "source_image": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
+      "generation_job_ids": [
+        "6a288ce0-53ef-425e-93f8-b381c9092d27"
+      ],
+      "prompt_version": "v3.4_dahlia_isolated_from_calendula_endpoint",
+      "result": "Completed, 5.50 MB. At 0:06 a distinct burgundy dahlia with layered petals and visible center is legible at frame left as the calendula recedes separately at right. By 0:09–0:10 the dahlia is dominant and sharp; slight top-edge crop remains. Endpoint saved as BB-005_DAHLIA_LAST_FRAME_10S_V3_4. Separate trial only, not added to approved v3.2 timeline."
     }
   ],
   "transition_policy_v2": {
@@ -398,10 +411,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-005_V3_4_PROMPT_READY",
-    "next_action": "Render one 10-second BB-005 v3.4 test from BB-004_CALENDULA_LAST_FRAME_10S_V3_4, then check the entry hold, distinct dahlia anatomy, non-overlap, framing margins, exposure, and endpoint. Save the endpoint only if useful. Keep the accepted v3.2 timeline unchanged.",
-    "do_not_generate_before_review": false,
+    "current_scene": "BB_V34_CLIP_TRIALS_COMPLETE",
+    "next_action": "Review the updated v3.3/v3.4 trial clips as a separate chain, using their saved endpoints and checking all four joins, timing, exposure, and framing. Preserve the approved v3.2 timeline; do not replace it unless the user explicitly chooses the revised chain after review.",
+    "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-004 v3.3 failed to reveal the calendula; its endpoint was not saved. BB-004 v3.4 resolved to a separate, readable calendula at 0:07–0:10, with the original rose receding separately and a bright, fully framed final image. Saved BB-004_CALENDULA_LAST_FRAME_10S_V3_4. The v3.4 trial is separate from the approved v3.2 timeline. Next, prepare BB-005 from this actual endpoint. BB-005 prompt v3.4 is now prepared from the actual BB-004 v3.4 calendula endpoint; it places a distinct burgundy dahlia at frame left and lets the calendula recede separately."
+    "browser_status": "BB-004 v3.4 completed with a distinct readable calendula and saved endpoint BB-004_CALENDULA_LAST_FRAME_10S_V3_4. BB-005 v3.4 completed from that actual endpoint; the burgundy dahlia becomes distinct by 0:06 and dominates at 0:09–0:10, with slight top-edge crop. Endpoint BB-005_DAHLIA_LAST_FRAME_10S_V3_4 is saved. Both renders are separate tests and the accepted v3.2 timeline remains untouched. Next, review the updated chain in a separate trial project."
   }
 }
