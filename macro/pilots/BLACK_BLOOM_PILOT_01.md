@@ -127,3 +127,10 @@ The user confirmed that the production process is complete and correct, includin
 Reviewed the documented v3.2 QA and prepared one targeted prompt revision for the orchid reveal. The observed issue was that the orchid remained soft and unrecognizable, while the incoming iris and droplet stayed sharp. The v3.3 prompt now specifies the Phalaenopsis lip, broad rounded petals, central column, natural veins, and visible surface detail; fixes the bloom to frame right at roughly 45–55% of the frame; locks camera, focus, and exposure; and uses a narrow lilac light reveal with black negative space separating the incoming iris from the orchid. It also lets the outgoing iris recede into shadow without morphing.
 
 This is a prompt-only revision; no new video has been generated. The approved v3.2 project and joins remain untouched. Next validation, if the prompt is accepted, is one 10-second BB-002 render from the existing BB-001 v3.2 saved last frame, followed by endpoint review before any other generation.
+
+
+## BB-002 v3.3 readability test result
+
+The targeted render completed in VideoExpress at 10 seconds, 1920×1080, 5.89 MB (job `4d2f2226-f8ca-402f-9a58-8966acc5ef24`). It starts from `BB-001_IRIS_LAST_FRAME_10S_V3_2`. The Phalaenopsis is now clearly recognizable, with its broad petals and characteristic central lip; the iris recedes separately into shadow. The endpoint is a tighter close-up than requested and crops part of the upper petal, so composition still needs refinement. Saved the endpoint as `BB-002_ORCHID_LAST_FRAME_10S_V3_3` in My AI Images.
+
+This is a separate prompt test only: it was not added to or substituted into the user-approved v3.2 timeline. For the next iteration, refine BB-003 from the actual v3.3 orchid endpoint and specify fixed camera distance, generous framing margins, readable rose anatomy, and no overlapping flower layers. Review the prompt before the next generation.
