@@ -76,3 +76,8 @@ Two v3 candidates are present in **My AI Videos** (6.17 MB and 4.73 MB; the UI d
 ## BB-002 v3.2 endpoint review
 
 BB-002 job `b9530504-825c-4ac9-ab32-9601322c2194` completed at 10 seconds, 1920×1080, 6.19 MB. Its opening closely matches the saved BB-001 v3.2 endpoint. At 0:04 the lilac form remains soft and orchid identity is unclear; at 0:09 the iris petal, radial veins, and attached droplet are sharp and stable, while a distinct Phalaenopsis shape is not legible. The endpoint is suitable for chain continuity but the orchid reveal missed its visual target. Saved the actual last frame to My AI Images as `BB-002_ORCHID_LAST_FRAME_10S_V3_2`. BB-003 may proceed from this exact endpoint; keep camera/focus/exposure locked and make the intended rose reveal readable through restrained in-clip lighting.
+
+
+## BB-003 v3.2 render in progress
+
+Submitted BB-003 job `59555434-96aa-4a5d-84f7-df39577de405` from the exact saved `BB-002_ORCHID_LAST_FRAME_10S_V3_2` reference. Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length = 10 seconds; automatic prompt enhancement off. The revised prompt keeps the iris/droplet sharp with locked camera, focus, and exposure, and reveals a distinct ivory rose only through localized background light. Review the render's opening and 0:10 endpoint before continuing.
