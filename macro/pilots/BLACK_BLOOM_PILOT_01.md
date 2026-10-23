@@ -1,6 +1,6 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** BB-001–BB-003 are chained on the timeline at 00:00–00:30. The focused BB-003 retry now occupies 00:20–00:30; its endpoint is saved in My AI Images, and the project `Black Bloom Pilot 01` is saved. Two BB-004 candidates rendered at 10 seconds / 1920×1080, but both are rejected for the rose-to-calendula overlay and are not on the timeline.
+**Status:** BB-001–BB-004 están encadenados en el timeline de `Black Bloom Pilot 01` de 00:00 a 00:40. BB-003 usa el reintento enfocado; BB-004 usa un único render corregido con corte a negro y flor naranja aislada. Sus endpoints están guardados en My AI Images. BB-005 queda pendiente.
 
 ## Goal
 Produce five connected 10-second macro clips with intentional entry and exit transitions on a pure black background. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct cuts; timeline dissolves reduce runtime by their overlap.
@@ -51,3 +51,6 @@ A single targeted retry was submitted from `BB-002_ORCHID_LAST_FRAME_10S.png` wi
 
 ### BB-004 render review
 Two completed 10-second, 1920×1080 renders appeared in **Media Library → My AI Videos** after the creator was closed. The 3.88 MB preview shows rose and orange calendula-like tissue visibly overlaid around 00:06. The 3.35 MB preview holds the rose longer, then begins introducing an orange petal edge, but did not present a clearly resolved calendula in the observed preview. Neither candidate was added to the timeline or used as an endpoint. Two generation identifiers were observed in the creator (`18ce2235-8041-4ce5-b6fd-3f1f274af87a`, `bfb5d5dc-4cee-4d49-9e08-ed54bcac3b0d`), but the UI did not expose a reliable mapping from those IDs to the two files. Revise the BB-004 prompt to request a distinct calendula cut/reveal with one non-overlapping specimen before another generation.
+
+### BB-004 targeted correction
+After rejecting two rose/calendula overlay candidates, one revised render was submitted with an explicit full-black separation and a single flower reveal. VideoExpress job `9725abe9-0160-4b10-a305-770a5f2ef303` completed as a 10-second, 1920×1080 file (2.36 MB). Preview at 00:02 shows a single orange flower on black; at 00:06 the radial petal grooves are clear and no rose overlaps it. At 00:10 the subject has closed into a small, dark orange-green bud rather than the planned amber bokeh point. The clip was added at 00:30–00:40, its endpoint was saved as `BB-004_CALENDULA_LAST_FRAME_10S` to My AI Images, and `Black Bloom Pilot 01` was saved. BB-004 is a provisional continuity pass; assess the BB-005 opening against this actual endpoint.
