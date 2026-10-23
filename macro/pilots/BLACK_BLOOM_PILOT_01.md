@@ -225,6 +225,19 @@ To avoid another prompt-only render, duplicated the v3.6 seam project as **Black
 
 **Observed review:** The opening is a tight burgundy dahlia macro. A pale, out-of-focus patch at the far-left edge is visible at 0:00 and has receded by about 0:01. Mid-clip, the lateral orbit and amber-to-ruby strip-light sweep give a new perspective and a warmer, more sculptural petal view; flower identity and petal structure remain coherent. Around 0:09 the dahlia is sharp and stable, with a close crop that is acceptable for macro photography.
 
-**Status:** Visual direction is promising, but this is not yet an approved BB-005→BB-006 seam. The transition-out and matched opening of BB-007 have not been checked together. No endpoint was saved from this render and it was not added to the approved timeline.
+**Status:** The actual last frame was saved as `BB-006_DAHLIA_LAST_FRAME_PERSPECTIVE_V1` in My AI Images. BB-006 and BB-007 were placed directly adjacent in the separate diagnostic timeline and checked at the boundary. The pairing looks continuous; it is awaiting the user's approval and is not part of the approved v3.2 timeline.
 
 **Prompt lesson:** Do not universally demand fixed subject scale, full-flower visibility, generous frame margins, no zoom, or no crop. Keep anatomical identity and physical texture coherent while allowing deliberate macro push-ins, angle changes, parallax, frame-edge crops and partial subject exits. Use light, focus, and motion cues to bridge such framings. Review the requested transition-in and transition-out on the actual video rather than treating prompt wording as proof.
+
+
+## BB-007 petal-ridge macro test and BB-006 → BB-007 seam check
+
+**Test asset:** VideoExpress video ID `825235fa-b0d6-48e1-bca3-79762fc0b7db`; 10 seconds, 1920×1080, 8.46 MB. Starting reference: `BB-006_DAHLIA_LAST_FRAME_PERSPECTIVE_V1`. Rendered in **Black Bloom - BB-005 Resize Test v3.7**, a diagnostic project kept separate from the accepted v3.2 chain.
+
+**Observed review:** The opening continues the burgundy dahlia composition. By 0:05 the camera has moved into an extreme close-up of the petal surface; visible veins and texture fill the frame, with part of the subject naturally cropped out. At 0:10 the shot resolves sharply on a petal edge and small dew detail against red-violet optical bokeh. The clip played at 0:10 / 0:10. The transition-out provides a stable final detail for chaining.
+
+**Saved endpoint:** `BB-007_DAHLIA_PETAL_RIDGE_LAST_FRAME_V1`, confirmed in My AI Images.
+
+**Boundary check:** BB-006 and BB-007 were added directly adjacent on one track at 00:20–00:30 and 00:30–00:40 in the diagnostic timeline, with no editor-side transition. At 00:28 the outgoing dahlia remains readable; at the 00:30 boundary the incoming frame continues the same burgundy flower and perspective without an obvious visual jump. **The BB-006→BB-007 seam passes for visual continuity, pending user approval.** This is not a promotion to the accepted v3.2 project.
+
+**Production lesson:** The crop and scale change in BB-007 are intentional macro coverage, not defects. Keep the visible anatomy coherent, and use a distinctive angle, changing focus and shaped raking/rim light to motivate the move. The final petal-edge detail supplies a useful opening cue for BB-008.
