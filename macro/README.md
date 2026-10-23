@@ -25,13 +25,13 @@ Default target: **60 minutes, 16:9, 360 nominal clips at 10 seconds each**. Actu
 2. Build the scene map and adjacent-frame transitions before generation.
 3. Check the existing account's included membership allowance and existing assets. Use the paid membership for authorized project generations; no top-up or upgrade without explicit authorization.
 4. Generate the minimum reference imagery needed. Use VideoExpress **Create Video From Prompt**, Advanced Mode and Manual Video Length = 10 for tested 10-second clips.
-5. Run dependent clips sequentially: add each video to the timeline, seek to its actual end, save the current frame, verify it in My AI Images and select it for the next clip.
+5. Run dependent clips sequentially: add each video to the timeline for review, save its endpoint through the media-library clip menu → Save Last Frame, verify it in My AI Images and select it for the next clip. This avoids exact-boundary seeking.
 6. Review every output before continuing. If a specific defect occurs, diagnose it, make one targeted edit, and allow at most one retry. Never submit an unchanged prompt again.
 7. Save a checkpoint after each clip with source and output assets, measured duration, transition QA and observed credit use when available.
 8. Assemble and measure the final timeline. Count overlaps, trims, holds, audio and export settings explicitly.
 
 ## Verified route and limits
-The VideoExpress prompt workflow was observed producing a 10-second 1920×1080 clip when Manual Video Length was set to 10. The editor accepted the clip; Save Current Frame stored an endpoint in My AI Images, and the endpoint was selectable as the next prompt-video reference. The First Frame, Last Frame route produced 7 seconds in the tested 10-second request. Review the opening continuity on each chained render; frame selection does not guarantee exact adherence in generated motion.
+The VideoExpress prompt workflow produced two 10-second 1920×1080 clips at Manual Video Length = 10. BB-002 used BB-001's saved endpoint as the reference and appeared directly after it on the timeline. The clip menu → Save Last Frame created an 831 KB endpoint in My AI Images; the endpoint was selectable in the next prompt form. BB-002 retained the violet droplet palette but did not clearly depict an orchid. The First Frame, Last Frame route produced 7 seconds in the tested 10-second request. Review opening continuity and subject identity on each chained render; frame selection does not guarantee exact adherence in generated motion.
 
 Artistly and VideoExpress are not connected to a repository API by these files. A browser-capable agent with an authenticated session is needed for UI actions. Keep credentials out of this repository. Do not claim an automated generation happened unless the live product confirms it.
 
