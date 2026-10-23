@@ -19,7 +19,7 @@
       "scene_number": 1,
       "transition_in": "Gradual upper-left rim-light sweep and focus reveal from black into the iris.",
       "duration_seconds": 10,
-      "status": "two_v3_candidate_renders_reviewed_endpoint_soft_rejected",
+      "status": "bb001_v31_single_targeted_render_pending_visual_review",
       "image_asset_uri": null,
       "video_asset_uri": null,
       "actual_credits": null,
@@ -30,9 +30,10 @@
       "source_image_used": "BB-001_IRIS_LAST_FRAME_10S.png (existing My AI Images asset; Artistly master still did not sync to My Artistly Images)",
       "candidate_video_asset_ids": [
         "e1d25f45-17b4-4cb0-a0f8-7d9e872f4517",
-        "388f0337-b402-4c5e-985b-95d151b4739c"
+        "388f0337-b402-4c5e-985b-95d151b4739c",
+        "61e23ee8-24a8-446b-adf2-74cb15ee8c7c"
       ],
-      "qa_observation": "Both v3 candidates were reviewed in VideoExpress. 6.17 MB candidate: final 0:10 frame soft/defocused. 4.73 MB candidate: same progressive push-in ends with droplet and petal visibly soft, insufficient detail for BB-002 chain start. Neither added to timeline; no endpoint saved. Do not continue chain from either candidate. Prompt correction queued: greatly reduce push-in, lock focus through 8–10s, and place exit light effect in background only."
+      "qa_observation": "Both v3 candidates were reviewed in VideoExpress. 6.17 MB candidate: final 0:10 frame soft/defocused. 4.73 MB candidate: same progressive push-in ends with droplet and petal visibly soft, insufficient detail for BB-002 chain start. Neither added to timeline; no endpoint saved. Do not continue chain from either candidate. Prompt correction queued: greatly reduce push-in, lock focus through 8–10s, and place exit light effect in background only. Targeted v3.1 retry submitted after prompt correction: minimal push-in, locked focus, background-only exit light. Job 61e23ee8-24a8-446b-adf2-74cb15ee8c7c; pending Media Library visual review. Source image BB-001_IRIS_LAST_FRAME_10S.png, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s."
     },
     {
       "id": "BB-002",
@@ -262,7 +263,8 @@
       "source_image": "BB-001_IRIS_LAST_FRAME_10S.png (pre-existing verified My AI Images asset)",
       "generation_job_ids": [
         "e1d25f45-17b4-4cb0-a0f8-7d9e872f4517",
-        "388f0337-b402-4c5e-985b-95d151b4739c"
+        "388f0337-b402-4c5e-985b-95d151b4739c",
+        "61e23ee8-24a8-446b-adf2-74cb15ee8c7c"
       ],
       "candidate_files": [
         {
@@ -274,7 +276,8 @@
           "visual_review": "played in VideoExpress; progressive push-in ends with droplet and petal soft/defocused; rejected as next-clips starting image"
         }
       ],
-      "result": "Both candidates reviewed and rejected for soft final-frame focus. No candidate was added to the timeline and no endpoint was saved. Duplicate submission was caused by shifting UI accessibility indices; do not submit duplicate jobs."
+      "result": "Single targeted retry submitted using revised prompt with minimal camera push-in, locked droplet focus, background-only exit light; job pending. Reuse BB-001_IRIS_LAST_FRAME_10S.png; 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s.",
+      "prompt_version": "v3.1_locked_subject_focus"
     }
   ],
   "transition_policy_v2": {
@@ -301,9 +304,9 @@
   },
   "resume_checkpoint": {
     "current_scene": "BB-001",
-    "next_action": "Use revised BB-001 v3.1 prompt with minimal push-in, locked subject focus, and background-only exit light. Submit one targeted retry, then review 0:10 frame. Proceed to BB-002 only if droplet/petal remain sharp and stable.",
+    "next_action": "Wait for VideoExpress job 61e23ee8-24a8-446b-adf2-74cb15ee8c7c in Media Library > My AI Videos. Review the 0:10 final frame; use it for BB-002 only if droplet and petal stay crisp and stable.",
     "do_not_generate_before_review": false,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "Second candidate (4.73 MB) visually reviewed; soft endpoint rejected. No rerender submitted."
+    "browser_status": "Targeted BB-001 v3.1 retry submitted; waiting for completed asset to appear in My AI Videos."
   }
 }
