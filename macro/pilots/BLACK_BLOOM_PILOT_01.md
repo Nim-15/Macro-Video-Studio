@@ -101,3 +101,10 @@ BB-004 job `ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7` completed at 10 seconds, 1920�
 ## BB-005 v3.2 render in progress
 
 Submitted the final pilot clip, BB-005 job `33e10c28-01e7-4371-95cd-b84a43c04a2d`, from `BB-004_CALENDULA_LAST_FRAME_10S_V3_2`. Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length = 10 seconds; automatic prompt enhancement off. The prompt keeps the actual iris/droplet and flower layers, then introduces only a small separate burgundy dahlia petal at the far right. Review the opening and endpoint before saving it or assembling the five-clip v3.2 chain on the timeline.
+
+
+## BB-005 v3.2 endpoint review and pilot chain status
+
+BB-005 job `33e10c28-01e7-4371-95cd-b84a43c04a2d` completed at 10 seconds, 1920×1080, 4.77 MB. Its opening broadly retains the BB-004 violet petal/droplet and orange/cream layers, with some composition drift. At 0:09 the droplet and foreground petal are readable and a small burgundy dahlia-like form appears separately at far right. Several flower layers still overlap visually, and the ivory flower remains prominent; no clear subject morphing is visible. Saved `BB-005_DAHLIA_LAST_FRAME_10S_V3_2` in My AI Images.
+
+All five v3.2 clips now have reviewed saved endpoints and can be assembled in sequence. Their continuity is visually workable, but BB-002's orchid identity is soft, BB-003/004 drift in composition, and BB-004/005 show overlapping layers. The five updated renders are **not yet assembled on the timeline**. Next, create a separate v3.2 timeline or project copy, preserve the existing first-pass project, place BB-001–BB-005 contiguously with no editor-side transitions, then review the full 50-second chain at all four boundaries.
