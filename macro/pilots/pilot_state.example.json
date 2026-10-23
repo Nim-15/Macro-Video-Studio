@@ -1,0 +1,56 @@
+{
+  "project_id": "BLACK-BLOOM-PILOT-001",
+  "run_status": "not_started",
+  "approval": {
+    "go": false,
+    "credit_cap": null,
+    "currency": null
+  },
+  "verification": {
+    "artistly_still_input": false,
+    "videoexpress_10s": false,
+    "videoexpress_first_frame_reference": false,
+    "videoexpress_last_frame_extraction": false,
+    "editor_export": false
+  },
+  "scene_status": {
+    "BB-001": {
+      "status": "not_generated",
+      "image_uri": null,
+      "video_uri": null,
+      "credits_used": null,
+      "qa_score": null
+    },
+    "BB-002": {
+      "status": "not_generated",
+      "image_uri": null,
+      "video_uri": null,
+      "credits_used": null,
+      "qa_score": null
+    },
+    "BB-003": {
+      "status": "not_generated",
+      "image_uri": null,
+      "video_uri": null,
+      "credits_used": null,
+      "qa_score": null
+    },
+    "BB-004": {
+      "status": "not_generated",
+      "image_uri": null,
+      "video_uri": null,
+      "credits_used": null,
+      "qa_score": null
+    },
+    "BB-005": {
+      "status": "not_generated",
+      "image_uri": null,
+      "video_uri": null,
+      "credits_used": null,
+      "qa_score": null
+    }
+  },
+  "estimated_credits": null,
+  "actual_credits": null,
+  "next_safe_action": "Verify product capabilities and actual credits; request GO before paid generation"
+}
