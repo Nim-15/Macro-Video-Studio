@@ -17,3 +17,9 @@
 
 ## Timing
 For pure cuts and 360 clips × 10s, runtime = 3,600s. For overlapping dissolves, actual timeline is **sum of clip lengths minus overlap duration**, plus other edits/holds. Do not promise exactly 60 minutes until the timeline is measured.
+
+## Verified chained handoff · VideoExpress
+
+The tested pilot route is **Create Video From Prompt → Add to Timeline → seek to the clip end → Save current frame → select that saved still from My AI Images for the next prompt-video form**. A 10-second BB-001 output was observed at 0:10 / 0:10 and the saved frame was selectable in the next form.
+
+Treat this as a reusable start-frame handoff, not proof that the next generated clip will reproduce it pixel-perfectly. Verify the opening frame on every render. If the scene change would require implausible flower morphing, use a controlled optical match cut or short editor dissolve while keeping the authored transition shape, color, and light cue.
