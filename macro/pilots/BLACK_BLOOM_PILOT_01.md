@@ -81,3 +81,8 @@ BB-002 job `b9530504-825c-4ac9-ab32-9601322c2194` completed at 10 seconds, 1920Ã
 ## BB-003 v3.2 render in progress
 
 Submitted BB-003 job `59555434-96aa-4a5d-84f7-df39577de405` from the exact saved `BB-002_ORCHID_LAST_FRAME_10S_V3_2` reference. Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length = 10 seconds; automatic prompt enhancement off. The revised prompt keeps the iris/droplet sharp with locked camera, focus, and exposure, and reveals a distinct ivory rose only through localized background light. Review the render's opening and 0:10 endpoint before continuing.
+
+
+## BB-003 v3.2 endpoint review
+
+BB-003 job `59555434-96aa-4a5d-84f7-df39577de405` completed at 10 seconds, 1920Ã—1080, 4.27 MB. The opening keeps the violet iris and attached droplet but reinterprets the composition rather than matching BB-002's saved frame exactly; an ivory flower is already visible in the background. At 0:10 the droplet and iris remain detailed and the cream flower stays distinct but soft; no clear species morphing is visible. Saved the endpoint as `BB-003_ROSE_LAST_FRAME_10S_V3_2` in My AI Images. It is usable for continuity with composition drift recorded. BB-004 should start from this actual endpoint and respect its framing.
