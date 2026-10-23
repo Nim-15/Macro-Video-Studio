@@ -49,17 +49,18 @@
       "scene_number": 2,
       "transition_in": "A natural caustic glides over the saved droplet as a cool-lilac rim-light starts to reveal a separate orchid petal.",
       "duration_seconds": 10,
-      "status": "v32_render_pending_visual_review",
+      "status": "v32_reviewed_endpoint_saved_bb003_ready",
       "image_asset_uri": "BB-001_IRIS_LAST_FRAME_10S_V3_2",
       "video_asset_uri": "b9530504-825c-4ac9-ab32-9601322c2194",
       "actual_credits": null,
-      "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S.png",
-      "qa_observation": "Generated from the approved BB-001 v3.2 saved endpoint. Fixed camera/focus/exposure, separate orchid revealed by light only; pending 0:10 visual review.",
+      "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S_V3_2",
+      "qa_observation": "Generated from BB-001_IRIS_LAST_FRAME_10S_V3_2; 10s, 1920x1080, 6.19 MB. Opening at 0:00 closely matches the reference. At 0:04 the purple orchid-like form remains soft and indistinct; at 0:09 the iris petal, veins, and attached droplet are sharp and stable, but no distinct Phalaenopsis anatomy is legible. Endpoint saved in My AI Images as BB-002_ORCHID_LAST_FRAME_10S_V3_2; usable as a continuity source, though orchid reveal did not meet target.",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
       "revised_prompt_version": "v3.2_locked_camera_subjects_sharp_light_reveal",
       "target_visual": "Photorealistic macro studio image of a purple Phalaenopsis orchid curved petal against deep seamless black, translucent lilac edge, subtle realistic epidermal papillae, single tiny dew glint at left third; upper-left cool soft rim, gentle muted warm underside reflection; high-end 100 mm macro lens optics, shallow depth of field, violet bokeh orb on left third with surrounding contours gradually emerging, no text, no fake geometry, 16:9.",
-      "image_generation_required": false
+      "image_generation_required": false,
+      "video_size_mb": 6.19
     },
     {
       "id": "BB-003",
@@ -336,10 +337,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-002",
-    "next_action": "Wait for job b9530504-825c-4ac9-ab32-9601322c2194 in My AI Videos. Review its opening for exact BB-001 endpoint continuity and 0:10 for sharp, stable iris/visible orchid. Save endpoint only if it passes; then BB-003 may use it.",
+    "current_scene": "BB-003",
+    "next_action": "Use BB-002_ORCHID_LAST_FRAME_10S_V3_2 from My AI Images as BB-003's exact reference, preserve the sharp iris/droplet, and make any rose reveal distinctly readable through in-clip lighting while maintaining the stable camera/focus/exposure behavior.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-002 job b9530504-825c-4ac9-ab32-9601322c2194 submitted from saved BB-001 v3.2 endpoint; waiting for render."
+    "browser_status": "BB-002 job b9530504-825c-4ac9-ab32-9601322c2194 completed, reviewed at opening/mid/end, 10s 1920x1080 (6.19 MB); saved endpoint verified in My AI Images. BB-003 is ready to generate from that exact endpoint."
   }
 }
