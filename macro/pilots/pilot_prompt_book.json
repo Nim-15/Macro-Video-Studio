@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v33_bb002_bb003_tests_complete_bb004_v33_failed_v34_ready",
+  "status": "bb_v34_bb004_endpoint_saved_bb005_ready",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -108,19 +108,20 @@
       "scene_number": 4,
       "transition_in": "Warm rim-light sweep over the rose endpoint, amber glint and focus reveal a separate calendula.",
       "duration_seconds": 10,
-      "status": "v33_test_failed_v34_prompt_ready",
+      "status": "v34_trial_rendered_endpoint_saved_not_yet_on_approved_timeline",
       "image_asset_uri": "BB-003_ROSE_LAST_FRAME_10S_V3_3",
-      "video_asset_uri": "9d42dc21-fee7-476a-98b8-e35081294df2",
+      "video_asset_uri": "6d834f3d-2154-4d75-b3ba-78d0463ec529",
       "actual_credits": null,
-      "qa_observation": "BB-004 v3.3 generated from BB-003_ROSE_LAST_FRAME_10S_V3_3 in one 10-second 1920x1080 render (4.47 MB; job 9d42dc21-fee7-476a-98b8-e35081294df2). Visual review at 0:04 and 0:08 shows the incoming ivory rose still dominates; no recognizable calendula appears. By 0:10 the frame is very dark and the rose remains the visible subject. Entry hold and isolated calendula reveal failed; endpoint was not saved and this trial was not added to the accepted v3.2 timeline. Revise scene action and exposure hold before any next generation. Prompt refinement v3.4 was adjusted against the actual centered, close rose reference: it now permits only a very slow 10% dolly-back to create room for a separate calendula; no render had been submitted at the time of this update.",
-      "saved_last_frame": null,
-      "video_size_mb": 4.47,
+      "qa_observation": "BB-004 v3.4 completed in one 10-second, 1920x1080 render (4.04 MB; job 6d834f3d-2154-4d75-b3ba-78d0463ec529) from BB-003_ROSE_LAST_FRAME_10S_V3_3. At 0:03 the separate orange radial flower begins to appear beside the rose; by 0:07–0:10 its central disk and ray petals are clearly recognizable and the calendula becomes the bright main subject. The rose recedes as a dim, separate bloom; no species morphing or overlap is apparent. A restrained dolly-back improves separation and the final calendula silhouette is fully in frame with narrow margins. Light falls during the 0:07 exit transition, then the final frame is bright and stable. Saved the actual last frame as BB-004_CALENDULA_LAST_FRAME_10S_V3_4 in My AI Images. Separate trial only; not added to or substituted in the accepted v3.2 timeline.",
+      "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
+      "video_size_mb": 4.04,
       "retry_count": 4,
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
       "revised_prompt_version": "v3.4_calendula_clear_single_subject_light_handoff",
       "target_visual": "One distinct golden-orange calendula with readable radial ray petals and central disk at frame right, about half-frame with full silhouette and black margins; incoming ivory rose recedes separately into shadow.",
-      "image_generation_required": false
+      "image_generation_required": false,
+      "retry_status": "v34_trial_endpoint_saved_reviewed"
     },
     {
       "id": "BB-005",
@@ -359,6 +360,19 @@
       ],
       "prompt_version": "v3.3_calendula_isolated_reveal_from_rose_v33",
       "result": "Completed, 4.47 MB. At 0:04 and 0:08 the incoming ivory rose still dominates and no recognizable calendula appears. At 0:10 the image is very dark and the rose remains the visible subject. No endpoint saved; not added to the accepted v3.2 timeline. The v3.3 prompt failed its delayed-entry, new-subject, and exposure-hold targets."
+    },
+    {
+      "scene_id": "BB-004-V3.4-TRIAL",
+      "route": "VideoExpress Create Video From Prompt; source BB-003_ROSE_LAST_FRAME_10S_V3_3; revised v3.4 centered-rose dolly-back and isolated calendula reveal",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "source_image": "BB-003_ROSE_LAST_FRAME_10S_V3_3",
+      "generation_job_ids": [
+        "6d834f3d-2154-4d75-b3ba-78d0463ec529"
+      ],
+      "prompt_version": "v3.4_calendula_clear_single_subject_light_handoff",
+      "result": "Completed, 4.04 MB. At 0:03 a separate orange radial flower begins appearing beside the centered rose. At 0:07–0:10 the calendula's disk and ray petals are clear, the rose recedes separately, and the final subject is bright and fully in frame with narrow margins. A light dip is visible in the exit-transition portion before the image stabilizes at the end. Saved BB-004_CALENDULA_LAST_FRAME_10S_V3_4. Not added to the accepted v3.2 timeline."
     }
   ],
   "transition_policy_v2": {
@@ -384,10 +398,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-004_V3_4_PROMPT_READY",
-    "next_action": "Run one targeted 10-second BB-004 v3.4 test from BB-003_ROSE_LAST_FRAME_10S_V3_3. Check a gentle dolly-back without distortion, separate readable calendula by 6 seconds, full margins, preserved rose identity, stable exposure, and a bright 0:10 endpoint. Save an endpoint only if useful for BB-005. Keep the accepted v3.2 timeline unchanged.",
+    "current_scene": "BB-004_V3_4_ENDPOINT_SAVED",
+    "next_action": "Prepare BB-005 from BB-004_CALENDULA_LAST_FRAME_10S_V3_4. Use a distinct burgundy dahlia reveal, preserve the calendula as an intact separate incoming subject, avoid silhouette overlap, and keep full flower margins and a stable bright endpoint. Render one 10-second test and review before deciding whether to save its endpoint. Keep the accepted v3.2 timeline unchanged.",
     "do_not_generate_before_review": false,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-004 v3.3 trial failed: the centered incoming rose remained dominant through 0:08, no readable calendula appeared, and the 0:10 frame was dark. No endpoint saved. The actual BB-003 source is a tightly framed centered rose, so the BB-004 v3.4 prompt now permits a restrained dolly-back of at most 10% to create room for a separate calendula while preserving flower anatomy and stable exposure. Accepted v3.2 timeline remains untouched."
+    "browser_status": "BB-004 v3.3 failed to reveal the calendula; its endpoint was not saved. BB-004 v3.4 resolved to a separate, readable calendula at 0:07–0:10, with the original rose receding separately and a bright, fully framed final image. Saved BB-004_CALENDULA_LAST_FRAME_10S_V3_4. The v3.4 trial is separate from the approved v3.2 timeline. Next, prepare BB-005 from this actual endpoint."
   }
 }
