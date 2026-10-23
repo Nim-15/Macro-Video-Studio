@@ -49,12 +49,12 @@
       "scene_number": 2,
       "transition_in": "A natural caustic glides over the saved droplet as a cool-lilac rim-light starts to reveal a separate orchid petal.",
       "duration_seconds": 10,
-      "status": "v32_prompt_ready_from_approved_bb001_endpoint",
+      "status": "v32_render_pending_visual_review",
       "image_asset_uri": "BB-001_IRIS_LAST_FRAME_10S_V3_2",
-      "video_asset_uri": "48ed3783-e307-4e84-9e49-cd22ef2a6ed6",
+      "video_asset_uri": "b9530504-825c-4ac9-ab32-9601322c2194",
       "actual_credits": null,
       "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S.png",
-      "qa_observation": "Prompt corrected to prevent soft-focus orchid reveal after BB-001's prior focus failures: fixed camera/focus/exposure, distinct species revealed by light only, both subjects remain legible through exit.",
+      "qa_observation": "Generated from the approved BB-001 v3.2 saved endpoint. Fixed camera/focus/exposure, separate orchid revealed by light only; pending 0:10 visual review.",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
       "revised_prompt_version": "v3.2_locked_camera_subjects_sharp_light_reveal",
@@ -298,6 +298,19 @@
       ],
       "prompt_version": "v3.2_locked_camera_localized_light_transition",
       "result": "Approved v3.2 trial submitted; 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s. Awaiting completion and visual endpoint QA."
+    },
+    {
+      "scene_id": "BB-002-V3.2",
+      "route": "VideoExpress Create Video From Prompt; source BB-001_IRIS_LAST_FRAME_10S_V3_2; fixed camera, locked focus/exposure, separate orchid revealed by localized light",
+      "requested_seconds": 10,
+      "observed_seconds": null,
+      "resolution": null,
+      "source_image": "BB-001_IRIS_LAST_FRAME_10S_V3_2",
+      "generation_job_ids": [
+        "b9530504-825c-4ac9-ab32-9601322c2194"
+      ],
+      "prompt_version": "v3.2_locked_camera_subjects_sharp_light_reveal",
+      "result": "BB-002 generated from immediately preceding clip's saved last frame. 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s. Awaiting completion and endpoint QA."
     }
   ],
   "transition_policy_v2": {
@@ -324,9 +337,9 @@
   },
   "resume_checkpoint": {
     "current_scene": "BB-002",
-    "next_action": "Use BB-001_IRIS_LAST_FRAME_10S_V3_2 as the sole starting image. Generate BB-002 with the v3.2 locked-camera orchid prompt and inspect its 0:10 frame before saving or continuing.",
+    "next_action": "Wait for job b9530504-825c-4ac9-ab32-9601322c2194 in My AI Videos. Review its opening for exact BB-001 endpoint continuity and 0:10 for sharp, stable iris/visible orchid. Save endpoint only if it passes; then BB-003 may use it.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-001 v3.2 render (job 0bae5c1a-83d7-4f0c-a9e7-5b38d32654d5), 6.55 MB, 10s 1920x1080; final frame visually checked and saved as BB-001_IRIS_LAST_FRAME_10S_V3_2 in My AI Images. Cleared as BB-002 chain source."
+    "browser_status": "BB-002 job b9530504-825c-4ac9-ab32-9601322c2194 submitted from saved BB-001 v3.2 endpoint; waiting for render."
   }
 }
