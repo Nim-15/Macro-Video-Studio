@@ -1,7 +1,7 @@
 # Black Bloom · tool preflight and run plan
 
 **Checked:** 2026-10-23  
-**Scope:** inspected the signed-in Artistly and VideoExpress interfaces, prepared BB-001 prompts, and ran one authorized VideoExpress first/last-frame test with generated endpoint images. One test video and two stills were generated; no other Black Bloom clips were started.
+**Scope:** inspected the signed-in Artistly and VideoExpress interfaces, prepared BB-001 prompts, and ran one authorized VideoExpress first/last-frame test with generated endpoint images. Two test videos and supporting stills were generated for BB-001; no other Black Bloom scene clips were started.
 
 ## Observed in the applications
 
