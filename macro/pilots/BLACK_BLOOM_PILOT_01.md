@@ -96,3 +96,8 @@ Submitted BB-004 job `ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7` from the exact saved
 ## BB-004 v3.2 endpoint review
 
 BB-004 job `ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7` completed at 10 seconds, 1920×1080, 5.56 MB. The opening retains the violet petal, droplet, and ivory flower with a slight warm glow already present. At 0:10 a distinct orange radial-petal flower appears, but visually overlaps/blends with the ivory rose, and the droplet darkens significantly. The iris remains recognizable. Saved `BB-004_CALENDULA_LAST_FRAME_10S_V3_2` in My AI Images for continuity, with these limitations recorded. BB-005 should use this actual endpoint and avoid overlapping flower silhouettes while keeping the droplet bright and legible.
+
+
+## BB-005 v3.2 render in progress
+
+Submitted the final pilot clip, BB-005 job `33e10c28-01e7-4371-95cd-b84a43c04a2d`, from `BB-004_CALENDULA_LAST_FRAME_10S_V3_2`. Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length = 10 seconds; automatic prompt enhancement off. The prompt keeps the actual iris/droplet and flower layers, then introduces only a small separate burgundy dahlia petal at the far right. Review the opening and endpoint before saving it or assembling the five-clip v3.2 chain on the timeline.
