@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "v3_single_master_image_sequential_last_frame_chain",
+  "status": "v3_endpoint_review_failed_focus_lock_required",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -19,7 +19,7 @@
       "scene_number": 1,
       "transition_in": "Gradual upper-left rim-light sweep and focus reveal from black into the iris.",
       "duration_seconds": 10,
-      "status": "two_v3_candidate_renders_in_media_library_visual_review_incomplete",
+      "status": "two_v3_candidate_renders_reviewed_endpoint_soft_rejected",
       "image_asset_uri": null,
       "video_asset_uri": null,
       "actual_credits": null,
@@ -32,7 +32,7 @@
         "e1d25f45-17b4-4cb0-a0f8-7d9e872f4517",
         "388f0337-b402-4c5e-985b-95d151b4739c"
       ],
-      "qa_observation": "Two identical v3 jobs appeared in My AI Videos after a duplicate browser submission caused by shifting accessibility indices. Candidate thumbnails are 6.17 MB and 4.73 MB; UI did not map IDs to file sizes. Played the first displayed candidate (6.17 MB): the 0:10 final frame is soft/defocused, so it is not approved as a chain endpoint. The second candidate still requires visual review. Neither candidate was added to the timeline and no endpoint was saved."
+      "qa_observation": "Both v3 candidates were reviewed in VideoExpress. 6.17 MB candidate: final 0:10 frame soft/defocused. 4.73 MB candidate: same progressive push-in ends with droplet and petal visibly soft, insufficient detail for BB-002 chain start. Neither added to timeline; no endpoint saved. Do not continue chain from either candidate."
     },
     {
       "id": "BB-002",
@@ -271,10 +271,10 @@
         },
         {
           "size_mb": 4.73,
-          "visual_review": "pending; browser session disconnected before review"
+          "visual_review": "played in VideoExpress; progressive push-in ends with droplet and petal soft/defocused; rejected as next-clips starting image"
         }
       ],
-      "result": "Two candidates appear in My AI Videos. Due to a shifting UI index, submission was duplicated; no further generation will be made. The newly generated Artistly master image is saved under Artistly Personal Designs but did not appear in VideoExpress My Artistly Images, so it was not the source for these video jobs. No candidate was added to the timeline and no endpoint was saved."
+      "result": "Both candidates reviewed and rejected for soft final-frame focus. No candidate was added to the timeline and no endpoint was saved. Duplicate submission was caused by shifting UI accessibility indices; do not submit duplicate jobs."
     }
   ],
   "transition_policy_v2": {
@@ -301,9 +301,9 @@
   },
   "resume_checkpoint": {
     "current_scene": "BB-001",
-    "next_action": "When VideoExpress browser access is available, visually review the second v3 candidate (4.73 MB) in My AI Videos. If its 0:10 frame is stable and detailed, save that last frame and use it as BB-002's reference; otherwise stop and diagnose before any rerender.",
-    "do_not_generate_before_review": true,
+    "next_action": "Revise BB-001 exit: keep camera static or use only a minimal push-in; lock focus on the droplet throughout 8–10s; allow softness only in background/highlight. Review revised prompt, then make at most one targeted retry and inspect the final frame before starting BB-002.",
+    "do_not_generate_before_review": false,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "Cua session disconnected during second-candidate review; do not assume completion."
+    "browser_status": "Second candidate (4.73 MB) visually reviewed; soft endpoint rejected. No rerender submitted."
   }
 }
