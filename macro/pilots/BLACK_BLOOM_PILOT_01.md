@@ -164,3 +164,10 @@ Prepared the BB-005 prompt from the actual `BB-004_CALENDULA_LAST_FRAME_10S_V3_4
 BB-005 job `6a288ce0-53ef-425e-93f8-b381c9092d27` completed at 10 seconds, 1920×1080, 5.50 MB. At 0:06, the dahlia's layered burgundy petals and center are clearly recognizable; the calendula recedes separately at frame right. By 0:09–0:10 the dahlia dominates in a sharp macro close-up. The upper petals have a slight top-edge crop, but there is no clear species morphing or bloom overlap. Saved the actual last frame as `BB-005_DAHLIA_LAST_FRAME_10S_V3_4` in My AI Images.
 
 This is a separate test, not a replacement for the accepted v3.2 timeline. BB-004 v3.4 and BB-005 v3.4 now form the latest endpoint chain for those scenes; the next quality check is to review the revised clips and joins together in a separate trial project before choosing whether to replace anything in the approved project.
+
+
+## BB-004 → BB-005 v3.4 seam test
+
+Saved a separate VideoExpress project named **Black Bloom - Seam Test BB-004 to BB-005 v3.4**. The Open Project list shows it separately from the accepted **Black Bloom Pilot 01 - v3.2 Chained** project. BB-004 v3.4 and BB-005 v3.4 are placed directly adjacent on one track: 10 seconds each, 20 seconds total, with no editor-side transition.
+
+The boundary was checked at 00:09 and 00:10. The calendula with the dim outgoing rose remnant carries into the BB-005 opening without an obvious visual jump. **The BB-004→BB-005 seam passes.** At 00:16, the new burgundy dahlia is recognizable, but its scale crops the bloom at the left and upper frame edges. Refine BB-005 framing before considering any replacement of a clip in the approved v3.2 project; keep both projects separate.
