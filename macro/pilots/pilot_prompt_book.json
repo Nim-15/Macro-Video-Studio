@@ -1,44 +1,45 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "v2_transition_prompts_ready_for_corrected_render_pass",
+  "status": "v3_single_master_image_sequential_last_frame_chain",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
-  "reference_frame_handoff": "verified_manual_save_last_frame_from_media_library_then_use_from_library; BB-003 endpoint confirmed in My AI Images",
+  "reference_frame_handoff": "Generate only BB-001 master still; for BB-002 onward use the immediately preceding clip's actual saved last frame from My AI Images as the supplied starting reference.",
   "default_negative": "No text, watermark, logos, CGI plastic texture, anatomical deformity, subject morphing or deformation, species replacement, duplication, hard cuts, abrupt flashes, abrupt color jumps, erratic camera motion, floating water, flicker, editor-side transition between clips.",
   "scenes": [
     {
       "id": "BB-001",
       "subject": "Iris violeta, rocío, oscuridad de estudio",
       "image": "Ultra-photorealistic extreme macro still of a single deep-violet iris petal emerging from absolute black studio background; realistic radial veins, tiny spherical dew droplets with believable surface tension, rich amethyst-purple pigment, one large clear droplet centered in the left third, exquisite texture, 100 mm macro lens look at high magnification, thin sharp focus plane, restrained cool rim-light from upper left and faint warm lower bounce; genuine optical bokeh, high-end botanical studio photography, landscape 16:9, no text, no graphics, no artificial CGI gloss.",
-      "video": "10-second photorealistic macro cinematography. Lock the iris petal's species, silhouette, veins, proportions, texture, and position throughout; no morphing or deformation. 0–2s ENTRY: from the existing black studio, a delicate upper-left rim-light sweep and slow focus reveal bring the same violet iris and dew into view; make the transition visibly gradual, not a hard cut. 2–7s: hold a legible stable iris macro with one almost imperceptible forward camera push; a bead refracts the existing light without moving unnaturally. 7–10s EXIT: let that bead's highlight bloom gently into a soft violet optical bokeh at the left third as focus eases away; keep the iris geometry fixed. End with the violet orb on the left and black negative space on the right, cueing BB-002's violet refracted-light entry. All effects are within these 10 seconds; no added editor transition, no jitter or flicker.",
+      "video": "Premium extreme macro botanical cinematography. A single deep-violet iris against a seamless pure black background, with one perfectly formed transparent dew droplet resting on the front petal. Physically accurate petal microtexture and radial veins, refined studio rim lighting, rich violet tones, controlled specular highlights, realistic 100mm macro lens appearance, shallow but natural depth of field.\nENTRY TRANSITION, 0–2 seconds: Begin with the exact composition of the provided master reference image. Hold the iris geometry, petal positions, droplet shape and lighting completely stable for a brief moment. Start a very slow, smooth cinematic push-in as a delicate upper-left rim light gradually reveals the petal texture.\nMAIN ACTION, 2–8 seconds: Move closer to the same dew droplet with precise, continuous camera motion. The droplet remains attached to the same petal and refracts the violet petal texture realistically. Gradually shift focus from the surrounding petal to the droplet surface; keep the iris recognizable and geometrically unchanged.\nEXIT TRANSITION, 8–10 seconds: Finish with the same droplet centered slightly to the right, occupying approximately one-third of the frame. Let only its specular highlight soften into a subtle violet optical bokeh while the droplet itself remains attached and unchanged. Lock camera movement and hold the droplet sharply in focus. End on a clean, stable, detailed frame suitable for saving as the starting image of BB-002.\nNo morphing, no moving droplets, no duplicated petals, no flicker, no camera shake, no artificial glitter, no text, no watermark.",
       "entry": "Extreme focus on veined iris petal with large left-third droplet; upper-left cool rim; ample black right.",
       "exit": "Out-of-focus violet dew highlight occupies left third, with pure black right, no harsh contours.",
       "transition_out": "Droplet highlight blooms into violet bokeh at left third.",
       "scene_number": 1,
       "transition_in": "Gradual upper-left rim-light sweep and focus reveal from black into the iris.",
       "duration_seconds": 10,
-      "status": "test_render_needs_visual_approval",
+      "status": "ready_for_v3_validation_render",
       "image_asset_uri": null,
       "video_asset_uri": null,
       "actual_credits": null,
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v2_user_transition_rules"
+      "revised_prompt_version": "v3_user_example_single_image_chain",
+      "image_generation_required": true
     },
     {
       "id": "BB-002",
       "subject": "Orquídea púrpura, continuidad óptica",
-      "image": "Photorealistic macro studio image of a purple Phalaenopsis orchid curved petal against deep seamless black, translucent lilac edge, subtle realistic epidermal papillae, single tiny dew glint at left third; upper-left cool soft rim, gentle muted warm underside reflection; high-end 100 mm macro lens optics, shallow depth of field, violet bokeh orb on left third with surrounding contours gradually emerging, no text, no fake geometry, 16:9.",
-      "video": "10-second photorealistic macro cinematography. Preserve the supplied violet iris/dew endpoint at the opening; do not alter the droplet or transform it into another object. 0–2s ENTRY: a realistic caustic highlight slowly crosses the left-third violet orb, then a gentle rack focus reveals a separate purple Phalaenopsis petal behind it, keeping the black studio and upper-left light direction. 2–7s: hold the orchid visibly in focus, with stable anatomy and a single natural petal tremor; the subject remains clearly an orchid. 7–10s EXIT: gradually cool the rim light and soften one petal-edge highlight into a pale lilac optical glint near upper center, while the orchid stays intact and recedes into shallow focus. End on that glint against near-black to cue BB-003. No species morph, deformation, abrupt flash, or added editor transition.",
+      "image": null,
+      "video": "Premium extreme macro botanical cinematography. Continue directly from the exact supplied final frame of BB-001. Preserve its violet droplet, petal geometry, lighting and composition at the opening. A separate purple Phalaenopsis orchid petal may be revealed behind the droplet through natural focus and refraction, against the same seamless pure black studio background. Physically accurate orchid microtexture, refined macro studio lighting, realistic 100mm macro lens appearance, shallow but natural depth of field.\nENTRY TRANSITION, 0–2 seconds: Begin with the exact composition of the supplied BB-001 last-frame image. Hold the droplet, iris petal, positions and lighting completely stable for a brief moment. Start a very slow, smooth push-in as one realistic caustic highlight glides across the droplet.\nMAIN ACTION, 2–8 seconds: Gradually rack focus through the stationary droplet to reveal a distinct orchid petal behind it; do not transform the iris or droplet into the orchid. Keep the orchid recognizable and sharply legible by the middle of the shot. Preserve the iris geometry wherever it remains visible. Move closer with precise, continuous camera motion; the droplet stays attached to its original petal and refracts the scene naturally.\nEXIT TRANSITION, 8–10 seconds: Finish with one pale-lilac highlight near the upper center, formed by the orchid petal's real rim light and shallow focus. Keep the visible flower anatomy stable. Lock camera movement and hold the highlight cleanly against black. End on a stable, detailed frame suitable for saving as the starting image of BB-003.\nNo morphing, no deformation, no species replacement, no moving droplets, no duplicated petals, no flicker, no camera shake, no artificial glitter, no text, no watermark.",
       "entry": "Violet orb in left third against black; focus slowly reveals a separate orchid shot with same highlight.",
       "exit": "Tiny pale-lilac soft highlight near upper center, surrounding near-black.",
       "transition_out": "Petal-edge light softens into a pale lilac glint upper center.",
       "scene_number": 2,
       "transition_in": "Violet refraction/caustic glides across the saved iris highlight and focus reveals a distinct orchid.",
       "duration_seconds": 10,
-      "status": "test_render_quality_review_required",
+      "status": "v3_prompt_ready_after_previous_endpoint",
       "image_asset_uri": "BB-001_IRIS_LAST_FRAME_10S.png",
       "video_asset_uri": "48ed3783-e307-4e84-9e49-cd22ef2a6ed6",
       "actual_credits": null,
@@ -46,20 +47,22 @@
       "qa_observation": "Violet droplet palette and opening composition carry through; orchid identity unclear because most of the clip is soft-focus macro.",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v2_user_transition_rules"
+      "revised_prompt_version": "v3_user_example_single_image_chain",
+      "target_visual": "Photorealistic macro studio image of a purple Phalaenopsis orchid curved petal against deep seamless black, translucent lilac edge, subtle realistic epidermal papillae, single tiny dew glint at left third; upper-left cool soft rim, gentle muted warm underside reflection; high-end 100 mm macro lens optics, shallow depth of field, violet bokeh orb on left third with surrounding contours gradually emerging, no text, no fake geometry, 16:9.",
+      "image_generation_required": false
     },
     {
       "id": "BB-003",
       "subject": "Rosa blanca nacarada, microgotas",
-      "image": "High-end extreme macro photography of pristine ivory rose petal edge with botanically realistic layered tissue and miniature condensation beads, pure black seamless background, a tiny specular highlight at upper center matching preceding isolated lilac light, natural pearl-cream and pale violet cool reflections, precise angled studio edge lighting from upper left, cinematic shallow focus, 16:9, no lettering.",
-      "video": "10-second photorealistic macro cinematography. Preserve the supplied violet/lilac droplet endpoint exactly at first; keep its position, shape, and surface stable. 0–2s ENTRY: a soft refracted highlight glides through the droplet and shifts focus gradually to reveal a separate ivory rose petal in the same black studio, with no droplet-to-flower transformation. 2–7s: show a recognizable, sharply legible layered ivory rose macro; keep petal geometry stable while a subtle pearl highlight travels along one real petal edge. A gentle lateral camera move only. 7–10s EXIT: let the pearl highlight stretch optically into a creamy crescent at the right third through a slow rack focus and soft lens bloom; the rose remains intact. End with a warm ivory crescent against black, cueing BB-004's gradual amber-light entry. No morphing, deformation, abrupt color jump, or added editor transition.",
+      "image": null,
+      "video": "Premium extreme macro botanical cinematography. Continue directly from the exact supplied final frame of BB-002. Preserve the incoming lilac highlight, petal geometry and black studio lighting at the opening. Reveal a separate ivory rose petal through realistic focus and reflected light, without changing the orchid into a rose. Physically accurate layered petal tissue, delicate condensation, refined studio rim lighting, natural pearl-cream tones, realistic 100mm macro lens appearance, shallow but natural depth of field.\nENTRY TRANSITION, 0–2 seconds: Begin with the exact composition of the supplied BB-002 last-frame image. Hold its highlight, subject positions and lighting stable for a brief moment. Start a very slow, smooth lateral camera drift as the lilac glint refracts softly across the frame.\nMAIN ACTION, 2–8 seconds: Gradually shift focus from the existing glint to a distinct ivory rose petal appearing behind it. The rose becomes clearly recognizable while retaining stable, natural petal geometry. Let one pearl highlight travel along a real petal edge; keep the orchid unchanged wherever visible. Use precise continuous camera motion and restrained macro focus.\nEXIT TRANSITION, 8–10 seconds: Finish on a creamy crescent highlight at the right third, produced by the rose petal's real edge light and soft optical defocus. Keep the rose intact, stop camera movement and hold the crescent cleanly against black. End on a stable, detailed frame suitable for saving as the starting image of BB-004.\nNo morphing, no deformation, no overlapping flower anatomy, no moving droplets, no duplicated petals, no flicker, no camera shake, no artificial glitter, no text, no watermark.",
       "entry": "Tiny glint upper-center transitions into dew reflection on pale rose; same light direction.",
       "exit": "Blurred creamy crescent on right third, largely black frame.",
       "transition_out": "Pearl highlight becomes a creamy crescent at right third.",
       "scene_number": 3,
       "transition_in": "Soft droplet refraction and rack focus reveal a distinct ivory rose.",
       "duration_seconds": 10,
-      "status": "retry_selected_on_timeline_quality_review_required",
+      "status": "v3_prompt_ready_after_previous_endpoint",
       "image_asset_uri": "BB-002_ORCHID_LAST_FRAME_10S.png",
       "video_asset_uri": "8ebacb3e-4a65-496f-b12c-357270cf3eb5",
       "actual_credits": null,
@@ -71,20 +74,22 @@
       "retry_status": "reviewed_and_selected_on_timeline",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v2_user_transition_rules"
+      "revised_prompt_version": "v3_user_example_single_image_chain",
+      "target_visual": "High-end extreme macro photography of pristine ivory rose petal edge with botanically realistic layered tissue and miniature condensation beads, pure black seamless background, a tiny specular highlight at upper center matching preceding isolated lilac light, natural pearl-cream and pale violet cool reflections, precise angled studio edge lighting from upper left, cinematic shallow focus, 16:9, no lettering.",
+      "image_generation_required": false
     },
     {
       "id": "BB-004",
       "subject": "Caléndula ámbar, borde luminoso",
-      "image": "Extreme realistic macro studio photograph of the thin curled edge of a single golden-orange calendula petal on seamless black; a delicate soft crescent-shaped pale-amber rim highlight occupies right third corresponding to previous rose glow; petal cuticle grooves and natural pollen grains, directional professional studio rim light upper left, muted honey-amber tonality with no oversaturation, organic dimensional texture and natural shallow depth of field, 16:9.",
-      "video": "10-second photorealistic macro cinematography. Start from the actual BB-003 saved rose endpoint and preserve the rose's geometry while it is visible. 0–2s ENTRY: a narrow warm rim-light sweep travels along the incoming ivory crescent and shifts gradually toward amber; a realistic defocused pollen glint passes across the lens. 2–7s: use the glint and slow rack focus to reveal a separate single orange calendula emerging from shadow in the same black studio; do not turn the rose into the calendula. Keep both subjects geometrically stable, avoid overlap, and hold the calendula's radial grooves clearly in focus. 7–10s EXIT: lower the backlight gradually and let one amber petal reflection soften into a small low-center orange-green bud silhouette, still visible against black, to cue BB-005. No full-black cut, hard cut, morphing, deformation, or added editor transition.",
+      "image": null,
+      "video": "Premium extreme macro botanical cinematography. Continue directly from the exact supplied final frame of BB-003. Preserve its ivory crescent highlight and any visible rose petal geometry at the opening. Reveal a separate single golden-orange calendula through a gradual warm rim-light sweep and realistic rack focus, against the same seamless pure black studio background. Fine natural petal grooves and pollen detail, controlled amber color, refined studio lighting, realistic 100mm macro lens appearance, shallow but natural depth of field.\nENTRY TRANSITION, 0–2 seconds: Begin with the exact composition of the supplied BB-003 last-frame image. Hold its crescent, subject positions and lighting stable for a brief moment. Start a very slow, smooth push-in while the existing highlight warms gradually from ivory to pale amber.\nMAIN ACTION, 2–8 seconds: Let a realistic defocused pollen glint pass across the lens and use it to rack focus onto a distinct calendula emerging from shadow. Do not turn or deform the rose into the calendula. Keep the calendula clearly recognizable with stable radial grooves and natural petal geometry; maintain coherent light direction and precise camera motion.\nEXIT TRANSITION, 8–10 seconds: Finish on one small, natural amber highlight near the lower center, with the calendula remaining intact and softly visible around it. Gradually soften the background through optical focus, without a black cut. Lock the camera and hold a clean, stable, detailed frame suitable for saving as the starting image of BB-005.\nNo morphing, no deformation, no species replacement, no duplicated petals, no black cut, no abrupt flash, no flicker, no camera shake, no artificial glitter, no text, no watermark.",
       "entry": "Warm ivory crescent receives a gradual amber rim-light sweep and optical glint; distinct calendula revealed by rack focus, no cut.",
       "exit": "Small orange-green bud remains visible while the light gradually softens; no full-black cut.",
       "transition_out": "Amber reflection softens to a low-center orange-green bud silhouette.",
       "scene_number": 4,
       "transition_in": "Warm rim-light sweep over the rose endpoint, amber glint and focus reveal a separate calendula.",
       "duration_seconds": 10,
-      "status": "provisional_test_render_on_timeline",
+      "status": "v3_prompt_ready_after_previous_endpoint",
       "image_asset_uri": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
       "video_asset_uri": "9725abe9-0160-4b10-a305-770a5f2ef303",
       "actual_credits": null,
@@ -94,20 +99,22 @@
       "retry_count": 3,
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v2_user_transition_rules"
+      "revised_prompt_version": "v3_user_example_single_image_chain",
+      "target_visual": "Extreme realistic macro studio photograph of the thin curled edge of a single golden-orange calendula petal on seamless black; a delicate soft crescent-shaped pale-amber rim highlight occupies right third corresponding to previous rose glow; petal cuticle grooves and natural pollen grains, directional professional studio rim light upper left, muted honey-amber tonality with no oversaturation, organic dimensional texture and natural shallow depth of field, 16:9.",
+      "image_generation_required": false
     },
     {
       "id": "BB-005",
       "subject": "Dalia rojo borgoña, cierre contemplativo",
-      "image": "Photorealistic extreme macro studio image of dark burgundy dahlia petal folds with subtle velvet-like botanical surface, delicate deep wine micro-ridges, one believable golden-amber dew specular spot lower center to align preceding frame, isolated on seamless pure black, upper-left soft rim with subdued copper bounce, advanced macro optics and narrow natural depth of field, elegant cinematic realistic texture, 16:9 no text.",
-      "video": "10-second photorealistic macro cinematography. Start on the actual saved BB-004 orange-green bud endpoint; preserve its shape and position without stretching or opening it into another species. 0–2s ENTRY: a soft amber caustic and gentle light sweep pass across the bud; rack focus slowly toward a separate burgundy dahlia petal emerging behind it, with no bud-to-dahlia morph. 2–7s: reveal a recognizable, stable burgundy dahlia macro; keep petal anatomy, texture, and proportions consistent while the camera drifts back only a few millimeters. 7–10s EXIT: gradually deepen the burgundy shadows and soften the rim light into a slow optical bokeh fade to black, with no abrupt fade or flash. End in stable black, ready for a new clip's entry effect. All transition effects remain within 10 seconds; place clips directly adjacent, no editor-side transition.",
+      "image": null,
+      "video": "Premium extreme macro botanical cinematography. Continue directly from the exact supplied final frame of BB-004. Preserve its amber highlight, calendula geometry and lighting at the opening. A separate deep-burgundy dahlia petal may be revealed behind it with realistic focus and shadow, against the same seamless pure black background. Physically accurate velvety botanical microtexture, rich wine tones, restrained copper bounce, refined studio rim lighting, realistic 100mm macro lens appearance, shallow but natural depth of field.\nENTRY TRANSITION, 0–2 seconds: Begin with the exact composition of the supplied BB-004 last-frame image. Hold its amber detail, flower geometry and lighting stable for a brief moment. Start a very slow, smooth cinematic push-in as the amber highlight refracts gently across the lens.\nMAIN ACTION, 2–8 seconds: Gradually rack focus through the highlight to reveal a distinct burgundy dahlia petal behind the calendula; do not transform the calendula into a dahlia. Keep any visible flower geometry stable and recognizable. Move closer with precise, continuous camera motion while a subdued copper rim light slowly resolves the dahlia's natural ridges.\nEXIT TRANSITION, 8–10 seconds: Finish on a clean burgundy petal detail with a small, controlled copper highlight near the center. Let the surrounding black background deepen subtly through a gradual optical bokeh fade, without obscuring or deforming the petal. Lock the camera and hold the final frame sharply and steadily. End on a stable, detailed frame suitable for saving as the starting image of a future clip.\nNo morphing, no deformation, no species replacement, no duplicated petals, no abrupt fade or flash, no flicker, no camera shake, no artificial glitter, no text, no watermark.",
       "entry": "Actual orange-green BB-004 bud is held stable as amber caustic and focus reveal a separate dahlia.",
       "exit": "Burgundy petal and rim light recede through a gradual in-clip optical bokeh fade to black.",
       "transition_out": "Burgundy rim light softens into optical bokeh and gradual black fade.",
       "scene_number": 5,
       "transition_in": "Amber light sweep over the actual bud endpoint; focus reveals a separate burgundy dahlia.",
       "duration_seconds": 10,
-      "status": "test_render_on_timeline",
+      "status": "v3_prompt_ready_after_previous_endpoint",
       "image_asset_uri": "BB-004_CALENDULA_LAST_FRAME_10S.png",
       "video_asset_uri": "47376f6e-b3ce-445b-9829-4e270846ae0e",
       "actual_credits": null,
@@ -116,24 +123,29 @@
       "qa_observation": "10s, 1920x1080; opening at 00:00 matches BB-004's saved dark orange-green bud, ~00:05 resolves into a recognizable burgundy dahlia against black, 00:10 is nearly black after fade. Added at 00:40–00:50; endpoint save confirmed in My AI Images; project saved.",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v2_user_transition_rules"
+      "revised_prompt_version": "v3_user_example_single_image_chain",
+      "target_visual": "Photorealistic extreme macro studio image of dark burgundy dahlia petal folds with subtle velvet-like botanical surface, delicate deep wine micro-ridges, one believable golden-amber dew specular spot lower center to align preceding frame, isolated on seamless pure black, upper-left soft rim with subdued copper bounce, advanced macro optics and narrow natural depth of field, elegant cinematic realistic texture, 16:9 no text.",
+      "image_generation_required": false
     }
   ],
   "production_generation_strategy": {
-    "primary_video_route": "VideoExpress Create Video From Prompt",
+    "primary_video_route": "VideoExpress Create Video From Prompt, one generated BB-001 master still followed by sequential saved-last-frame references",
     "aspect_ratio": "16:9",
     "image_type": "Photorealistic (Cinematic)",
     "manual_video_length_seconds": 10,
     "advanced_mode": true,
     "sequence": [
-      "reuse preceding clip's saved last frame from My AI Images as next image reference",
-      "replace sample image and video prompts before each render",
-      "generate one dependent clip at a time",
-      "add finished clip to timeline for sequence review; save endpoint with the media-library Save Last Frame action; verify it in My AI Images"
+      "generate and approve one BB-001 master still only",
+      "for BB-001 select that master still as the video reference; use the exact v3 timed prompt and render one 10-second clip",
+      "save the actual final frame via Media Library > My Videos > Save Last Frame; verify it appears in My AI Images",
+      "for each next clip, select only the immediately preceding clip's verified saved last frame as its starting reference; do not generate a separate scene still",
+      "render one dependent clip at a time, review it, save its final frame, then proceed to the next prompt",
+      "place finished clips directly adjacent on the timeline with no extra editor transition"
     ],
     "generation_saving_rules": [
-      "reuse existing assets before creating new ones",
-      "avoid separate still generation for each scene unless the chain cannot plausibly reach the scene",
+      "generate one master still for the entire chain unless a missing or unusable saved endpoint requires a documented replacement",
+      "reuse the immediately preceding verified endpoint for every clip after BB-001",
+      "do not generate separate scene stills when a saved frame can start the next clip",
       "never rerun an unchanged prompt",
       "allow at most one targeted retry after recording and correcting a specific defect"
     ],
@@ -241,13 +253,21 @@
     "effects_are_inside_each_10s_clip": true,
     "default_timing_seconds": {
       "entry": "0-2",
-      "stable_macro_and_optional_gradual_change": "2-7",
-      "exit": "7-10"
+      "main_action_and_gradual_reveal": "2-8",
+      "exit": "8-10"
     },
     "inter_clip_edit": "direct adjacency; no added cut, dissolve, wipe, fade, or separate transition clip",
     "subject_lock": "Preserve the main subject's identity, species, silhouette, anatomy, proportions, texture, and position; no morphing or deformation.",
     "change_rule": "A color or subject change may happen gradually inside the clip through a realistic light, refraction, bokeh, focus, or shadow reveal. Reveal a different subject as distinct, never transform one subject into another.",
     "applies_to_existing_renders": false,
-    "note": "These are revised prompts/rules. Existing BB-001–BB-005 video renders have not been regenerated to satisfy v2."
+    "note": "This v3 prompt structure updates the production instructions only. Existing renders are historical and have not been regenerated.",
+    "entry_reference": "Every clip begins on the exact supplied image: BB-001 master still or the immediately previous clip's saved last frame.",
+    "exit_reference": "End on a clean, stable, detailed frame explicitly designed to be saved and used as the next clip's starting image."
+  },
+  "image_generation_policy": {
+    "master_image_count": 1,
+    "master_image_scene": "BB-001",
+    "later_scenes": "Do not generate separate stills. Select the previous clip's saved final frame as the next prompt's reference image.",
+    "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   }
 }
