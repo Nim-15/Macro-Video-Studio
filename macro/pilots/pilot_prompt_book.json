@@ -463,6 +463,16 @@
       "prompt": "Animate the supplied BB-004 final frame as the exact opening composition: bright amber calendula and dim rose remnant against black. Hold exact composition for 0–2s with locked camera/focus/exposure and subtle amber rim shimmer. From 2–8s, with no camera movement or zoom, reveal a separate burgundy dahlia in open black space at left by localized edge light; let the rose remnant recede and soften the calendula illumination. Keep dahlia a consistent 20–25% of frame width from reveal through end, fully inside generous margins, separated from the calendula by black. At 8–10s settle a restrained burgundy rim light and hold the same small, sharp full-bloom composition. Negative: morphing, species replacement, overlap, growing/oversized dahlia, cropped petals, bright competing calendula, duplication, flicker, exposure pumping, focus breathing, camera movement, flash, full-frame fade, glitter, text, watermark.",
       "result": "Completed at 10 seconds, 1920x1080, 5.60 MB. Opening at 00:00 matches the BB-004 calendula/rose-remnant endpoint. At 00:05 the dahlia and calendula both occupy much of the frame, with the dahlia clipped at frame left. At 00:09 the dahlia again grows oversized and is cropped at the left/bottom; the calendula remains a large, dim competing subject. Rejected: no endpoint saved and not added to any timeline. Repeated prompt-only scale constraints did not solve the framing issue.",
       "file_size_mb": 5.6
+    },
+    {
+      "scene_id": "BB-005-RESIZE-AND-MOVE-TEST",
+      "route": "VideoExpress timeline Properties > Resize and move, tested on a separate copy of the v3.6 seam timeline",
+      "project_name": "Black Bloom - BB-005 Resize Test v3.7",
+      "source_video_jobs": [
+        "6d834f3d-2154-4d75-b3ba-78d0463ec529",
+        "8561d318-fbed-415f-b224-fe158aaed617"
+      ],
+      "result": "Applied an approximately 80% frame resize to the second clip on a separate project copy and saved that copy. The whole image becomes smaller with black margins, but the dahlia is still clipped at the source video's own frame edge around 00:17. The effect cannot recover petals already outside the generated frame, so this is not a fix for the cropped source. No new video generation; accepted v3.2 chain and v3.6 seam project remain untouched."
     }
   ],
   "transition_policy_v2": {
@@ -489,8 +499,8 @@
   },
   "resume_checkpoint": {
     "current_scene": "BB_005_V3_7_REJECTED",
-    "next_action": "Do not submit another prompt-only scale retry. Choose a materially different strategy before spending another generation: use a wider source frame/composition created as an image, or consider a non-generative editor scale/position treatment on a separately duplicated clip. First confirm the available editor transform workflow, then make a separate test. Keep the approved v3.2 chain and the v3.6 seam-test project untouched.",
+    "next_action": "Do not generate another scale-only variant. The timeline Resize and Move tool can shrink the full source image but cannot restore dahlia petals already cropped inside the generated video. Treat v3.6 as a continuity-only candidate. Next, complete boundary-by-boundary QA of the approved five-clip v3.2 chain and keep it as the production baseline; address BB-005 composition only with a materially different visual source/shot strategy in a later iteration.",
     "do_not_generate_before_review": true,
-    "browser_status": "BB-005 v3.7 (job f5921870-e16e-489f-a2ab-e5c3468b635a) completed at 10s, 1920x1080, 5.60 MB from the BB-004 v3.4 endpoint. Opening matches the source, but at 00:05 the dahlia and calendula both fill much of the image; at 00:09 the dahlia is oversized and cropped left/bottom. Rejected, no endpoint saved, no timeline insertion. v3.6 remains only a continuity candidate. Prompt-only scale instructions have now failed repeatedly; change the strategy before another paid render."
+    "browser_status": "v3.7 is rejected for repeated in-frame dahlia cropping; no endpoint saved. A separate project copy, Black Bloom - BB-005 Resize Test v3.7, was saved after testing VideoExpress Resize and Move at about 80%; the black margins appear, but the generated dahlia crop remains at the source frame edge. This non-generative transform cannot fix the missing petals. BB-004 v3.4→BB-005 v3.6 seam passes for continuity; v3.6 still has framing limitations. Approved v3.2 baseline remains unchanged."
   }
 }
