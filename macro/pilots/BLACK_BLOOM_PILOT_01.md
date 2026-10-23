@@ -134,3 +134,10 @@ This is a prompt-only revision; no new video has been generated. The approved v3
 The targeted render completed in VideoExpress at 10 seconds, 1920×1080, 5.89 MB (job `4d2f2226-f8ca-402f-9a58-8966acc5ef24`). It starts from `BB-001_IRIS_LAST_FRAME_10S_V3_2`. The Phalaenopsis is now clearly recognizable, with its broad petals and characteristic central lip; the iris recedes separately into shadow. The endpoint is a tighter close-up than requested and crops part of the upper petal, so composition still needs refinement. Saved the endpoint as `BB-002_ORCHID_LAST_FRAME_10S_V3_3` in My AI Images.
 
 This is a separate prompt test only: it was not added to or substituted into the user-approved v3.2 timeline. For the next iteration, refine BB-003 from the actual v3.3 orchid endpoint and specify fixed camera distance, generous framing margins, readable rose anatomy, and no overlapping flower layers. Review the prompt before the next generation.
+
+
+## BB-003 v3.3 rose test and next prompt
+
+The BB-003 v3.3 render completed at 10 seconds, 1920×1080, 4.25 MB (job `3bc10d9e-a4c5-4a26-b3c4-cf4115b66380`) from `BB-002_ORCHID_LAST_FRAME_10S_V3_3`. The ending is a clear, centered ivory rose with a recognizable layered spiral and central curl. The rose reads as a separate subject, with less flower overlap. Two composition issues remain: outer petals touch or crop at the upper/lower frame edge, and the rose begins appearing before the 2-second entry hold ends. Saved the endpoint as `BB-003_ROSE_LAST_FRAME_10S_V3_3` in My AI Images.
+
+Prepared a BB-004 v3.3 prompt from that actual rose endpoint. It delays the calendula reveal until after the opening hold, specifies visible ray petals and central disk, locks camera framing, gives the new flower black margins, and lets the outgoing rose recede into shadow as a separate subject. The BB-003 test is separate and has not been added to the accepted v3.2 project. BB-004 is ready for one targeted render after prompt review.
