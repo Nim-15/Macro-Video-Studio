@@ -1,6 +1,6 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v3 prompt pass now follows the user's copy-ready structure and one-image chaining rule. Two BB-001 v3 candidates were generated; review is incomplete.
+**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v3 prompt pass now follows the user's copy-ready structure and one-image chaining rule. Two BB-001 v3 candidates were generated and reviewed; both fail endpoint-focus QA.
 
 ## Goal
 
@@ -68,6 +68,6 @@ The copy-ready video prompt uses the exact section order and timing the user sup
 
 The Artistly master still generated for BB-001 is visible in Artistly Personal Designs, but the VideoExpress **My Artistly Images** folder was empty, so it was not available as a source for the video render. The two v3 jobs instead used the already available `BB-001_IRIS_LAST_FRAME_10S.png` in **My AI Images**.
 
-Two v3 candidates are present in **My AI Videos** (6.17 MB and 4.73 MB; the UI did not map their IDs to file sizes). The first displayed candidate was reviewed: its final 0:10 frame is too soft/defocused to use as a chain endpoint. The second candidate remains unreviewed because the CUA browser session disconnected. Neither candidate was added to the timeline; no endpoint was saved. A duplicate submission occurred when the page's accessibility indices shifted; do not generate again before reviewing the remaining candidate.
+Two v3 candidates are present in **My AI Videos** (6.17 MB and 4.73 MB; the UI did not map their IDs to file sizes). The 6.17 MB candidate was reviewed first; its 0:10 frame was too soft/defocused to use. The 4.73 MB candidate was then played in VideoExpress; it also progressively pushed into the droplet but ended with the droplet/petal visibly soft and lacking sufficient detail for a chain endpoint. Neither candidate was added to the timeline, and no endpoint was saved. The duplicate submission resulted in two paid renders; no further render has been submitted.
 
-**Resume:** reopen VideoExpress when browser access is available, review the second candidate, and save its final frame only if it is stable and detailed enough to start BB-002. If it fails, diagnose before any further generation.
+**Resume:** revise BB-001's exit action to keep the camera static or use only a very small push-in, lock focus on the droplet through 8–10 seconds, and reserve optical softness for the background/highlight only. Render at most one targeted retry after the revised prompt is reviewed; then inspect the final frame before proceeding to BB-002.
