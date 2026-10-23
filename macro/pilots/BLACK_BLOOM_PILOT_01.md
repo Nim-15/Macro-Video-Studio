@@ -141,3 +141,10 @@ This is a separate prompt test only: it was not added to or substituted into the
 The BB-003 v3.3 render completed at 10 seconds, 1920×1080, 4.25 MB (job `3bc10d9e-a4c5-4a26-b3c4-cf4115b66380`) from `BB-002_ORCHID_LAST_FRAME_10S_V3_3`. The ending is a clear, centered ivory rose with a recognizable layered spiral and central curl. The rose reads as a separate subject, with less flower overlap. Two composition issues remain: outer petals touch or crop at the upper/lower frame edge, and the rose begins appearing before the 2-second entry hold ends. Saved the endpoint as `BB-003_ROSE_LAST_FRAME_10S_V3_3` in My AI Images.
 
 Prepared a BB-004 v3.3 prompt from that actual rose endpoint. It delays the calendula reveal until after the opening hold, specifies visible ray petals and central disk, locks camera framing, gives the new flower black margins, and lets the outgoing rose recede into shadow as a separate subject. The BB-003 test is separate and has not been added to the accepted v3.2 project. BB-004 is ready for one targeted render after prompt review.
+
+
+## BB-004 v3.3 result and v3.4 prompt refinement
+
+BB-004 job `9d42dc21-fee7-476a-98b8-e35081294df2` completed as a 10-second 1920×1080 render (4.47 MB) from `BB-003_ROSE_LAST_FRAME_10S_V3_3`. Visual review at 0:04 and 0:08 showed the incoming ivory rose still dominating; no recognizable calendula appeared. At 0:10 the image was very dark and the rose remained the visible subject. The delayed entry, new-subject reveal, and exposure hold all missed their targets. No endpoint was saved, and the trial was not added to the accepted v3.2 timeline.
+
+The BB-004 v3.4 prompt now calls for a complete, unmistakable calendula by mid-clip, with its circular disk and narrow radial petals visible, a fixed camera and exposure, full framing margins, and the incoming rose kept anatomically separate as it recedes into localized shadow. The final frame must keep the calendula bright and stable. The next run should use the same v3.3 rose endpoint and save an endpoint only if it is useful for BB-005. The approved v3.2 timeline and its joins remain unchanged.
