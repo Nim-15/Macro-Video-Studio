@@ -3,29 +3,37 @@
 This directory contains an original macro-film production workflow inspired by the orchestration patterns of [ai-playbooks/nursery_rhyme_music_video](https://github.com/ai-playbooks/nursery_rhyme_music_video). The root-level legacy files are retained for reference; **use this directory for macro production**.
 
 ## Purpose
-Plan and coordinate photorealistic macro films with configurable subjects, chapter structure, image prompts, 10-second video prompts, matched entrance/exit transitions, generation checkpoints, budget controls, and final assembly QA.
+Plan and coordinate photorealistic macro films with configurable subjects, chapter structure, image prompts, nominal 10-second video prompts, matched entrance/exit transitions, generation checkpoints, membership-credit controls, and final assembly QA.
 
-Default target: **60 minutes, 16:9, 360 nominal clips at 10 seconds each**. Actual clip count and timeline length must be recalculated if transition overlaps, trims, or alternate clip durations are used.
+Default target: **60 minutes, 16:9, 360 nominal clips at 10 seconds each**. Actual clip count and timeline length must be recalculated for trims, overlaps, or alternate durations.
 
 ## Files
 - `SYSTEM_PROMPT.md`: operator contract and production stages.
-- `config/WORKFLOW.json`: machine-readable defaults.
+- `config/WORKFLOW.json`: machine-readable defaults and verified VideoExpress route.
 - `prompts/MACRO_PROMPT_GUIDE.md`: macro realism, movement and transition language.
 - `prompts/prompt_book.template.json`: structured prompt and scene template.
 - `state/WORKFLOW_STATE.example.json`: checkpoint template.
-- `TRANSITIONS.md`: transition rules.
-- `BUDGET.md`: credit estimation and approval gates.
+- `TRANSITIONS.md`: transition rules and tested editor handoff.
+- `BUDGET.md`: membership-credit use and retry discipline.
+- `pilots/BLACK_BLOOM_PILOT_01.md`: Black Bloom five-clip runbook.
+- `pilots/BLACK_BLOOM_PREFLIGHT.md`: live-app observations and test results.
+- `pilots/pilot_prompt_book.json`: Black Bloom prompts, chain details and test records.
+- `pilots/pilot_state.example.json`: Black Bloom run checkpoint.
 
 ## Operating instructions
-1. Select macro theme, audience, aesthetic, duration, frame ratio, soundtrack type, and rights.
-2. Develop a six-chapter visual progression, visual bible, scene map, and adjacent-frame plan.
-3. Price the tools with **current account-specific prices**; obtain explicit GO before paid generation.
-4. Generate 3–5 test clips and evaluate continuity before proceeding.
-5. Produce approved clips in confirmed batch sizes. Record tool IDs, output locations, and checkpoints after each batch.
-6. Assemble using verified editor features. Confirm final audio synchronization, runtime, frame size and export.
+1. Lock the theme, audience, visual bible, duration, frame ratio and rights needs.
+2. Build the scene map and adjacent-frame transitions before generation.
+3. Check the existing account's included membership allowance and existing assets. Use the paid membership for authorized project generations; no top-up or upgrade without explicit authorization.
+4. Generate the minimum reference imagery needed. Use VideoExpress **Create Video From Prompt**, Advanced Mode and Manual Video Length = 10 for tested 10-second clips.
+5. Run dependent clips sequentially: add each video to the timeline, seek to its actual end, save the current frame, verify it in My AI Images and select it for the next clip.
+6. Review every output before continuing. If a specific defect occurs, diagnose it, make one targeted edit, and allow at most one retry. Never submit an unchanged prompt again.
+7. Save a checkpoint after each clip with source and output assets, measured duration, transition QA and observed credit use when available.
+8. Assemble and measure the final timeline. Count overlaps, trims, holds, audio and export settings explicitly.
 
-## Automation limitations
-Artistly, VideoExpress and optional CloneVoice are *planned tools*, not proven integrations. A browser-capable agent with authenticated sessions and application permissions is required to automate GUI operations. This repository by itself is **not an executable video generator**. Do not invent supported features, completed actions, export URLs, pricing, or render results.
+## Verified route and limits
+The VideoExpress prompt workflow was observed producing a 10-second 1920×1080 clip when Manual Video Length was set to 10. The editor accepted the clip; Save Current Frame stored an endpoint in My AI Images, and the endpoint was selectable as the next prompt-video reference. The First Frame, Last Frame route produced 7 seconds in the tested 10-second request. Review the opening continuity on each chained render; frame selection does not guarantee exact adherence in generated motion.
+
+Artistly and VideoExpress are not connected to a repository API by these files. A browser-capable agent with an authenticated session is needed for UI actions. Keep credentials out of this repository. Do not claim an automated generation happened unless the live product confirms it.
 
 ## Attribution and reuse
-The source repository is credited above for workflow inspiration. Review the source project's applicable license before distributing copied original text or code. These new macro documents are independently authored and do not purport to grant rights to any inherited material.
+The source repository is credited above for workflow inspiration. Review the source project's applicable license before distributing copied original text or code. These macro documents are independently authored and do not purport to grant rights to inherited material.
