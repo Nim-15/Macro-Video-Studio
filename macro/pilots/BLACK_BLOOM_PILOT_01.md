@@ -1,6 +1,6 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** workflow preflight verified; two BB-001 tests and one chained BB-002 test render completed. BB-001 produced a verified 10-second clip and saved endpoint. BB-002 rendered at 10 seconds from the BB-001 saved endpoint; its new endpoint was saved and selected in the next prompt form. BB-002 needs visual review because the orchid is not clearly recognizable. BB-003–BB-005 have not been generated.
+**Status:** workflow preflight verified; BB-001, BB-002 and BB-003 chained renders completed at 10 seconds each. All three clips are on the timeline in sequence at 00:00–00:30, with saved endpoints confirmed in My AI Images. BB-002’s orchid is indistinct, and BB-003’s ivory petal forms remain soft focus; review before propagating to BB-004.
 
 ## Goal
 Produce five connected 10-second macro clips with intentional entry and exit transitions on a pure black background. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct cuts; timeline dissolves reduce runtime by their overlap.
@@ -16,7 +16,7 @@ For each dependent clip, use the preceding clip's saved last frame as the next i
 5. State in the image/video prompt that the selected image is the exact opening composition. Describe only plausible motion and the planned exit state. Do not ask the model to morph one flower species into another.
 6. Generate one clip. When complete, play it and verify actual runtime, opening continuity, visual stability and exit frame. Add it to the timeline, save its endpoint, and continue to the next scene.
 
-The editor frame-save and library-reuse steps were verified for BB-001. BB-002 then rendered from the selected BB-001 endpoint, was added directly after BB-001 on the timeline, and its `BB-002_ORCHID_LAST_FRAME_10S.png` endpoint was saved via **Save Last Frame** and selected in a new prompt form. The clip held the violet droplet palette, but the orchid did not become clearly recognizable; the ending also resolves to a soft lilac droplet. For BB-003, explicitly request a recognizable ivory rose petal edge and a controlled focus pull from this saved droplet reference. Review before spending the next generation.
+The editor frame-save and library-reuse steps were verified across BB-001→BB-002→BB-003. BB-003 (`d7b72c78-d88c-4d95-9aa1-b83ab6e98392`, 3.17 MB) rendered at 10 seconds / 1920×1080 from `BB-002_ORCHID_LAST_FRAME_10S.png`, then was added contiguously at 00:20–00:30. The opening matches the violet droplet. Later frames show cream layered petal forms, but remain soft focus and the rose identity is only partly legible. `BB-003_ROSE_LAST_FRAME_10S.png` (545.04 KB) was saved and confirmed in My AI Images. Do not propagate this soft endpoint as a quality reference without review; consider an editor-side match cut into BB-004’s amber crescent.
 
 ## Generation discipline
 - Use assets already present in My AI Images/My AI Videos before creating replacements.
