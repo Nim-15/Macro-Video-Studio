@@ -217,3 +217,14 @@ Prompt-only scale constraints have failed repeatedly. Do not spend another gener
 To avoid another prompt-only render, duplicated the v3.6 seam project as **Black Bloom - BB-005 Resize Test v3.7** and tested VideoExpress's timeline **Resize and move** control on BB-005 v3.6. Reducing the full clip image to about 80% creates black margins and makes the flower smaller in the frame. However, at 00:17 the dahlia remains cut at the source video's own left/bottom boundary; scaling the frame cannot restore petals the render already cropped. Saved this diagnostic copy separately. It is not a composition fix and is not promoted to the approved project.
 
 **Next:** keep the accepted v3.2 chain as the production baseline and finish its four-boundary QA. For a later BB-005 visual iteration, change the source/shot strategy materially before generating again; do not repeat prompt-only scale limits or use Resize and move as a crop repair.
+
+
+## BB-006 macro perspective test
+
+**Test asset:** VideoExpress video ID `57fbb173-ac1c-4d5e-9d9c-d2422464883f`; 10 seconds, 1920×1080, 9.35 MB. Source: BB-005 final-frame reference. This is a separate test in **Black Bloom - BB-005 Resize Test v3.7**, not part of the approved v3.2 chain.
+
+**Observed review:** The opening is a tight burgundy dahlia macro. A pale, out-of-focus patch at the far-left edge is visible at 0:00 and has receded by about 0:01. Mid-clip, the lateral orbit and amber-to-ruby strip-light sweep give a new perspective and a warmer, more sculptural petal view; flower identity and petal structure remain coherent. Around 0:09 the dahlia is sharp and stable, with a close crop that is acceptable for macro photography.
+
+**Status:** Visual direction is promising, but this is not yet an approved BB-005→BB-006 seam. The transition-out and matched opening of BB-007 have not been checked together. No endpoint was saved from this render and it was not added to the approved timeline.
+
+**Prompt lesson:** Do not universally demand fixed subject scale, full-flower visibility, generous frame margins, no zoom, or no crop. Keep anatomical identity and physical texture coherent while allowing deliberate macro push-ins, angle changes, parallax, frame-edge crops and partial subject exits. Use light, focus, and motion cues to bridge such framings. Review the requested transition-in and transition-out on the actual video rather than treating prompt wording as proof.
