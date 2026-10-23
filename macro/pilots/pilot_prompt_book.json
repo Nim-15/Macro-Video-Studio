@@ -100,13 +100,13 @@
       "scene_number": 4,
       "transition_in": "Warm rim-light sweep over the rose endpoint, amber glint and focus reveal a separate calendula.",
       "duration_seconds": 10,
-      "status": "v32_render_pending_visual_review",
+      "status": "v32_reviewed_endpoint_saved_bb005_ready",
       "image_asset_uri": "BB-003_ROSE_LAST_FRAME_10S_V3_2",
       "video_asset_uri": "ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7",
       "actual_credits": null,
-      "qa_observation": "Submitted BB-004 using the verified BB-003 saved endpoint, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s; automatic prompt enhancement off. Job ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7. Pending render and opening/endpoint QA.",
-      "saved_last_frame": null,
-      "video_size_mb": 2.36,
+      "qa_observation": "10s, 1920x1080, 5.56 MB. Opening retains BB-003's violet petal, droplet, and ivory flower with slight warm glow already present. At 0:10 a distinct orange radial-petal flower is visible behind, but it overlaps/blends visually with the ivory rose and the droplet darkens significantly. Violet iris remains recognizable. Saved endpoint BB-004_CALENDULA_LAST_FRAME_10S_V3_2 in My AI Images; usable as BB-005 source with composition/overlap limitations recorded.",
+      "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S_V3_2",
+      "video_size_mb": 5.56,
       "retry_count": 3,
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
@@ -337,10 +337,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-004",
-    "next_action": "Wait for BB-004 job ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7 in My AI Videos. Review opening against BB-003_ROSE_LAST_FRAME_10S_V3_2 and inspect 0:10 for stable sharp detail before saving its endpoint or preparing BB-005.",
+    "current_scene": "BB-005",
+    "next_action": "Use BB-004_CALENDULA_LAST_FRAME_10S_V3_2 as BB-005's exact source. Keep the orange calendula distinct, preserve the existing violet petal/droplet composition, and reveal a separate burgundy dahlia only by restrained light/shadow; avoid overlapping flower silhouettes and keep the droplet bright enough to read.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-004 job ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7 submitted from verified BB-003 endpoint; pending render."
+    "browser_status": "BB-004 job ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7 completed, reviewed at opening and 0:10, 10s 1920x1080, 5.56 MB. Saved endpoint BB-004_CALENDULA_LAST_FRAME_10S_V3_2; BB-005 ready using this actual source."
   }
 }
