@@ -1,6 +1,6 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
-  "run_status": "five_clip_chain_complete_full_sequence_review_pending",
+  "run_status": "v2_transition_rules_accepted_prompt_pass_prepared_rerender_pending",
   "membership_policy": {
     "existing_membership_generations_authorized": true,
     "credit_topups_or_upgrades_authorized": false,
@@ -188,5 +188,13 @@
   },
   "estimated_credits": null,
   "actual_credits": null,
-  "next_safe_action": "Review the complete 00:00–00:50 timeline at clip boundaries, score the five scenes against the pilot rubric, then decide whether to export this 50-second pilot. Before designing the 60-minute workflow, address BB-002 orchid legibility and BB-004's dark-bud exit if the review rejects either transition."
+  "next_safe_action": "Use the revised v2 prompt book for a targeted corrected render pass, one dependent clip at a time. Select the weakest transition or subject-stability defect first, verify its in-clip opening and closing effects, and continue the chain from the newly saved endpoint. Do not describe existing v1 renders as v2-compliant.",
+  "user_corrections_v2": {
+    "entry_and_exit_effects": "Visible optical/light transition at the beginning and end of each clip, inside the clip duration.",
+    "subject_stability": "Preserve principal subject identity and geometry; no deformation or extreme transformation.",
+    "gradual_changes": "Subject/color changes may happen within a clip using creative, realistic macro light/optical effects; reveal a separate subject rather than morphing.",
+    "inter_clip_edit": "Directly adjacent clips; no added editor transition duration.",
+    "prompts_revised": true,
+    "existing_renders_regenerated": false
+  }
 }
