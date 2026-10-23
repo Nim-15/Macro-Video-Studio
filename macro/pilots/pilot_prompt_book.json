@@ -1,11 +1,11 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "prompts_ready_workflow_tested",
+  "status": "two_clip_chain_rendered_review_required",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
-  "reference_frame_handoff": "verified_manual_save_current_frame_then_use_from_library; next-render-adherence-pending",
+  "reference_frame_handoff": "verified_manual_save_last_frame_from_media_library_then_use_from_library; BB-002 endpoint selected in next prompt form",
   "default_negative": "No text, watermark, logos, CGI plastic texture, anatomical deformity, unrealistic morph, jumping composition, subject duplication, erratic camera motion, floating water, flicker.",
   "scenes": [
     {
@@ -35,10 +35,12 @@
       "scene_number": 2,
       "transition_in": "Preserve prior clip exit geometry via true frame-reference if supported; otherwise editor-side match cut/dissolve.",
       "duration_seconds": 10,
-      "status": "not_generated",
-      "image_asset_uri": null,
-      "video_asset_uri": null,
-      "actual_credits": null
+      "status": "test_render_quality_review_required",
+      "image_asset_uri": "BB-001_IRIS_LAST_FRAME_10S.png",
+      "video_asset_uri": "48ed3783-e307-4e84-9e49-cd22ef2a6ed6",
+      "actual_credits": null,
+      "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S.png",
+      "qa_observation": "Violet droplet palette and opening composition carry through; orchid identity unclear because most of the clip is soft-focus macro."
     },
     {
       "id": "BB-003",
@@ -99,7 +101,7 @@
       "reuse preceding clip's saved last frame from My AI Images as next image reference",
       "replace sample image and video prompts before each render",
       "generate one dependent clip at a time",
-      "add finished clip to timeline, seek to end, save current frame, verify it in My AI Images"
+      "add finished clip to timeline for sequence review; save endpoint with the media-library Save Last Frame action; verify it in My AI Images"
     ],
     "generation_saving_rules": [
       "reuse existing assets before creating new ones",
@@ -125,6 +127,18 @@
       "observed_seconds": 10,
       "resolution": "1920x1080",
       "result": "verified in player; added to timeline; saved end frame BB-001_IRIS_LAST_FRAME_10S.png; saved frame selected as reference in next prompt form; no second chained render"
+    },
+    {
+      "scene_id": "BB-002",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reference BB-001 saved endpoint",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "video_asset_id": "48ed3783-e307-4e84-9e49-cd22ef2a6ed6",
+      "file_size_mb": 5.36,
+      "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S.png",
+      "saved_last_frame_size_kb": 831.19,
+      "result": "Timeline confirms 10 seconds and clip is contiguous with BB-001. Violet dew-drop opening carries through. Body is very soft lilac macro; orchid identity unclear. Endpoint is available and selected as next prompt reference; quality review pending."
     }
   ]
 }
