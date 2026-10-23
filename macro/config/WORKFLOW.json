@@ -56,7 +56,8 @@
         "require a visible in-clip transition-out in the closing seconds",
         "lock the principal subject identity and geometry; forbid morphing, deforming, stretching, melting, duplication or species replacement",
         "allow gradual subject or color changes only through a plausible light, focus, refraction, bokeh or shadow reveal",
-        "place adjacent clips directly together with no editor-side transition or added duration"
+        "place adjacent clips directly together with no editor-side transition or added duration",
+        "vary macro perspective, angles, scale, focus and photographic lighting; permit motivated tight crops and partial exits from frame"
       ],
       "transition_timing_10s": {
         "entry": "0-2s",
@@ -92,11 +93,12 @@
       "lighting direction",
       "focal plane",
       "palette logic",
-      "camera pace"
+      "subject identity and anatomy (not fixed screen position, scale, or full-frame visibility)"
     ],
-    "subject_or_color_change": "gradual physically plausible optical or lighting reveal of a separate subject; never morph or deform the principal subject",
+    "subject_or_color_change": "gradual physically plausible optical or lighting reveal of a separate subject; never morph or deform the principal subject; camera framing may crop or let a subject leave frame without morphing",
     "last_frame_reuse_requires_verification": true,
-    "next_clip_adherence": "use the saved actual endpoint and pair its light/shape/color cue with the next in-clip entry; generated adherence must be reviewed"
+    "next_clip_adherence": "use the saved actual endpoint and pair its light/shape/color cue with the next in-clip entry; generated adherence must be reviewed",
+    "visual_framing_policy": "Creative extreme-macro framing is encouraged: vary angle, perspective, scale, focus, raking/rim light and camera path; intentional tight crops, partial visibility and subjects leaving frame are allowed when anatomy remains coherent and the transition is motivated."
   },
   "quality_control": {
     "check_photorealism": true,
