@@ -178,3 +178,13 @@ The boundary was checked at 00:09 and 00:10. The calendula with the dim outgoing
 The v3.4 seam test passes, but the dahlia is cropped at the left and upper edges during its reveal. Submitted one targeted BB-005 correction from the actual `BB-004_CALENDULA_LAST_FRAME_10S_V3_4` endpoint (VideoExpress job `8203cf15-829b-443d-865d-02be9b21650e`). The revised prompt locks the camera and limits the complete dahlia to 35% of frame width and 55% of frame height, with at least 8% margins from the top, left, and bottom. It requires the complete bloom and center to be readable by 6 seconds and held within frame through 10 seconds.
 
 Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Video Only, Manual Video Length = 10 seconds, prompt enhancement off. The render is pending in My AI Videos. Review 00:06, 00:09, and 00:10 before saving its endpoint or adding it to a separate seam test. Do not alter the accepted v3.2 timeline.
+
+
+## BB-005 v3.5 framing test result
+
+BB-005 v3.5 (job `8203cf15-829b-443d-865d-02be9b21650e`) completed at 10 seconds, 1920×1080, 5.83 MB. The opening matches the BB-004 v3.4 endpoint. At 00:06, 00:09, and 00:10 the burgundy dahlia remains oversized and cropped at the frame edges despite explicit size limits and margins. Rejected: no endpoint saved and no timeline insertion. Revise the shot approach before another attempt.
+
+
+## BB-005 v3.6 wide-macro test submitted
+
+To address the repeated crop, the scene plan now uses a wide macro composition from a moderate working distance, with the camera stationary and the complete dahlia kept small in frame (about 20–25% of frame width) against broad black negative space. Submitted one render from the same `BB-004_CALENDULA_LAST_FRAME_10S_V3_4` endpoint (job `8561d318-fbed-415f-b224-fe158aaed617`). Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Video Only, Manual Video Length = 10 seconds, prompt enhancement off. The render is pending in My AI Videos; inspect the opening, 00:06, 00:09, and 00:10 before accepting it. Keep it out of the timeline if the flower is still cropped, and preserve the approved v3.2 project.
