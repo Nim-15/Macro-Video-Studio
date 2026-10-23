@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "three_clip_chain_with_BB004_candidates_rejected_for_visual_continuity",
+  "status": "four_clip_chain_with_BB004_provisional",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -70,27 +70,30 @@
       "image": "Extreme realistic macro studio photograph of the thin curled edge of a single golden-orange calendula petal on seamless black; a delicate soft crescent-shaped pale-amber rim highlight occupies right third corresponding to previous rose glow; petal cuticle grooves and natural pollen grains, directional professional studio rim light upper left, muted honey-amber tonality with no oversaturation, organic dimensional texture and natural shallow depth of field, 16:9.",
       "video": "10-second slow studio macro shot. Begin with a softly defocused crescent rim at right third; focus pull in 0–3s reveals the calendula's curved amber edge, not a literal rose-to-calendula metamorphosis. 3–8s: patient diagonal camera drift downward-left, exposing realistic pollen flecks and fine petal grooves in light, otherwise static specimen. 8–10s: move focus toward a single warm circular pollen glint lower center and let surrounding petal sink into the black. Exit: one soft amber bokeh point lower center against black. No synthetic shimmer, excessive particles or morphing.",
       "entry": "Soft ivory/amber crescent at right third, matched cut or optical dissolve to calendula rim.",
-      "exit": "Small warm amber bokeh circle at lower center, black elsewhere.",
+      "exit": "Small, dark orange-green flower bud centered low against black; use actual saved endpoint for BB-005 opening continuity.",
       "transition_out": "Color and geometry match into a dew highlight on next flower.",
       "scene_number": 4,
       "transition_in": "Preserve prior clip exit geometry via true frame-reference if supported; otherwise editor-side match cut/dissolve.",
       "duration_seconds": 10,
-      "status": "two_candidates_rejected_for_visual_continuity",
+      "status": "provisional_test_render_on_timeline",
       "image_asset_uri": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
-      "video_asset_uri": null,
+      "video_asset_uri": "9725abe9-0160-4b10-a305-770a5f2ef303",
       "actual_credits": null,
-      "qa_observation": "Two 10-second 1920x1080 candidates (3.88 MB and 3.35 MB). The 3.88 MB preview overlaid rose and calendula-like orange tissue around 00:06. The 3.35 MB preview retained the rose longer, then began an orange edge, but did not clearly resolve a calendula in the observed preview. Neither is approved, added to timeline, or used as endpoint."
+      "qa_observation": "10s, 1920x1080; 2.36 MB. Revised prompt used a full-black cut to isolate the orange flower. At 00:02–00:06 a single orange flower with clear radial grooves is visible without rose overlap. At 00:10 it closes to a small dark orange-green bud, not the planned amber bokeh. Added at 00:30–00:40; endpoint save confirmed in My AI Images; project saved.",
+      "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S",
+      "video_size_mb": 2.36,
+      "retry_count": 3
     },
     {
       "id": "BB-005",
       "subject": "Dalia rojo borgoña, cierre contemplativo",
       "image": "Photorealistic extreme macro studio image of dark burgundy dahlia petal folds with subtle velvet-like botanical surface, delicate deep wine micro-ridges, one believable golden-amber dew specular spot lower center to align preceding frame, isolated on seamless pure black, upper-left soft rim with subdued copper bounce, advanced macro optics and narrow natural depth of field, elegant cinematic realistic texture, 16:9 no text.",
       "video": "10-second macro cinematic shot. Start on soft warm amber bokeh point lower center matching preceding shot; 0–3s focus glides into one small droplet resting along deep burgundy dahlia fold. 3–7s slowly track backward a few millimeters to reveal overlapping velvet-dark petal planes, maintaining realistic geometry and studio light directions. 7–10s gently dim only the backlight while holding a final stable composed burgundy petal edge; finish with a black-dominant elegant fade suitable for chapter transition. No abrupt fade, no unrealistic stretching or duplicate petals.",
-      "entry": "Golden amber light point lower center gently resolves to droplet on burgundy petal.",
+      "entry": "Small dark orange-green bud low center against black, gradually revealing a burgundy petal.",
       "exit": "Stable burgundy dark petal silhouette receding to complete black, ready for chapter fade.",
       "transition_out": "Gradual controlled fade to black for end of pilot or next chapter.",
       "scene_number": 5,
-      "transition_in": "Preserve prior clip exit geometry via true frame-reference if supported; otherwise editor-side match cut/dissolve.",
+      "transition_in": "Open from the actual BB-004_CALENDULA_LAST_FRAME_10S endpoint; match the low-center scale and black negative space, then resolve into a separate burgundy dahlia petal without morphing.",
       "duration_seconds": 10,
       "status": "not_generated",
       "image_asset_uri": null,
@@ -189,6 +192,18 @@
         "bfb5d5dc-4cee-4d49-9e08-ed54bcac3b0d"
       ],
       "result": "Two candidates found in My AI Videos. UI did not expose exact job-to-file mapping. Both rejected for visual continuity; neither added to timeline. Revise prompt before a single targeted generation."
+    },
+    {
+      "scene_id": "BB-004-R1",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reference BB-003 saved endpoint",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "video_asset_id": "9725abe9-0160-4b10-a305-770a5f2ef303",
+      "file_size_mb": 2.36,
+      "source_image": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
+      "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S",
+      "result": "One isolated orange flower appears after a black cut; radial grooves clear by 00:06. Exit becomes a small dark orange-green bud at 00:10. Added to timeline 00:30–00:40 and endpoint saved to My AI Images."
     }
   ]
 }
