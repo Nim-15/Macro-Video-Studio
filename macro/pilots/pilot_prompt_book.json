@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v35_bb005_framing_retry_render_pending",
+  "status": "bb_v36_bb005_wide_macro_render_pending",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -408,14 +408,28 @@
       "scene_id": "BB-005-V3.5-TRIAL",
       "route": "VideoExpress Create Video From Prompt; BB-004 saved endpoint; Photorealistic (Cinematic); Advanced Mode; Video Only; Manual Video Length=10s",
       "requested_seconds": 10,
-      "observed_seconds": null,
-      "resolution": null,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
       "source_image": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
       "generation_job_ids": [
         "8203cf15-829b-443d-865d-02be9b21650e"
       ],
       "prompt_version": "v3.5_dahlia_full_silhouette_scale_lock",
-      "result": "Submitted one targeted framing revision. Locked camera; dahlia capped at 35% frame width and 55% frame height, with at least 8% margins from top, left, and bottom; full bloom silhouette required by 6 seconds and at the endpoint. Prompt enhancement disabled. Render is pending in My AI Videos."
+      "result": "Completed as a 10-second, 1920x1080 render (5.83 MB). The calendula opening matches the supplied BB-004 endpoint. At 0:06, 0:09, and 0:10 the burgundy dahlia remains oversized and cropped at the frame edges despite explicit scale/margin limits. Rejected; no endpoint saved and not added to any timeline. Revise the scene strategy before another attempt.",
+      "file_size_mb": 5.83
+    },
+    {
+      "scene_id": "BB-005-V3.6-TRIAL",
+      "route": "VideoExpress Create Video From Prompt; BB-004 saved endpoint; Photorealistic (Cinematic); Advanced Mode; Video Only; Manual Video Length=10s",
+      "requested_seconds": 10,
+      "observed_seconds": null,
+      "resolution": null,
+      "source_image": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
+      "generation_job_ids": [
+        "8561d318-fbed-415f-b224-fe158aaed617"
+      ],
+      "prompt_version": "v3.6_wide_macro_full_bloom_reframing",
+      "result": "Submitted one re-planned attempt after v3.5 failed. This shot plan changes to a wide macro composition at moderate working distance, a stationary camera, and a small complete dahlia occupying about 20–25% of frame width with generous black margins. Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Video Only, 10 seconds, prompt enhancement off. Pending in My AI Videos."
     }
   ],
   "transition_policy_v2": {
@@ -441,10 +455,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB_005_V3_5_RENDER_PENDING",
-    "next_action": "Wait for VideoExpress job 8203cf15-829b-443d-865d-02be9b21650e in My AI Videos; review the 10-second output at 00:06, 00:09, and 00:10 for full dahlia margins, sharpness, and the calendula handoff. Save its endpoint only if the frame is usable. Keep the test project separate and preserve the approved v3.2 timeline.",
+    "current_scene": "BB_005_V3_6_RENDER_PENDING",
+    "next_action": "Wait for VideoExpress job 8561d318-fbed-415f-b224-fe158aaed617. Review its opening and 00:06/00:09/00:10 for a complete dahlia bloom at small scale, stable exposure, and a clean endpoint. Do not save or add it if the subject remains cropped. Keep the approved v3.2 timeline untouched.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-004→BB-005 v3.4 seam test passes and is saved as a separate project. A single targeted BB-005 v3.5 framing correction was submitted from BB-004_CALENDULA_LAST_FRAME_10S_V3_4, job 8203cf15-829b-443d-865d-02be9b21650e. It uses 16:9, 10 seconds, Photorealistic (Cinematic), Advanced Mode, Video Only, prompt enhancement off; outcome pending in My AI Videos. The v3.2 project remains separate and unchanged."
+    "browser_status": "The separate v3.4 seam test passes at the BB-004→BB-005 boundary and remains saved separately from v3.2. BB-005 v3.5 completed (job 8203cf15-829b-443d-865d-02be9b21650e; 10s, 1920x1080, 5.83 MB) but still crops the oversized dahlia at 0:06/0:09/0:10; rejected, no endpoint saved, not added to a timeline. One re-planned v3.6 wide-macro render from BB-004_CALENDULA_LAST_FRAME_10S_V3_4 is pending (job 8561d318-fbed-415f-b224-fe158aaed617)."
   }
 }
