@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v36_seam_passed_candidate_pending_selection",
+  "status": "bb_v37_fixed_scale_render_pending",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -448,6 +448,20 @@
         "BB-005 v3.6"
       ],
       "result": "Project saved separately from the accepted v3.2 project and the v3.4 test. At 00:09–00:10 the flower composition carries into the v3.6 opening without an obvious abrupt jump. At 00:11 the dahlia becomes dominant, with the outgoing flower composition still visible; continuity is workable, but the dahlia over-scales around mid-clip and the calendula remains visually bright/cropped at the right edge near the endpoint. Seam passes for continuity; BB-005 v3.6 remains a visual candidate only, not an approved replacement."
+    },
+    {
+      "scene_id": "BB-005-V3.7-TRIAL",
+      "route": "VideoExpress Create Video From Prompt; source BB-004 saved endpoint; Photorealistic (Cinematic); Advanced Mode; Video Only; Manual Video Length=10s; prompt enhancement off",
+      "requested_seconds": 10,
+      "observed_seconds": null,
+      "resolution": null,
+      "source_image": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
+      "generation_job_ids": [
+        "f5921870-e16e-489f-a2ab-e5c3468b635a"
+      ],
+      "prompt_version": "v3.7_locked_camera_constant_dahlia_scale",
+      "prompt": "Animate the supplied BB-004 final frame as the exact opening composition: bright amber calendula and dim rose remnant against black. Hold exact composition for 0–2s with locked camera/focus/exposure and subtle amber rim shimmer. From 2–8s, with no camera movement or zoom, reveal a separate burgundy dahlia in open black space at left by localized edge light; let the rose remnant recede and soften the calendula illumination. Keep dahlia a consistent 20–25% of frame width from reveal through end, fully inside generous margins, separated from the calendula by black. At 8–10s settle a restrained burgundy rim light and hold the same small, sharp full-bloom composition. Negative: morphing, species replacement, overlap, growing/oversized dahlia, cropped petals, bright competing calendula, duplication, flicker, exposure pumping, focus breathing, camera movement, flash, full-frame fade, glitter, text, watermark.",
+      "result": "Submitted; currently rendering in My AI Videos. Review opening, mid-clip scale, and final frame before saving an endpoint or assembling another seam test."
     }
   ],
   "transition_policy_v2": {
@@ -473,10 +487,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB_005_V3_6_CANDIDATE_REVIEWED",
-    "next_action": "Use the separate Black Bloom - Seam Test BB-004 to BB-005 v3.6 project to compare candidate framing. If the composition is accepted, explicitly promote BB-005 v3.6 into the next separate pilot iteration; otherwise refine the prompt to keep the dahlia small throughout and reduce the bright cropped calendula at frame right. Preserve the approved v3.2 project.",
+    "current_scene": "BB_005_V3_7_RENDER_PENDING",
+    "next_action": "Wait for VideoExpress job f5921870-e16e-489f-a2ab-e5c3468b635a. Review its opening, 00:06, and 00:09–00:10 for exact BB-004 continuity, constant small dahlia scale, separation from the calendula, and a clean endpoint. Only save its endpoint if it passes; otherwise revise once more. Keep the accepted v3.2 project unchanged.",
     "do_not_generate_before_review": true,
-    "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-005 v3.6 (job 8561d318-fbed-415f-b224-fe158aaed617) completed at 10s, 1920x1080, 7.26 MB. Endpoint saved as BB-005_DAHLIA_LAST_FRAME_10S_V3_6. Wide-macro composition keeps the dahlia mostly/full within frame at the endpoint, but the flower grows oversized and crops around 00:06; the calendula remains bright/cropped at frame right. The 20-second BB-004 v3.4→BB-005 v3.6 seam test is saved separately as Black Bloom - Seam Test BB-004 to BB-005 v3.6; continuity passes without an obvious abrupt jump at 00:09–00:10. Candidate only; the approved v3.2 project remains untouched."
+    "source_image": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
+    "browser_status": "BB-005 v3.6 seam test is saved separately and passes for visual continuity; its crop/scale issue remains. A targeted v3.7 fixed-camera/constant-scale retry was submitted from the same BB-004 endpoint (job f5921870-e16e-489f-a2ab-e5c3468b635a); it is rendering in My AI Videos. The accepted v3.2 project remains untouched."
   }
 }
