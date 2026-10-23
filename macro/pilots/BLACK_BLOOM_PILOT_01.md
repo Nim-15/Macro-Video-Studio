@@ -203,3 +203,10 @@ Next: compare the v3.6 framing candidate in the saved test project. If it is acc
 ## BB-005 v3.7 fixed-scale retry submitted
 
 After the v3.6 seam passed but its dahlia grew oversized mid-clip, submitted one targeted BB-005 retry from the same actual `BB-004_CALENDULA_LAST_FRAME_10S_V3_4` source. VideoExpress job: `f5921870-e16e-489f-a2ab-e5c3468b635a`. The v3.7 prompt holds the camera and lens distance fixed, reveals the burgundy dahlia through localized rim light, dims the outgoing rose and calendula, and requires the complete dahlia to remain at a consistent 20–25% frame width with black separation and generous margins throughout. Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Video Only, Manual Video Length = 10 seconds, prompt enhancement off. The job is rendering in My AI Videos. Review its opening, middle, and endpoint before saving an endpoint or adding it to another test project. The accepted v3.2 chain remains unchanged.
+
+
+## BB-005 v3.7 result — scale prompt rejected
+
+VideoExpress job `f5921870-e16e-489f-a2ab-e5c3468b635a` completed at 10 seconds, 1920×1080, 5.60 MB from `BB-004_CALENDULA_LAST_FRAME_10S_V3_4`. The opening at 00:00 matches the saved source composition. At 00:05 the dahlia and calendula both occupy much of the frame, with the dahlia cut off at the left edge. At 00:09 the dahlia has grown oversized and is cropped at the left and bottom; the calendula remains a large, dim competing subject. The v3.7 scale-lock prompt did not achieve the requested framing. Rejected: no endpoint saved and no timeline insertion.
+
+Prompt-only scale constraints have failed repeatedly. Do not spend another generation on the same approach. Next, change the method first: inspect whether a duplicated clip can be resized/repositioned in VideoExpress without regeneration, or prepare a wider source composition that keeps the dahlia farther from the camera. Test that method separately, leaving **Black Bloom Pilot 01 - v3.2 Chained** and the saved v3.6 seam project untouched.
