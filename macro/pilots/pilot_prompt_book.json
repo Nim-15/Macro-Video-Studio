@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v32_workflow_and_chain_approved_prompt_refinement_next",
+  "status": "bb_v33_targeted_prompt_ready",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -42,23 +42,23 @@
       "id": "BB-002",
       "subject": "Orquídea púrpura, continuidad óptica",
       "image": null,
-      "video": "Premium extreme macro botanical cinematography. Continue from the exact supplied final frame of BB-001: a sharply detailed transparent droplet attached to a deep-violet iris petal against pure black. Preserve the incoming droplet, petal geometry, lighting, and composition. Reveal a distinct purple Phalaenopsis orchid petal behind the iris through a gradual, realistic cool-lilac rim-light sweep; never transform the iris into the orchid. Physically accurate botanical microtexture, controlled studio highlights, realistic 100mm macro lens appearance, natural depth of field. Animate the supplied reference image while preserving all visible subject anatomy.\\nENTRY TRANSITION, 0–2 seconds: Begin on the exact supplied BB-001 last-frame composition. Hold the droplet and iris petal stable. A subtle caustic highlight glides across the droplet while a soft lilac rim begins to reveal the separate orchid petal in the background. Camera and focus remain locked.\\nMAIN ACTION, 2–8 seconds: Keep the iris and attached droplet unchanged and in sharp focus. Gradually brighten the distinct orchid petal behind them until its recognizable Phalaenopsis shape and natural texture are clearly legible by mid-shot. Use only controlled studio-light movement and a gentle shadow reveal; do not move the droplet, rack focus, zoom, or shift the camera. Preserve clean separation between iris and orchid with no overlapping or blended flower anatomy.\\nEXIT TRANSITION, 8–10 seconds: Hold a stable, clearly detailed composition with the violet droplet and iris still visible in the foreground and the separate lilac orchid petal recognizable behind it. Let only the orchid's rim-light edge soften slightly against the black background; keep both flower structures and the droplet sharp enough to identify. Lock camera, focus, and exposure. End on a clean, stable, detailed frame suitable for saving as the starting image of BB-003.\\nNo morphing, no deformation, no species replacement, no moving droplets, no duplicated petals, no focus pull, no zoom, no camera shake, no flicker, no artificial glitter, no whole-frame fade, no text, no watermark.",
+      "video": "Premium extreme macro botanical cinematography, 16:9. Animate the supplied BB-001 final frame as the exact opening composition. The incoming subject is one deep-violet iris petal with its attached transparent droplet on pure black. Preserve the petal anatomy and droplet shape; do not move or deform either. A separate, unmistakable purple Phalaenopsis orchid is revealed by a controlled studio-light transition. The finished composition must feature one clearly readable orchid bloom as the sole dominant subject, with clean black negative space between it and any remaining iris detail. Real botanical proportions, crisp papillae and veins, rich but restrained lilac-violet color, refined macro studio lighting, realistic 100mm macro optics.\n\nENTRY TRANSITION, 0–2 seconds: Match the supplied reference frame exactly. Hold its iris petal, attached droplet, framing, exposure, camera, and focus steady. A small cool-lilac highlight appears only on the far-right black background, introducing a new, separate orchid silhouette. No whole-frame fade, zoom, or focus pull.\n\nMAIN ACTION, 2–8 seconds: Keep the camera, framing, and focus locked. Slowly move a narrow lilac studio key light across the separate orchid at frame right, revealing its recognizable Phalaenopsis lip, broad rounded petals, central column, natural veins, and surface texture. The orchid becomes the clear focal subject and occupies about 45–55% of the frame by 8 seconds. At the same time, let the original iris and droplet recede naturally into shadow at frame left without changing their shape. Maintain a visible strip of pure black between the two flowers. One orchid only; no cluster, no extra petals detached from the bloom, no flower overlap.\n\nEXIT TRANSITION, 8–10 seconds: Finish on a stable, sharply detailed Phalaenopsis bloom at frame right, with its characteristic lip and central column plainly legible. Keep a small violet iris remnant dimly visible at far left only if it remains clearly separate; otherwise it may be concealed by natural shadow. Hold the orchid's color, geometry, focus, exposure, and composition unchanged through 10 seconds. End on a clean image suitable as the next clip's starting frame.\n\nNo morphing or species replacement, no blended flower anatomy, no overlapping blooms, no soft indistinct orchid, no camera movement, no focus breathing, no rack focus, no moving droplet, no duplicate flower, no flicker, no exposure pumping, no artificial glitter, no abrupt flash or full-frame fade, no text, no watermark.",
       "entry": "Exact saved BB-001 droplet and iris petal composition; a lilac rim-light begins to reveal a distinct orchid behind.",
       "exit": "Droplet and iris remain detailed in foreground; separate lilac Phalaenopsis petal stays recognizable behind; localized background light settles.",
       "transition_out": "Lilac orchid rim light settles against black while the iris droplet and distinct orchid anatomy remain sharp and stable.",
       "scene_number": 2,
       "transition_in": "A natural caustic glides over the saved droplet as a cool-lilac rim-light starts to reveal a separate orchid petal.",
       "duration_seconds": 10,
-      "status": "v32_reviewed_endpoint_saved_bb003_ready",
+      "status": "v33_prompt_ready_pending_targeted_render",
       "image_asset_uri": "BB-001_IRIS_LAST_FRAME_10S_V3_2",
       "video_asset_uri": "b9530504-825c-4ac9-ab32-9601322c2194",
       "actual_credits": null,
       "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S_V3_2",
-      "qa_observation": "Generated from BB-001_IRIS_LAST_FRAME_10S_V3_2; 10s, 1920x1080, 6.19 MB. Opening at 0:00 closely matches the reference. At 0:04 the purple orchid-like form remains soft and indistinct; at 0:09 the iris petal, veins, and attached droplet are sharp and stable, but no distinct Phalaenopsis anatomy is legible. Endpoint saved in My AI Images as BB-002_ORCHID_LAST_FRAME_10S_V3_2; usable as a continuity source, though orchid reveal did not meet target.",
+      "qa_observation": "Generated from BB-001_IRIS_LAST_FRAME_10S_V3_2; 10s, 1920x1080, 6.19 MB. Opening at 0:00 closely matches the reference. At 0:04 the purple orchid-like form remains soft and indistinct; at 0:09 the iris petal, veins, and attached droplet are sharp and stable, but no distinct Phalaenopsis anatomy is legible. Endpoint saved in My AI Images as BB-002_ORCHID_LAST_FRAME_10S_V3_2; usable as a continuity source, though orchid reveal did not meet target. Prompt refinement v3.3: targeted only at the failed orchid-readability/composition issue. Adds explicit diagnostic orchid anatomy, frame-right placement, 45–55% subject scale, locked viewpoint, pure-black separation, and a shadow/light handoff from the incoming iris. Not yet rendered; existing v3.2 endpoint remains the chain source.",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v3.2_locked_camera_subjects_sharp_light_reveal",
-      "target_visual": "Photorealistic macro studio image of a purple Phalaenopsis orchid curved petal against deep seamless black, translucent lilac edge, subtle realistic epidermal papillae, single tiny dew glint at left third; upper-left cool soft rim, gentle muted warm underside reflection; high-end 100 mm macro lens optics, shallow depth of field, violet bokeh orb on left third with surrounding contours gradually emerging, no text, no fake geometry, 16:9.",
+      "revised_prompt_version": "v3.3_orchid_legibility_isolated_light_reveal",
+      "target_visual": "One unmistakable Phalaenopsis orchid bloom with visible lip, rounded petals, central column, and crisp natural texture; dominant at frame right against black, separated from any dim outgoing iris remnant by clear negative space.",
       "image_generation_required": false,
       "video_size_mb": 6.19
     },
@@ -337,10 +337,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "CONTENT_PROMPT_REFINEMENT",
-    "next_action": "Preserve the validated five-clip, 10-second chained workflow and direct-adjacency timeline. Improve only the per-scene prompts for stronger subject readability and composition, using each actual preceding saved endpoint. Review each prompt revision and render one targeted change at a time; avoid rerunning unchanged prompts.",
+    "current_scene": "BB-002_V3_3_PROMPT_REVIEW",
+    "next_action": "Review the targeted BB-002 v3.3 prompt for orchid readability. If accepted, render one 10-second test from BB-001_IRIS_LAST_FRAME_10S_V3_2, review the saved final frame before deciding whether to continue; do not alter the validated timeline or rerun any other scene.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "The user confirmed the complete production workflow and all clip joins are correct. The saved Black Bloom Pilot 01 - v3.2 Chained timeline contains five contiguous 10-second clips and reaches 00:00:50. The production process is accepted; remaining work is creative prompt refinement for composition and content. The initial first-pass project remains preserved."
+    "browser_status": "The five-clip v3.2 chain and direct joins are user-approved. BB-002 has the clearest prompt-driven defect (the orchid remains indistinct), so one isolated v3.3 prompt revision has been prepared. It is not rendered yet. The saved v3.2 timeline remains unchanged."
   }
 }
