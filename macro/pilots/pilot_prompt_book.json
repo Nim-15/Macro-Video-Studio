@@ -127,15 +127,15 @@
       "id": "BB-005",
       "subject": "Dalia rojo borgoña, cierre contemplativo",
       "image": null,
-      "video": "Premium extreme macro botanical cinematography. Continue directly from the exact supplied final frame of BB-004. Preserve its amber highlight, calendula geometry and lighting at the opening. A separate deep-burgundy dahlia petal may be revealed behind it with realistic focus and shadow, against the same seamless pure black background. Physically accurate velvety botanical microtexture, rich wine tones, restrained copper bounce, refined studio rim lighting, realistic 100mm macro lens appearance, shallow but natural depth of field.\nENTRY TRANSITION, 0–2 seconds: Begin with the exact composition of the supplied BB-004 last-frame image. Hold its amber detail, flower geometry and lighting stable for a brief moment. Start a very slow, smooth cinematic push-in as the amber highlight refracts gently across the lens.\nMAIN ACTION, 2–8 seconds: Gradually rack focus through the highlight to reveal a distinct burgundy dahlia petal behind the calendula; do not transform the calendula into a dahlia. Keep any visible flower geometry stable and recognizable. Move closer with precise, continuous camera motion while a subdued copper rim light slowly resolves the dahlia's natural ridges.\nEXIT TRANSITION, 8–10 seconds: Finish on a clean burgundy petal detail with a small, controlled copper highlight near the center. Let the surrounding black background deepen subtly through a gradual optical bokeh fade, without obscuring or deforming the petal. Lock the camera and hold the final frame sharply and steadily. End on a stable, detailed frame suitable for saving as the starting image of a future clip.\nNo morphing, no deformation, no species replacement, no duplicated petals, no abrupt fade or flash, no flicker, no camera shake, no artificial glitter, no text, no watermark.",
+      "video": "Premium extreme macro botanical cinematography, 16:9. Animate the supplied BB-004 v3.4 endpoint as the exact opening reference: one golden calendula with a visible central disk and narrow radial petals at frame right; a dim ivory rose remains separate at frame left. Preserve the calendula's petal geometry, color, lighting, and framing during the opening. Introduce one distinct deep-burgundy dahlia with layered, gently curled petals and a visible central disk. Professional realistic 100mm macro photography, rich wine-red botanical texture, restrained copper rim light, pure black negative space.\n\nENTRY TRANSITION, 0–2 seconds: Match the reference exactly. Hold the calendula, rose remnant, framing, focus, and exposure steady. Introduce only a small copper glint in the empty black space at frame left. Do not reveal dahlia petals yet. Do not dim the whole image.\n\nMAIN ACTION, 2–8 seconds: Use a very slow, smooth macro dolly-back of no more than about 10% of frame scale, preserving both flower shapes and creating room for a separate dahlia at frame left. Gradually reveal its layered burgundy petals and central disk with a narrow copper studio light. By 6 seconds the dahlia is clearly recognizable and separate from the calendula. Let the calendula at frame right recede into localized shadow without changing species, merging, or deforming. Keep visible black separation between the two flower silhouettes. Lock focus and exposure; no pan, sudden zoom, rack focus, or whole-frame darkening.\n\nEXIT TRANSITION, 8–10 seconds: Settle on one clearly readable burgundy dahlia with its complete silhouette inside the frame and black margins around it. The calendula may remain only as a dim, separate bloom at far right. Add a restrained copper highlight along a few real dahlia petal ridges, then hold a bright, sharp, stable final image suitable for a future chained clip.\n\nNo morphing, no species replacement, no merged or overlapping flower anatomy, no extra flowers, no crop cutting either bloom, no extreme camera movement, no focus breathing, no flicker, no exposure pumping, no artificial glitter, no abrupt flash, no text, no watermark.",
       "entry": "Actual orange-green BB-004 bud is held stable as amber caustic and focus reveal a separate dahlia.",
       "exit": "Burgundy petal and rim light recede through a gradual in-clip optical bokeh fade to black.",
       "transition_out": "Burgundy rim light softens into optical bokeh and gradual black fade.",
       "scene_number": 5,
       "transition_in": "Amber light sweep over the actual bud endpoint; focus reveals a separate burgundy dahlia.",
       "duration_seconds": 10,
-      "status": "v32_reviewed_endpoint_saved_pilot_complete",
-      "image_asset_uri": "BB-004_CALENDULA_LAST_FRAME_10S_V3_2",
+      "status": "v34_prompt_ready",
+      "image_asset_uri": "BB-004_CALENDULA_LAST_FRAME_10S_V3_4",
       "video_asset_uri": "33e10c28-01e7-4371-95cd-b84a43c04a2d",
       "actual_credits": null,
       "saved_last_frame": "BB-005_DAHLIA_LAST_FRAME_10S_V3_2",
@@ -143,8 +143,8 @@
       "qa_observation": "10s, 1920x1080, 4.77 MB. Opening broadly preserves the violet petal/droplet and orange/cream flower layers from BB-004, with composition drift. At 0:09 the droplet and foreground petal are clearly readable; a small burgundy dahlia-like form appears separately at far right, though several flower layers visually overlap and the white flower remains prominent. No clear subject morphing. Endpoint saved as BB-005_DAHLIA_LAST_FRAME_10S_V3_2 in My AI Images. Final clip reviewed; pilot chain complete in saved endpoints, but not assembled on the timeline.",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v3.2_locked_camera_light_reveal",
-      "target_visual": "Photorealistic extreme macro studio image of dark burgundy dahlia petal folds with subtle velvet-like botanical surface, delicate deep wine micro-ridges, one believable golden-amber dew specular spot lower center to align preceding frame, isolated on seamless pure black, upper-left soft rim with subdued copper bounce, advanced macro optics and narrow natural depth of field, elegant cinematic realistic texture, 16:9 no text.",
+      "revised_prompt_version": "v3.4_dahlia_isolated_from_calendula_endpoint",
+      "target_visual": "One recognizable burgundy dahlia with layered curled petals and visible central disk, fully in frame with margin, separated from a receding golden calendula.",
       "image_generation_required": false
     }
   ],
@@ -398,10 +398,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-004_V3_4_ENDPOINT_SAVED",
-    "next_action": "Prepare BB-005 from BB-004_CALENDULA_LAST_FRAME_10S_V3_4. Use a distinct burgundy dahlia reveal, preserve the calendula as an intact separate incoming subject, avoid silhouette overlap, and keep full flower margins and a stable bright endpoint. Render one 10-second test and review before deciding whether to save its endpoint. Keep the accepted v3.2 timeline unchanged.",
+    "current_scene": "BB-005_V3_4_PROMPT_READY",
+    "next_action": "Render one 10-second BB-005 v3.4 test from BB-004_CALENDULA_LAST_FRAME_10S_V3_4, then check the entry hold, distinct dahlia anatomy, non-overlap, framing margins, exposure, and endpoint. Save the endpoint only if useful. Keep the accepted v3.2 timeline unchanged.",
     "do_not_generate_before_review": false,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-004 v3.3 failed to reveal the calendula; its endpoint was not saved. BB-004 v3.4 resolved to a separate, readable calendula at 0:07–0:10, with the original rose receding separately and a bright, fully framed final image. Saved BB-004_CALENDULA_LAST_FRAME_10S_V3_4. The v3.4 trial is separate from the approved v3.2 timeline. Next, prepare BB-005 from this actual endpoint."
+    "browser_status": "BB-004 v3.3 failed to reveal the calendula; its endpoint was not saved. BB-004 v3.4 resolved to a separate, readable calendula at 0:07–0:10, with the original rose receding separately and a bright, fully framed final image. Saved BB-004_CALENDULA_LAST_FRAME_10S_V3_4. The v3.4 trial is separate from the approved v3.2 timeline. Next, prepare BB-005 from this actual endpoint. BB-005 prompt v3.4 is now prepared from the actual BB-004 v3.4 calendula endpoint; it places a distinct burgundy dahlia at frame left and lets the calendula recede separately."
   }
 }
