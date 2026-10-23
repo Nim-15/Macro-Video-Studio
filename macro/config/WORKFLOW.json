@@ -1,6 +1,6 @@
 {
   "workflow_name": "Macro Video Studio",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "source_attribution": {
     "repository": "https://github.com/ai-playbooks/nursery_rhyme_music_video",
     "relationship": "independent macro adaptation"
@@ -42,7 +42,7 @@
     "generation_policy": {
       "use_existing_membership_credits": true,
       "require_explicit_authorization_for_credit_purchase_or_upgrade": true,
-      "generate_missing_stills_only": true,
+      "generate_missing_stills_only": false,
       "video_route": "VideoExpress Create Video From Prompt",
       "advanced_mode": true,
       "manual_video_length_seconds": 10,
@@ -60,9 +60,10 @@
       ],
       "transition_timing_10s": {
         "entry": "0-2s",
-        "stable_macro_or_gradual_reveal": "2-7s",
-        "exit": "7-10s"
-      }
+        "main_action_and_gradual_reveal": "2-8s",
+        "exit": "8-10s"
+      },
+      "master_still_policy": "Generate one approved still for the first clip only. Subsequent clips use the immediately preceding clip's verified saved last frame as their starting reference; create a replacement still only when that endpoint is missing or unusable."
     }
   },
   "transitions": {
@@ -74,10 +75,10 @@
     ],
     "stable_observation_window_seconds": [
       2,
-      7
+      8
     ],
     "clip_exit_window_seconds": [
-      7,
+      8,
       10
     ],
     "inter_clip_edit": "direct_adjacent_placement_no_added_transition",
