@@ -148,3 +148,10 @@ Prepared a BB-004 v3.3 prompt from that actual rose endpoint. It delays the cale
 BB-004 job `9d42dc21-fee7-476a-98b8-e35081294df2` completed as a 10-second 1920×1080 render (4.47 MB) from `BB-003_ROSE_LAST_FRAME_10S_V3_3`. Visual review at 0:04 and 0:08 showed the incoming ivory rose still dominating; no recognizable calendula appeared. At 0:10 the image was very dark and the rose remained the visible subject. The delayed entry, new-subject reveal, and exposure hold all missed their targets. No endpoint was saved, and the trial was not added to the accepted v3.2 timeline.
 
 The BB-004 v3.4 prompt now calls for a complete, unmistakable calendula by mid-clip, with its circular disk and narrow radial petals visible, a fixed camera and exposure, full framing margins, and the incoming rose kept anatomically separate as it recedes into localized shadow. The final frame must keep the calendula bright and stable. The next run should use the same v3.3 rose endpoint and save an endpoint only if it is useful for BB-005. The approved v3.2 timeline and its joins remain unchanged.
+
+
+## BB-004 v3.4 endpoint review
+
+BB-004 v3.4 job `6d834f3d-2154-4d75-b3ba-78d0463ec529` completed at 10 seconds, 1920×1080, 4.04 MB, from `BB-003_ROSE_LAST_FRAME_10S_V3_3`. The first seconds retain the centered rose. By 0:03 a separate orange radial flower begins to appear; at 0:07–0:10 its central disk and ray petals are clearly legible as a calendula, while the rose recedes as a distinct dim bloom. A restrained dolly-back creates separation without visible flower morphing. The light dips during the exit transition, then the final frame settles bright with the full calendula silhouette inside the frame and narrow margins. Saved the actual endpoint as `BB-004_CALENDULA_LAST_FRAME_10S_V3_4` in My AI Images.
+
+This v3.4 render remains a separate test and was not added to the user-approved v3.2 timeline. BB-004 v3.3 failed and no endpoint was saved from it. Next, prepare BB-005 from the saved v3.4 calendula endpoint; reveal a distinct burgundy dahlia while preserving flower separation, full margins, and a stable bright endpoint.
