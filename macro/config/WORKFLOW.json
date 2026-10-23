@@ -21,7 +21,15 @@
     "video": "VideoExpress",
     "voice": "CloneVoice (optional)",
     "soundtrack": "licensed ambient music",
-    "capabilities_verified": true
+    "capabilities_verified": true,
+    "capability_verification_scope": "Interactive browser tests only; not API integration or proof of deterministic frame adherence.",
+    "verified_workflow_features": [
+      "Create Video From Prompt",
+      "Advanced Mode with manual 10-second length",
+      "1920x1080 landscape output",
+      "Save Last Frame from Media Library",
+      "select saved endpoint from My AI Images for next prompt"
+    ]
   },
   "automation": {
     "mode": "sequential_browser_assisted_generation",
@@ -39,13 +47,15 @@
       "advanced_mode": true,
       "manual_video_length_seconds": 10,
       "chain_via_editor_saved_last_frame": true,
-      "preflight_gate": "verify reference, prompt fields, aspect ratio, image type and duration before each render",
-      "retry_rule": "one targeted retry after diagnosing a specific defect; never repeat an unchanged prompt"
+      "preflight_gate": "verify selected reference thumbnail against source endpoint, replace sample text in both prompt fields, and verify aspect ratio, image type and duration before each render",
+      "retry_rule": "one targeted retry after diagnosing a specific defect; never repeat an unchanged prompt",
+      "save_endpoint_action": "Media Library > My Videos > clip context menu > Save Last Frame > verify My AI Images; avoids seeking the timeline boundary",
+      "batch_size": 1
     }
   },
   "transitions": {
     "preferred": "editor_saved_last_frame_reference",
-    "last_frame_reuse_requires_verification": false,
+    "last_frame_reuse_requires_verification": true,
     "preserve": [
       "lighting direction",
       "focal plane",
@@ -53,7 +63,7 @@
       "subject geometry",
       "camera motion"
     ],
-    "next_clip_adherence": "verify visually on each render"
+    "next_clip_adherence": "BB-002 retained violet droplet palette but orchid identity was unclear; visually inspect start and endpoint on each render"
   },
   "quality_control": {
     "check_photorealism": true,
