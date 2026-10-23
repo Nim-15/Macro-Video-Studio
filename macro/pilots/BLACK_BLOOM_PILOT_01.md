@@ -1,6 +1,6 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v3 prompt pass now follows the user's copy-ready structure and one-image chaining rule. Two BB-001 v3 candidates were generated and reviewed; both fail endpoint-focus QA.
+**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v3 prompt pass now follows the user's copy-ready structure and one-image chaining rule. Two BB-001 v3 candidates were generated and reviewed; both failed endpoint-focus QA. A single targeted v3.1 retry is now pending.
 
 ## Goal
 
@@ -70,4 +70,4 @@ The Artistly master still generated for BB-001 is visible in Artistly Personal D
 
 Two v3 candidates are present in **My AI Videos** (6.17 MB and 4.73 MB; the UI did not map their IDs to file sizes). The 6.17 MB candidate was reviewed first; its 0:10 frame was too soft/defocused to use. The 4.73 MB candidate was then played in VideoExpress; it also progressively pushed into the droplet but ended with the droplet/petal visibly soft and lacking sufficient detail for a chain endpoint. Neither candidate was added to the timeline, and no endpoint was saved. The duplicate submission resulted in two paid renders; no further render has been submitted.
 
-**Resume:** revise BB-001's exit action to keep the camera static or use only a very small push-in, lock focus on the droplet through 8–10 seconds, and reserve optical softness for the background/highlight only. Render at most one targeted retry after the revised prompt is reviewed; then inspect the final frame before proceeding to BB-002.
+**Resume:** one v3.1 retry has been submitted with minimal push-in, locked droplet focus, and a background-only exit light. Job `61e23ee8-24a8-446b-adf2-74cb15ee8c7c` is pending in My AI Videos. Inspect its 0:10 frame before proceeding to BB-002.
