@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v33_bb002_readability_test_passed_composition_refinement_next",
+  "status": "bb_v33_prompts_bb002_bb003_targeted_tests",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -70,27 +70,27 @@
       "id": "BB-003",
       "subject": "Rosa blanca nacarada, microgotas",
       "image": null,
-      "video": "Premium extreme macro botanical cinematography. Continue directly from the exact supplied final frame of BB-002. Preserve the incoming lilac highlight, petal geometry and black studio lighting at the opening. Reveal a separate ivory rose petal through realistic focus and reflected light, without changing the orchid into a rose. Physically accurate layered petal tissue, delicate condensation, refined studio rim lighting, natural pearl-cream tones, realistic 100mm macro lens appearance, shallow but natural depth of field.\nENTRY TRANSITION, 0–2 seconds: Begin with the exact composition of the supplied BB-002 last-frame image. Hold its highlight, subject positions and lighting stable for a brief moment. Start a very slow, smooth lateral camera drift as the lilac glint refracts softly across the frame.\nMAIN ACTION, 2–8 seconds: Gradually shift focus from the existing glint to a distinct ivory rose petal appearing behind it. The rose becomes clearly recognizable while retaining stable, natural petal geometry. Let one pearl highlight travel along a real petal edge; keep the orchid unchanged wherever visible. Use precise continuous camera motion and restrained macro focus.\nEXIT TRANSITION, 8–10 seconds: Finish on a creamy crescent highlight at the right third, produced by the rose petal's real edge light and soft optical defocus. Keep the rose intact, stop camera movement and hold the crescent cleanly against black. End on a stable, detailed frame suitable for saving as the starting image of BB-004.\nNo morphing, no deformation, no overlapping flower anatomy, no moving droplets, no duplicated petals, no flicker, no camera shake, no artificial glitter, no text, no watermark.",
+      "video": "Premium extreme macro botanical cinematography, 16:9. Animate the supplied BB-002 v3.3 endpoint as the exact opening composition: a distinct lilac Phalaenopsis orchid in close view against pure black. Preserve its incoming petal anatomy and lighting for the opening; no species replacement. Create one separate ivory-white rose as a deliberate light-and-shadow reveal. Final composition: one clearly readable rose bloom, recognizable by its layered spiral of broad ivory petals, centered slightly left, occupying about half the frame with all petal edges inside the image and visible black margins. Fine natural petal veins and soft cream texture, pearl-white color with restrained lilac reflections, professional macro studio rim light, realistic 100mm macro photograph.\n\nENTRY TRANSITION, 0–2 seconds: Match the exact BB-002 supplied image and hold the orchid geometry, focus, exposure, and framing stable. A soft ivory rim highlight begins on the far-left black area, separate from the orchid. No camera move or whole-frame fade.\n\nMAIN ACTION, 2–8 seconds: Keep camera position, framing, and focus fixed. Move a narrow softbox reflection from left to right across the black field, revealing a separate ivory rose bloom at frame left. The rose's layered spiral, rounded petal edges, and central curl become crisp and unmistakable. As its ivory light grows, the original orchid at frame right gradually recedes into natural shadow without deforming. Preserve a clean band of black between the two flowers; do not overlap or blend their petals. Do not push in, pan, rack focus, or crop either subject. Maintain balanced exposure and realistic botanical detail.\n\nEXIT TRANSITION, 8–10 seconds: Hold on the single ivory rose as the dominant subject, fully within frame with clear black space around its outer silhouette. Keep its layered petals sharp, stable, and undistorted. The violet orchid may remain only as a dim, separate edge detail at frame right if it does not compete with the rose. Finish with a subtle pearl highlight settling along one real petal edge, then hold the composition still through 10 seconds for use as BB-004's starting image.\n\nNo morphing, no species replacement, no blended flower anatomy, no overlapping blooms, no extra flowers, no close crop cutting the rose outline, no camera movement, no zoom, no focus breathing, no rack focus, no flicker, no exposure pumping, no abrupt flash, no artificial glitter, no text, no watermark.",
       "entry": "Tiny glint upper-center transitions into dew reflection on pale rose; same light direction.",
       "exit": "Blurred creamy crescent on right third, largely black frame.",
       "transition_out": "Pearl highlight becomes a creamy crescent at right third.",
       "scene_number": 3,
       "transition_in": "Soft droplet refraction and rack focus reveal a distinct ivory rose.",
       "duration_seconds": 10,
-      "status": "v32_endpoint_saved_bb004_ready_with_composition_deviation",
+      "status": "v33_prompt_ready_pending_render",
       "image_asset_uri": "BB-002_ORCHID_LAST_FRAME_10S_V3_2",
       "video_asset_uri": "59555434-96aa-4a5d-84f7-df39577de405",
       "actual_credits": null,
       "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S_V3_2",
       "video_size_mb": 4.27,
-      "qa_observation": "10s, 1920x1080, 4.27 MB. Opened in VideoExpress and checked at start and 0:10. Start preserves the violet iris petal and attached droplet but reinterprets the low-angle composition rather than exactly matching BB-002's saved endpoint. An ivory flower is already visible behind the iris; by 0:10 the droplet and violet petal remain detailed, with the cream flower still distinct but soft. No clear species morphing. Endpoint saved in My AI Images as BB-003_ROSE_LAST_FRAME_10S_V3_2. Usable for continuity, with composition drift recorded.",
+      "qa_observation": "10s, 1920x1080, 4.27 MB. Opened in VideoExpress and checked at start and 0:10. Start preserves the violet iris petal and attached droplet but reinterprets the low-angle composition rather than exactly matching BB-002's saved endpoint. An ivory flower is already visible behind the iris; by 0:10 the droplet and violet petal remain detailed, with the cream flower still distinct but soft. No clear species morphing. Endpoint saved in My AI Images as BB-003_ROSE_LAST_FRAME_10S_V3_2. Usable for continuity, with composition drift recorded. Prompt v3.3 prepared from the actual BB-002_ORCHID_LAST_FRAME_10S_V3_3 source. Explicit full rose silhouette, black margins, locked framing/focus, no push-in or overlapping layers. Pending one targeted test render.",
       "retry_video_asset_uri": null,
       "retry_count": 1,
       "retry_status": "reviewed_and_selected_on_timeline",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v3.2_locked_camera_light_reveal",
-      "target_visual": "High-end extreme macro photography of pristine ivory rose petal edge with botanically realistic layered tissue and miniature condensation beads, pure black seamless background, a tiny specular highlight at upper center matching preceding isolated lilac light, natural pearl-cream and pale violet cool reflections, precise angled studio edge lighting from upper left, cinematic shallow focus, 16:9, no lettering.",
+      "revised_prompt_version": "v3.3_ivory_rose_full_readability_shadow_handoff",
+      "target_visual": "A single clearly readable ivory rose bloom centered slightly left, about half-frame with full silhouette and black margins; layered spiral petals and central curl in sharp detail, incoming orchid recedes into shadow without overlap.",
       "image_generation_required": false
     },
     {
@@ -354,10 +354,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-003_V3_3_PROMPT_REFINEMENT",
-    "next_action": "Use the actual BB-002_ORCHID_LAST_FRAME_10S_V3_3 endpoint as the prospective BB-003 start reference. Refine BB-003's prompt to transition from a distinct purple Phalaenopsis to an ivory rose through a motivated light/shadow reveal, with fixed camera distance, full readable flower anatomy, explicit framing margins, and no overlapping flower layers. Keep the accepted v3.2 timeline unchanged. Review the prompt before rendering another 10-second test.",
+    "current_scene": "BB-003_V3_3_TARGETED_TEST",
+    "next_action": "Render BB-003 once from BB-002_ORCHID_LAST_FRAME_10S_V3_3 using the v3.3 full-silhouette ivory-rose prompt. Review opening match, rose legibility, crop/margins, and saved endpoint. Keep the accepted v3.2 timeline untouched.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "User-approved v3.2 five-clip chain remains accepted and unchanged. A separate BB-002 v3.3 10-second readability test completed successfully: the orchid is recognizable; its final frame is closer/cropped at the top than desired. Saved its endpoint as BB-002_ORCHID_LAST_FRAME_10S_V3_3. Next refine BB-003 composition around this actual endpoint before any further render."
+    "browser_status": "BB-002 v3.3 test rendered and endpoint saved. BB-003 v3.3 prompt is prepared to improve full flower readability and composition from that actual endpoint. The existing accepted v3.2 timeline remains unmodified."
   }
 }
