@@ -3,7 +3,7 @@
 This directory contains an original macro-film production workflow inspired by the orchestration patterns of [ai-playbooks/nursery_rhyme_music_video](https://github.com/ai-playbooks/nursery_rhyme_music_video). The root-level legacy files are retained for reference; **use this directory for macro production**.
 
 ## Purpose
-Plan and coordinate photorealistic macro films with configurable subjects, chapter structure, image prompts, nominal 10-second video prompts with in-clip entry/exit effects, stable subjects, gradual realistic reveals, generation checkpoints, membership-credit controls, and final assembly QA.
+Plan and coordinate photorealistic macro films with configurable subjects, chapter structure, image prompts, nominal 10-second video prompts with in-clip entry/exit effects, anatomically coherent subjects with creative macro framing, gradual realistic reveals, generation checkpoints, membership-credit controls, and final assembly QA.
 
 Default target: **60 minutes, 16:9, 360 nominal clips at 10 seconds each**. Actual clip count and timeline length must be recalculated for trims, overlaps, or alternate durations.
 
@@ -41,3 +41,7 @@ The source repository is credited above for workflow inspiration. Review the sou
 
 ## Transition standard v2
 Every clip begins with a visible optical/light transition-in and ends with a visible optical/light transition-out, both inside its requested duration. Lock the principal subject's identity and geometry; allow subject or color changes only as gradual, realistic optical/light reveals of a distinct subject. Place clips directly adjacent with no editor-side cuts, dissolves, or added transition time. See `TRANSITIONS.md` and `prompts/MACRO_PROMPT_GUIDE.md`.
+
+## Creative macro framing update
+
+Production prompts should vary angle, perspective, scale, focus and professional macro lighting. Tight crops, partial views and subjects leaving frame are valid when they serve the camera move; preserve subject identity and anatomy in what remains visible. Do not apply fixed-scale or full-frame-margin constraints by default. See the updated prompt guide and transition policy.
