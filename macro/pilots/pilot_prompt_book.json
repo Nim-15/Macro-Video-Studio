@@ -125,13 +125,13 @@
       "scene_number": 5,
       "transition_in": "Amber light sweep over the actual bud endpoint; focus reveals a separate burgundy dahlia.",
       "duration_seconds": 10,
-      "status": "v32_render_pending_visual_review",
+      "status": "v32_reviewed_endpoint_saved_pilot_complete",
       "image_asset_uri": "BB-004_CALENDULA_LAST_FRAME_10S_V3_2",
       "video_asset_uri": "33e10c28-01e7-4371-95cd-b84a43c04a2d",
       "actual_credits": null,
-      "saved_last_frame": null,
-      "video_size_mb": 1.39,
-      "qa_observation": "Submitted BB-005 from the verified BB-004 v3.2 endpoint, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s; automatic prompt enhancement off. Job 33e10c28-01e7-4371-95cd-b84a43c04a2d. Pending render and endpoint review.",
+      "saved_last_frame": "BB-005_DAHLIA_LAST_FRAME_10S_V3_2",
+      "video_size_mb": 4.77,
+      "qa_observation": "10s, 1920x1080, 4.77 MB. Opening broadly preserves the violet petal/droplet and orange/cream flower layers from BB-004, with composition drift. At 0:09 the droplet and foreground petal are clearly readable; a small burgundy dahlia-like form appears separately at far right, though several flower layers visually overlap and the white flower remains prominent. No clear subject morphing. Endpoint saved as BB-005_DAHLIA_LAST_FRAME_10S_V3_2 in My AI Images. Final clip reviewed; pilot chain complete in saved endpoints, but not assembled on the timeline.",
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
       "revised_prompt_version": "v3.2_locked_camera_light_reveal",
@@ -337,10 +337,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-005",
-    "next_action": "Wait for BB-005 job 33e10c28-01e7-4371-95cd-b84a43c04a2d in My AI Videos; review opening against BB-004 saved endpoint and final frame for stable, distinct subjects and readable droplet, then save endpoint and decide whether to assemble the v3.2 five-clip chain contiguously on the timeline.",
+    "current_scene": "ASSEMBLY",
+    "next_action": "Create or duplicate a separate v3.2 timeline without overwriting the existing first-pass project. Add the five approved v3.2 render assets contiguously in BB-001 to BB-005 order, with no editor-side transitions, then review the full 50-second sequence at each boundary and save.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-005 job 33e10c28-01e7-4371-95cd-b84a43c04a2d submitted from verified BB-004 endpoint; pending render."
+    "browser_status": "BB-005 job 33e10c28-01e7-4371-95cd-b84a43c04a2d completed and was checked at opening/0:09, 10s 1920x1080, 4.77 MB; endpoint BB-005_DAHLIA_LAST_FRAME_10S_V3_2 saved. All five v3.2 endpoint frames now exist. Timeline assembly remains pending."
   }
 }
