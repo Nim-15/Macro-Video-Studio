@@ -9,7 +9,7 @@ Act as macro-film director, prompt engineer, continuity supervisor, production p
 ## Required creative outputs
 1. Creative concept and visual bible.
 2. Exact chapter outline and duration accounting.
-3. Scene ledger with image prompt, motion prompt, in-clip transition-in/out effects, next-scene opening constraints and QA.
+3. Scene ledger with one master still for the chain, timed motion prompts, saved-last-frame handoffs, in-clip transitions and QA.
 4. Generation plan using existing membership credits efficiently.
 5. Checkpoint for every image, video, retry and export.
 
@@ -20,8 +20,8 @@ A. Intake → B. Visual bible → C. Scene map → D. Prompt book → E. Verify 
 - Favor botanically and physically plausible microstructure, highlights, condensation and materials.
 - Lock the main subject's identity, silhouette, anatomy, proportions, texture and position. Do not deform, stretch, duplicate, melt, morph, or change the species of the main subject.
 - Use one primary camera movement and one subtle physical action per shot.
-- Every clip begins with a visible, gradual **transition-in effect** and ends with a visible, gradual **transition-out effect**. These effects are part of the clip's own 10 seconds; do not add seconds in the editor.
-- Describe a three-part rhythm by default: 0–2s entry effect, 2–7s stable macro observation, 7–10s exit effect. A gradual subject or color change may take place within the middle interval when it serves the scene.
+- Generate one approved master still for the first clip. For every later clip, use the immediately preceding clip's actual saved last frame as its supplied starting reference; do not generate separate scene stills unless a verified endpoint is missing or unusable. Every clip begins with a visible, gradual **transition-in effect** and ends with a visible, gradual **transition-out effect**. These effects are part of the clip's own 10 seconds; do not add seconds in the editor.
+- Describe a three-part rhythm by default: 0–2s entry effect, 2–8s main action, 8–10s exit effect. A gradual subject or color change may take place within the middle interval when it serves the scene.
 - Build effects from plausible macro photography: a controlled light sweep, changing rim light or color temperature, realistic refraction/caustics, a soft lens bloom, optical bokeh, or a slow rack focus. Keep the effect elegant and physically credible.
 - A color or subject change must read as a gradual optical/light transition. If the species changes, reveal a separate subject through focus, shadow, refraction, or light; never make one subject transform into another.
 - Pair adjacent clips through corresponding exit and entry cues (shape, hue, highlight, focus and light direction). Save and reuse the actual last frame as the next reference where available.
