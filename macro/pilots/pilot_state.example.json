@@ -1,6 +1,6 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
-  "run_status": "two_clip_chain_test_complete_review_required",
+  "run_status": "three_clip_chain_rendered_review_required",
   "membership_policy": {
     "existing_membership_generations_authorized": true,
     "credit_topups_or_upgrades_authorized": false,
@@ -15,7 +15,7 @@
     "add_to_timeline": true,
     "save_current_frame_at_clip_end": true,
     "next_clip_reference": "My AI Images → Use from Library",
-    "next_generated_clip_adherence": "BB-002 rendered from BB-001 saved frame; violet-droplet composition carried through but orchid identity remained unclear; BB-002 saved endpoint was selectable in the next prompt form",
+    "next_generated_clip_adherence": "BB-003 opened on the saved BB-002 droplet reference; body revealed cream petal forms but stayed soft-focus; BB-003 endpoint saved and confirmed in My AI Images",
     "save_last_frame_from_media_library": true
   },
   "test_runs": [
@@ -54,6 +54,20 @@
       "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S.png",
       "saved_last_frame_size_kb": 831.19,
       "result": "Added immediately after BB-001 on timeline. Opening retained violet petal/dew-drop composition; body became a very soft lilac macro with no clearly recognizable orchid. Save Last Frame succeeded; saved endpoint was selected in the next prompt form. Quality review required before BB-003."
+    },
+    {
+      "scene_id": "BB-003",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reused BB-002 saved frame",
+      "requested_seconds": 10,
+      "measured_seconds": 10,
+      "resolution": "1920x1080",
+      "video_asset_id": "d7b72c78-d88c-4d95-9aa1-b83ab6e98392",
+      "video_file": "10-second single continuous photorealistic macro shot. Start....mp4",
+      "video_size_mb": 3.17,
+      "source_image": "BB-002_ORCHID_LAST_FRAME_10S.png",
+      "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S.png",
+      "saved_last_frame_size_kb": 545.04,
+      "result": "Added contiguously after BB-002 at 00:20–00:30. Opening matches the violet droplet reference. Mid/late frames show cream petal forms, but focus is soft and the rose identity is only partially legible. Endpoint saved and verified in My AI Images; not approved as a quality target for propagating more detail."
     }
   ],
   "production_scene_status": {
@@ -84,14 +98,21 @@
       ]
     },
     "BB-003": {
-      "status": "not_generated",
-      "start_image": null,
-      "video": null,
-      "saved_last_frame": null,
-      "measured_runtime_seconds": null,
+      "status": "test_render_quality_review_required",
+      "start_image": "BB-002_ORCHID_LAST_FRAME_10S.png",
+      "video": "d7b72c78-d88c-4d95-9aa1-b83ab6e98392",
+      "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S.png",
+      "measured_runtime_seconds": 10,
       "visible_credits_used": null,
       "retry_count": 0,
-      "qa_score": null
+      "qa_score": null,
+      "observations": [
+        "1920x1080; 3.17 MB",
+        "opening matches the saved violet droplet endpoint and continues contiguously at 00:20",
+        "cream ivory layered petal forms appear by about 00:28 but remain soft focus; rose identity is only partly legible",
+        "Save Last Frame succeeded; endpoint appears in My AI Images at 545.04 KB",
+        "timeline boundary at 00:30 displays black after the clip ends"
+      ]
     },
     "BB-004": {
       "status": "not_generated",
@@ -116,5 +137,5 @@
   },
   "estimated_credits": null,
   "actual_credits": null,
-  "next_safe_action": "Review BB-002 render and its saved endpoint; if accepted, generate BB-003 from BB-002_ORCHID_LAST_FRAME_10S.png with a more explicit in-focus ivory rose edge, one clip only"
+  "next_safe_action": "Review BB-003 quality and endpoint. Before generating BB-004, revise the shot plan or prompt so its amber calendula crescent is reached through an explicit editor-side match cut if needed; do not propagate the soft-focus BB-003 endpoint as a quality reference without review."
 }
