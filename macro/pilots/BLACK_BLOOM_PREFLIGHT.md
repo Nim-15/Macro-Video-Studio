@@ -51,7 +51,7 @@ The following prompts were entered in the VideoExpress form and used for the BB-
 ## Execution gates
 
 1. Use Create Video From Prompt with Advanced Mode and Manual Video Length = 10 for each scene. Add each completed clip to the timeline, move the playhead to its end, save the current frame to My AI Images, then select that image as the next clip's starting reference. Preserve each transition card's subject, light, composition and movement cues.
-2. Before the remaining three Black Bloom scenes, check the current credit/allowance balance and estimate the run cost. The interface did not display a numeric charge for either test.
+2. Before the remaining four Black Bloom scenes, check the current credit/allowance balance and estimate the run cost. The interface did not display a numeric charge for either test.
 3. Generate one scene at a time and verify duration, saved endpoint and visual continuity before continuing. The five-clip pilot should use this chained route; the 7-second First Frame, Last Frame result is unsuitable for the 10-second target.
 
 ## Public product references
@@ -72,7 +72,7 @@ The following prompts were entered in the VideoExpress form and used for the BB-
 - VideoExpress did not show a numeric credit charge or price in the generation interface, so the consumed amount cannot be reported from the observed UI.
 
 
-## BB-002 workflow verification · 2026-10-23
+## BB-001 prompt-mode workflow verification · 2026-10-23
 
 - In Create Video From Prompt, Advanced Mode exposed “Manual Video Length, sec”; it was enabled and set to **10**. The image type was “Photorealistic (Cinematic)” and aspect ratio 16:9.
 - Generated one photorealistic violet iris image as the base and one 10-second macro video (video ID: `e988ac91-3941-4a2c-9a7d-8e8aa94b521a`). The player visibly reported **0:10 / 0:10**.
