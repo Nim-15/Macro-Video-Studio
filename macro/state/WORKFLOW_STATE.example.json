@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "example-not-an-actual-run",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "phase": "not_started",
+  "approval": {
+    "go": false,
+    "approved_budget": null,
+    "currency": null
+  },
+  "tool_capabilities": {
+    "artistly_verified": false,
+    "videoexpress_verified": false,
+    "last_frame_reference_verified": false,
+    "editor_export_verified": false
+  },
+  "pilot": {
+    "target_clips": 5,
+    "generated": [],
+    "approved": false
+  },
+  "generation": {
+    "desired_batch_size": 5,
+    "actual_verified_batch_size": null,
+    "completed_scene_ids": [],
+    "failed_scene_ids": [],
+    "submitted_jobs": []
+  },
+  "audio": {
+    "source": null,
+    "license_confirmed": false,
+    "duration_seconds": null
+  },
+  "assembly": {
+    "started": false,
+    "timeline_duration_seconds": null,
+    "export_job_id": null,
+    "output_uri": null,
+    "export_verified": false
+  },
+  "spending": {
+    "estimated": null,
+    "observed": null,
+    "retries": 0
+  },
+  "last_completed_action": null,
+  "next_safe_action": "Complete project intake",
+  "errors": [],
+  "updated_at": null
+}
