@@ -1,0 +1,68 @@
+{
+  "workflow_name": "Macro Video Studio",
+  "version": "1.0.0",
+  "source_attribution": {
+    "repository": "https://github.com/ai-playbooks/nursery_rhyme_music_video",
+    "relationship": "independent macro adaptation"
+  },
+  "project": {
+    "theme": "user_defined",
+    "duration_seconds": 3600,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080",
+    "nominal_clip_seconds": 10,
+    "nominal_clip_count": 360,
+    "chapters": 6,
+    "visual_style": "photorealistic cinematic extreme macro",
+    "mood": "contemplative"
+  },
+  "tools": {
+    "image": "Artistly",
+    "video": "VideoExpress",
+    "voice": "CloneVoice (optional)",
+    "soundtrack": "licensed ambient music",
+    "capabilities_verified": false
+  },
+  "automation": {
+    "mode": "conditional browser agent",
+    "require_go_before_paid_generation": true,
+    "proof_of_concept_clips": 5,
+    "desired_batch_size": 5,
+    "batch_size_requires_verification": true,
+    "max_retries_per_scene": 1,
+    "checkpoint_after_each_batch": true
+  },
+  "transitions": {
+    "preferred": "matched_frame",
+    "last_frame_reuse_requires_verification": true,
+    "preserve": [
+      "lighting direction",
+      "focal plane",
+      "palette",
+      "subject geometry",
+      "camera motion"
+    ]
+  },
+  "quality_control": {
+    "check_photorealism": true,
+    "check_continuity": true,
+    "check_audio_rights": true,
+    "check_timeline_duration": true,
+    "check_export": true
+  },
+  "stages": [
+    "intake",
+    "visual_bible",
+    "scene_plan",
+    "prompt_book",
+    "budget_approval",
+    "pilot_generation",
+    "pilot_review",
+    "batch_generation",
+    "assembly",
+    "audio",
+    "qa",
+    "export",
+    "delivery"
+  ]
+}
