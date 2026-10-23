@@ -1,11 +1,11 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "prompts_ready_not_generated",
+  "status": "prompts_ready_workflow_tested",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
-  "reference_frame_handoff": "conditional_on_video_tool_capability",
+  "reference_frame_handoff": "verified_manual_save_current_frame_then_use_from_library; next-render-adherence-pending",
   "default_negative": "No text, watermark, logos, CGI plastic texture, anatomical deformity, unrealistic morph, jumping composition, subject duplication, erratic camera motion, floating water, flicker.",
   "scenes": [
     {
@@ -87,6 +87,44 @@
       "image_asset_uri": null,
       "video_asset_uri": null,
       "actual_credits": null
+    }
+  ],
+  "production_generation_strategy": {
+    "primary_video_route": "VideoExpress Create Video From Prompt",
+    "aspect_ratio": "16:9",
+    "image_type": "Photorealistic (Cinematic)",
+    "manual_video_length_seconds": 10,
+    "advanced_mode": true,
+    "sequence": [
+      "reuse preceding clip's saved last frame from My AI Images as next image reference",
+      "replace sample image and video prompts before each render",
+      "generate one dependent clip at a time",
+      "add finished clip to timeline, seek to end, save current frame, verify it in My AI Images"
+    ],
+    "generation_saving_rules": [
+      "reuse existing assets before creating new ones",
+      "avoid separate still generation for each scene unless the chain cannot plausibly reach the scene",
+      "never rerun an unchanged prompt",
+      "allow at most one targeted retry after recording and correcting a specific defect"
+    ],
+    "membership_policy": "Use current included membership credits; do not buy top-ups, upgrades, or another subscription without explicit user authorization."
+  },
+  "test_runs": [
+    {
+      "scene_id": "BB-001",
+      "route": "First Frame, Last Frame",
+      "requested_seconds": 10,
+      "observed_seconds": 7,
+      "resolution": "1920x1080",
+      "result": "endpoint images accepted; duration missed target and final image was approximate"
+    },
+    {
+      "scene_id": "BB-001",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "result": "verified in player; added to timeline; saved end frame BB-001_IRIS_LAST_FRAME_10S.png; saved frame selected as reference in next prompt form; no second chained render"
     }
   ]
 }
