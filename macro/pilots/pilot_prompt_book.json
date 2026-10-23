@@ -1,7 +1,7 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
   "title": "Black Bloom | Estudio piloto macro",
-  "status": "bb_v33_prompts_bb002_bb003_targeted_tests",
+  "status": "bb_v33_bb002_bb003_tests_complete_bb004_prompt_ready",
   "duration_seconds": 50,
   "aspect_ratio": "16:9",
   "clip_duration_seconds": 10,
@@ -77,7 +77,7 @@
       "scene_number": 3,
       "transition_in": "Soft droplet refraction and rack focus reveal a distinct ivory rose.",
       "duration_seconds": 10,
-      "status": "v33_prompt_ready_pending_render",
+      "status": "v33_trial_rendered_endpoint_saved_not_yet_on_approved_timeline",
       "image_asset_uri": "BB-002_ORCHID_LAST_FRAME_10S_V3_2",
       "video_asset_uri": "59555434-96aa-4a5d-84f7-df39577de405",
       "actual_credits": null,
@@ -91,31 +91,35 @@
       "transition_out_type": "in_clip_optical_or_light_effect",
       "revised_prompt_version": "v3.3_ivory_rose_full_readability_shadow_handoff",
       "target_visual": "A single clearly readable ivory rose bloom centered slightly left, about half-frame with full silhouette and black margins; layered spiral petals and central curl in sharp detail, incoming orchid recedes into shadow without overlap.",
-      "image_generation_required": false
+      "image_generation_required": false,
+      "v33_trial_video_job_id": "3bc10d9e-a4c5-4a26-b3c4-cf4115b66380",
+      "v33_trial_video_asset": "Premium extreme macro botanical cinematography, 16:9. Animat...mp4",
+      "v33_saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S_V3_3",
+      "v33_trial_qa": "One 10-second 1920x1080 render, 4.25 MB. Starts from BB-002_ORCHID_LAST_FRAME_10S_V3_3. Result transitions to a clear, centered ivory rose with layered spiral and central curl; flower is distinguishable and the new subject is no longer blended with other flower layers. However, some outer petals touch/crop at the top/bottom frame margins, and the rose is already visible at the opening rather than appearing only after the 2-second entry hold. Endpoint saved as BB-003_ROSE_LAST_FRAME_10S_V3_3. Separate test only; not added to the approved v3.2 timeline."
     },
     {
       "id": "BB-004",
       "subject": "Caléndula ámbar, borde luminoso",
       "image": null,
-      "video": "Premium extreme macro botanical cinematography. Continue directly from the exact supplied final frame of BB-003. Preserve its ivory crescent highlight and any visible rose petal geometry at the opening. Reveal a separate single golden-orange calendula through a gradual warm rim-light sweep and realistic rack focus, against the same seamless pure black studio background. Fine natural petal grooves and pollen detail, controlled amber color, refined studio lighting, realistic 100mm macro lens appearance, shallow but natural depth of field.\nENTRY TRANSITION, 0–2 seconds: Begin with the exact composition of the supplied BB-003 last-frame image. Hold its crescent, subject positions and lighting stable for a brief moment. Start a very slow, smooth push-in while the existing highlight warms gradually from ivory to pale amber.\nMAIN ACTION, 2–8 seconds: Let a realistic defocused pollen glint pass across the lens and use it to rack focus onto a distinct calendula emerging from shadow. Do not turn or deform the rose into the calendula. Keep the calendula clearly recognizable with stable radial grooves and natural petal geometry; maintain coherent light direction and precise camera motion.\nEXIT TRANSITION, 8–10 seconds: Finish on one small, natural amber highlight near the lower center, with the calendula remaining intact and softly visible around it. Gradually soften the background through optical focus, without a black cut. Lock the camera and hold a clean, stable, detailed frame suitable for saving as the starting image of BB-005.\nNo morphing, no deformation, no species replacement, no duplicated petals, no black cut, no abrupt flash, no flicker, no camera shake, no artificial glitter, no text, no watermark.",
+      "video": "Premium extreme macro botanical cinematography, 16:9. Animate the supplied BB-003 v3.3 endpoint as the exact opening composition: one clearly recognizable ivory rose in close view against pure black. Preserve its layered petal anatomy and opening light for the first moment; do not transform the rose into another species. Reveal one distinct golden-orange calendula by a realistic directional studio-light transition. Final composition: a single botanically recognizable calendula bloom, its narrow ray petals radiating around a visible central disk, at frame right, occupying about half the frame, fully inside the image with visible black margins. Crisp natural petal grooves and pollen detail, restrained amber-orange color, refined macro studio rim light, realistic 100mm macro photograph.\n\nENTRY TRANSITION, 0–2 seconds: Match the supplied rose endpoint exactly. Hold the rose geometry, framing, focus, and exposure stable. A restrained amber rim glint appears in the black area at frame right; no calendula anatomy becomes visible before 2 seconds. No whole-frame fade or camera movement.\n\nMAIN ACTION, 2–8 seconds: Lock camera position, distance, framing, and focus. Gradually sweep a narrow warm softbox beam across frame right to reveal the separate calendula. Make the ray-petal silhouette and central disk sharp and unmistakable by mid-shot. At the same time, let the ivory rose at frame left recede into natural shadow without changing its petal geometry. Maintain a broad strip of pure black between the rose and calendula; never overlap, merge, or blend their anatomy. Keep both colors true and exposure controlled. No zoom, pan, rack focus, or reframing.\n\nEXIT TRANSITION, 8–10 seconds: Hold on the single calendula as the dominant, fully readable subject at frame right; keep its radial flower head within frame with black margins around the petals. The rose may remain only as a dim, distinct edge detail at far left if it does not compete. Settle one natural amber highlight along a calendula petal edge and hold a stable final frame for BB-005.\n\nNo morphing, no species replacement, no overlapping blooms, no blended anatomy, no extra flowers, no crop cutting the calendula silhouette, no camera movement, no zoom, no focus breathing, no rack focus, no flicker, no exposure pumping, no artificial glitter, no abrupt flash, no text, no watermark.",
       "entry": "Warm ivory crescent receives a gradual amber rim-light sweep and optical glint; distinct calendula revealed by rack focus, no cut.",
       "exit": "Small orange-green bud remains visible while the light gradually softens; no full-black cut.",
       "transition_out": "Amber reflection softens to a low-center orange-green bud silhouette.",
       "scene_number": 4,
       "transition_in": "Warm rim-light sweep over the rose endpoint, amber glint and focus reveal a separate calendula.",
       "duration_seconds": 10,
-      "status": "v32_reviewed_endpoint_saved_bb005_ready",
+      "status": "v33_prompt_ready_pending_render",
       "image_asset_uri": "BB-003_ROSE_LAST_FRAME_10S_V3_2",
       "video_asset_uri": "ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7",
       "actual_credits": null,
-      "qa_observation": "10s, 1920x1080, 5.56 MB. Opening retains BB-003's violet petal, droplet, and ivory flower with slight warm glow already present. At 0:10 a distinct orange radial-petal flower is visible behind, but it overlaps/blends visually with the ivory rose and the droplet darkens significantly. Violet iris remains recognizable. Saved endpoint BB-004_CALENDULA_LAST_FRAME_10S_V3_2 in My AI Images; usable as BB-005 source with composition/overlap limitations recorded.",
+      "qa_observation": "10s, 1920x1080, 5.56 MB. Opening retains BB-003's violet petal, droplet, and ivory flower with slight warm glow already present. At 0:10 a distinct orange radial-petal flower is visible behind, but it overlaps/blends visually with the ivory rose and the droplet darkens significantly. Violet iris remains recognizable. Saved endpoint BB-004_CALENDULA_LAST_FRAME_10S_V3_2 in My AI Images; usable as BB-005 source with composition/overlap limitations recorded. Prompt v3.3 prepared from BB-003_ROSE_LAST_FRAME_10S_V3_3 after the v3.3 rose trial. It targets distinct calendula anatomy, delayed reveal after the entry hold, locked framing, full margins, and non-overlap. Pending targeted render.",
       "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S_V3_2",
       "video_size_mb": 5.56,
       "retry_count": 3,
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v3.2_locked_camera_light_reveal",
-      "target_visual": "Extreme realistic macro studio photograph of the thin curled edge of a single golden-orange calendula petal on seamless black; a delicate soft crescent-shaped pale-amber rim highlight occupies right third corresponding to previous rose glow; petal cuticle grooves and natural pollen grains, directional professional studio rim light upper left, muted honey-amber tonality with no oversaturation, organic dimensional texture and natural shallow depth of field, 16:9.",
+      "revised_prompt_version": "v3.3_calendula_isolated_reveal_from_rose_v33",
+      "target_visual": "One distinct golden-orange calendula with readable radial ray petals and central disk at frame right, about half-frame with full silhouette and black margins; incoming ivory rose recedes separately into shadow.",
       "image_generation_required": false
     },
     {
@@ -329,6 +333,19 @@
       ],
       "prompt_version": "v3.3_orchid_legibility_isolated_light_reveal",
       "result": "Completed, 5.89 MB. Orchid is clearly legible and separate from the incoming iris. Final composition zooms closer than requested and crops the upper orchid petal. Endpoint BB-002_ORCHID_LAST_FRAME_10S_V3_3 saved. Kept as a separate test; not added to the accepted v3.2 timeline."
+    },
+    {
+      "scene_id": "BB-003-V3.3-TRIAL",
+      "route": "VideoExpress Create Video From Prompt; source BB-002_ORCHID_LAST_FRAME_10S_V3_3; prompt v3.3 full-silhouette ivory rose reveal",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "source_image": "BB-002_ORCHID_LAST_FRAME_10S_V3_3",
+      "generation_job_ids": [
+        "3bc10d9e-a4c5-4a26-b3c4-cf4115b66380"
+      ],
+      "prompt_version": "v3.3_ivory_rose_full_readability_shadow_handoff",
+      "result": "Completed, 4.25 MB. Clear centered ivory rose with layered spiral and central curl; distinct from orchid. Outer petals touch/crop top and bottom edges, and rose is visible before the 2-second entry hold. Endpoint saved as BB-003_ROSE_LAST_FRAME_10S_V3_3. Not added to approved v3.2 timeline."
     }
   ],
   "transition_policy_v2": {
@@ -354,10 +371,10 @@
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
   },
   "resume_checkpoint": {
-    "current_scene": "BB-003_V3_3_TARGETED_TEST",
-    "next_action": "Render BB-003 once from BB-002_ORCHID_LAST_FRAME_10S_V3_3 using the v3.3 full-silhouette ivory-rose prompt. Review opening match, rose legibility, crop/margins, and saved endpoint. Keep the accepted v3.2 timeline untouched.",
+    "current_scene": "BB-004_V3_3_PROMPT_READY",
+    "next_action": "Review the BB-004 v3.3 prompt, then if continuing, render one 10-second test from BB-003_ROSE_LAST_FRAME_10S_V3_3. Evaluate delayed entry, full calendula silhouette, and separation from the outgoing rose. Keep the accepted v3.2 timeline unchanged.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-002 v3.3 test rendered and endpoint saved. BB-003 v3.3 prompt is prepared to improve full flower readability and composition from that actual endpoint. The existing accepted v3.2 timeline remains unmodified."
+    "browser_status": "Separate BB-002 and BB-003 v3.3 tests are complete with saved endpoints. BB-002 orchid readability improved but overfilled the top edge; BB-003 rose is distinct, but edge crop and an early rose reveal remain. BB-004 prompt now specifically addresses delayed reveal, full subject margins, and isolated flower layers. The accepted v3.2 timeline remains untouched."
   }
 }
