@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "REPLACE_WITH_PROJECT_ID",
   "target_duration_seconds": 3600,
   "chapters": [],
@@ -25,12 +25,14 @@
         "motion": ""
       },
       "transition_in": {
-        "type": "direct_or_editor",
-        "duration_seconds": 0
+        "type": "in_clip_optical_or_light_effect",
+        "within_clip_seconds": "0-2",
+        "duration_seconds": 2
       },
       "transition_out": {
-        "type": "matched_frame",
-        "duration_seconds": 0
+        "type": "in_clip_optical_or_light_effect",
+        "within_clip_seconds": "7-10",
+        "duration_seconds": 3
       },
       "image_asset_uri": null,
       "video_asset_uri": null,
@@ -38,7 +40,15 @@
       "batch_id": null,
       "status": "not_started",
       "verified": false,
-      "qa_notes": []
+      "qa_notes": [],
+      "subject_lock": {
+        "identity": true,
+        "geometry": true,
+        "anatomy": true,
+        "texture": true,
+        "no_morph_or_deformation": true
+      },
+      "inter_clip_edit": "place_directly_adjacent; no added editor-side transition"
     }
   ],
   "duration_accounting": {
@@ -46,5 +56,26 @@
     "overlap_seconds": 0,
     "trim_seconds": 0,
     "expected_timeline_seconds": 3600
+  },
+  "transition_policy": {
+    "entry_exit_effects_required": true,
+    "effects_are_inside_clip": true,
+    "direct_adjacent_clip_placement": true,
+    "editor_transition_between_clips": false,
+    "default_timing_10s": {
+      "entry_seconds": "0-2",
+      "stable_macro_and_optional_change": "2-7",
+      "exit_seconds": "7-10"
+    },
+    "subject_lock": [
+      "identity",
+      "species_or_material",
+      "silhouette",
+      "anatomy",
+      "proportions",
+      "texture",
+      "position"
+    ],
+    "subject_or_color_change": "Gradual optical/light reveal of a distinct subject; never morph or deform the principal subject."
   }
 }
