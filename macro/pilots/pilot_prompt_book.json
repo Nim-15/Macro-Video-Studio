@@ -19,14 +19,20 @@
       "scene_number": 1,
       "transition_in": "Gradual upper-left rim-light sweep and focus reveal from black into the iris.",
       "duration_seconds": 10,
-      "status": "ready_for_v3_validation_render",
+      "status": "two_v3_candidate_renders_in_media_library_visual_review_incomplete",
       "image_asset_uri": null,
       "video_asset_uri": null,
       "actual_credits": null,
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
       "revised_prompt_version": "v3_user_example_single_image_chain",
-      "image_generation_required": true
+      "image_generation_required": true,
+      "source_image_used": "BB-001_IRIS_LAST_FRAME_10S.png (existing My AI Images asset; Artistly master still did not sync to My Artistly Images)",
+      "candidate_video_asset_ids": [
+        "e1d25f45-17b4-4cb0-a0f8-7d9e872f4517",
+        "388f0337-b402-4c5e-985b-95d151b4739c"
+      ],
+      "qa_observation": "Two identical v3 jobs appeared in My AI Videos after a duplicate browser submission caused by shifting accessibility indices. Candidate thumbnails are 6.17 MB and 4.73 MB; UI did not map IDs to file sizes. Played the first displayed candidate (6.17 MB): the 0:10 final frame is soft/defocused, so it is not approved as a chain endpoint. The second candidate still requires visual review. Neither candidate was added to the timeline and no endpoint was saved."
     },
     {
       "id": "BB-002",
@@ -246,6 +252,29 @@
       "source_image": "BB-004_CALENDULA_LAST_FRAME_10S.png",
       "saved_last_frame": "BB-005_DAHLIA_LAST_FRAME_10S",
       "result": "Opening matches saved bud; mid-clip resolves to burgundy dahlia; final frame fades almost to black. Added contiguously at 00:40–00:50 and endpoint saved."
+    },
+    {
+      "scene_id": "BB-001-V3",
+      "route": "VideoExpress Create Video From Prompt; 16:9; Photorealistic (Cinematic); Advanced Mode; Manual Video Length=10; v3 prompt structure",
+      "requested_seconds": 10,
+      "observed_seconds": 10,
+      "resolution": "1920x1080",
+      "source_image": "BB-001_IRIS_LAST_FRAME_10S.png (pre-existing verified My AI Images asset)",
+      "generation_job_ids": [
+        "e1d25f45-17b4-4cb0-a0f8-7d9e872f4517",
+        "388f0337-b402-4c5e-985b-95d151b4739c"
+      ],
+      "candidate_files": [
+        {
+          "size_mb": 6.17,
+          "visual_review": "played; final frame at 0:10 is blurred/soft; rejected as next-clips starting image"
+        },
+        {
+          "size_mb": 4.73,
+          "visual_review": "pending; browser session disconnected before review"
+        }
+      ],
+      "result": "Two candidates appear in My AI Videos. Due to a shifting UI index, submission was duplicated; no further generation will be made. The newly generated Artistly master image is saved under Artistly Personal Designs but did not appear in VideoExpress My Artistly Images, so it was not the source for these video jobs. No candidate was added to the timeline and no endpoint was saved."
     }
   ],
   "transition_policy_v2": {
@@ -269,5 +298,12 @@
     "master_image_scene": "BB-001",
     "later_scenes": "Do not generate separate stills. Select the previous clip's saved final frame as the next prompt's reference image.",
     "recovery": "Generate a replacement still only if a verified saved endpoint is missing or unusable; record why before spending credits."
+  },
+  "resume_checkpoint": {
+    "current_scene": "BB-001",
+    "next_action": "When VideoExpress browser access is available, visually review the second v3 candidate (4.73 MB) in My AI Videos. If its 0:10 frame is stable and detailed, save that last frame and use it as BB-002's reference; otherwise stop and diagnose before any rerender.",
+    "do_not_generate_before_review": true,
+    "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
+    "browser_status": "Cua session disconnected during second-candidate review; do not assume completion."
   }
 }
