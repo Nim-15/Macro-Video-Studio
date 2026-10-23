@@ -1,6 +1,6 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
-  "run_status": "preflight_verified_test_complete",
+  "run_status": "two_clip_chain_test_complete_review_required",
   "membership_policy": {
     "existing_membership_generations_authorized": true,
     "credit_topups_or_upgrades_authorized": false,
@@ -15,7 +15,8 @@
     "add_to_timeline": true,
     "save_current_frame_at_clip_end": true,
     "next_clip_reference": "My AI Images → Use from Library",
-    "next_generated_clip_adherence": "pending"
+    "next_generated_clip_adherence": "BB-002 rendered from BB-001 saved frame; violet-droplet composition carried through but orchid identity remained unclear; BB-002 saved endpoint was selectable in the next prompt form",
+    "save_last_frame_from_media_library": true
   },
   "test_runs": [
     {
@@ -39,6 +40,20 @@
       "video_asset_id": "e988ac91-3941-4a2c-9a7d-8e8aa94b521a",
       "saved_last_frame": "BB-001_IRIS_LAST_FRAME_10S.png",
       "result": "Added to timeline; endpoint saved in My AI Images and selected in next prompt form; chained render not yet generated"
+    },
+    {
+      "scene_id": "BB-002",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reused BB-001 saved frame",
+      "requested_seconds": 10,
+      "measured_seconds": 10,
+      "resolution": "1920x1080",
+      "video_asset_id": "48ed3783-e307-4e84-9e49-cd22ef2a6ed6",
+      "video_file": "10-second single continuous macro shot. Begin exactly on the....mp4",
+      "video_size_mb": 5.36,
+      "source_image": "BB-001_IRIS_LAST_FRAME_10S.png",
+      "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S.png",
+      "saved_last_frame_size_kb": 831.19,
+      "result": "Added immediately after BB-001 on timeline. Opening retained violet petal/dew-drop composition; body became a very soft lilac macro with no clearly recognizable orchid. Save Last Frame succeeded; saved endpoint was selected in the next prompt form. Quality review required before BB-003."
     }
   ],
   "production_scene_status": {
@@ -53,14 +68,20 @@
       "qa_score": null
     },
     "BB-002": {
-      "status": "not_generated",
-      "start_image": null,
-      "video": null,
-      "saved_last_frame": null,
-      "measured_runtime_seconds": null,
+      "status": "test_render_quality_review_required",
+      "start_image": "BB-001_IRIS_LAST_FRAME_10S.png",
+      "video": "48ed3783-e307-4e84-9e49-cd22ef2a6ed6",
+      "saved_last_frame": "BB-002_ORCHID_LAST_FRAME_10S.png",
+      "measured_runtime_seconds": 10,
       "visible_credits_used": null,
       "retry_count": 0,
-      "qa_score": null
+      "qa_score": null,
+      "observations": [
+        "1920x1080; 5.36 MB",
+        "opening retains violet petal and spherical dew-drop composition",
+        "mid-clip becomes soft-focus lilac macro; orchid identity unclear",
+        "last-frame save action succeeded; endpoint listed at 831.19 KB and selected in next prompt form"
+      ]
     },
     "BB-003": {
       "status": "not_generated",
@@ -95,5 +116,5 @@
   },
   "estimated_credits": null,
   "actual_credits": null,
-  "next_safe_action": "Review BB-001 test render; if approved, continue BB-002 from BB-001_IRIS_LAST_FRAME_10S.png using the sequential 10-second prompt workflow"
+  "next_safe_action": "Review BB-002 render and its saved endpoint; if accepted, generate BB-003 from BB-002_ORCHID_LAST_FRAME_10S.png with a more explicit in-focus ivory rose edge, one clip only"
 }
