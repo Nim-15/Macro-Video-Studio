@@ -171,3 +171,10 @@ This is a separate test, not a replacement for the accepted v3.2 timeline. BB-00
 Saved a separate VideoExpress project named **Black Bloom - Seam Test BB-004 to BB-005 v3.4**. The Open Project list shows it separately from the accepted **Black Bloom Pilot 01 - v3.2 Chained** project. BB-004 v3.4 and BB-005 v3.4 are placed directly adjacent on one track: 10 seconds each, 20 seconds total, with no editor-side transition.
 
 The boundary was checked at 00:09 and 00:10. The calendula with the dim outgoing rose remnant carries into the BB-005 opening without an obvious visual jump. **The BB-004→BB-005 seam passes.** At 00:16, the new burgundy dahlia is recognizable, but its scale crops the bloom at the left and upper frame edges. Refine BB-005 framing before considering any replacement of a clip in the approved v3.2 project; keep both projects separate.
+
+
+## BB-005 v3.5 framing correction submitted
+
+The v3.4 seam test passes, but the dahlia is cropped at the left and upper edges during its reveal. Submitted one targeted BB-005 correction from the actual `BB-004_CALENDULA_LAST_FRAME_10S_V3_4` endpoint (VideoExpress job `8203cf15-829b-443d-865d-02be9b21650e`). The revised prompt locks the camera and limits the complete dahlia to 35% of frame width and 55% of frame height, with at least 8% margins from the top, left, and bottom. It requires the complete bloom and center to be readable by 6 seconds and held within frame through 10 seconds.
+
+Settings: 16:9, Photorealistic (Cinematic), Advanced Mode, Video Only, Manual Video Length = 10 seconds, prompt enhancement off. The render is pending in My AI Videos. Review 00:06, 00:09, and 00:10 before saving its endpoint or adding it to a separate seam test. Do not alter the accepted v3.2 timeline.
