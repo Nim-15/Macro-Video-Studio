@@ -26,7 +26,7 @@
 
 ## Operational conclusion
 
-The account UI shows first/last-frame controls and a separate 10-second setting, but the combined mode test rendered **7 seconds**, despite a 10-second motion prompt. First/last-frame mode therefore works in a single run, while a 10-second duration in that mode is **not verified**. The output begins on the supplied iris composition and ends on a related purple-petal composition with several glowing droplets, but it does not exactly match the supplied final image. Do not mark `videoexpress_10s` as verified. The video file reports 1920×1080; no cost amount was shown in the interface.
+The account UI exposes two workable routes with different behavior. **First Frame, Last Frame** accepted both generated endpoints but produced a 7-second video and only approximated its final image. **Create Video From Prompt** with Advanced Mode and Manual Video Length set to 10 produced a video confirmed at 0:10 / 0:10. That clip was added to the editor timeline; the playhead was set to 00:00:10; Save Current Frame stored `BB-001_IRIS_LAST_FRAME_10S.png` in My AI Images; the saved image was selectable as the starting image in a new Create Video From Prompt form. This verifies a practical chained workflow via editor frame capture, but does not test a second generated clip. Both videos report 1920×1080. No numeric credit charge was displayed.
 
 ## Prepared Black Bloom sequence
 
@@ -50,9 +50,9 @@ The following prompts were entered in the VideoExpress form and used for the BB-
 
 ## Execution gates
 
-1. For chaining, inspect the actual final frame of each completed clip and use it as the next clip's first-frame reference where supported. Keep a continuity card with source/output asset IDs and frame descriptions.
-2. Before the remaining four scenes, establish the cost/credit impact and a hard cap; the UI did not show a price during this test.
-3. Generate one clip at a time. Stop after each render for endpoint, duration, and visual QA. Assemble only after the clips pass continuity review; the nominal 50 seconds assumes no overlap or trim.
+1. Use Create Video From Prompt with Advanced Mode and Manual Video Length = 10 for each scene. Add each completed clip to the timeline, move the playhead to its end, save the current frame to My AI Images, then select that image as the next clip's starting reference. Preserve each transition card's subject, light, composition and movement cues.
+2. Before the remaining three Black Bloom scenes, check the current credit/allowance balance and estimate the run cost. The interface did not display a numeric charge for either test.
+3. Generate one scene at a time and verify duration, saved endpoint and visual continuity before continuing. The five-clip pilot should use this chained route; the 7-second First Frame, Last Frame result is unsuitable for the 10-second target.
 
 ## Public product references
 
@@ -70,3 +70,12 @@ The following prompts were entered in the VideoExpress form and used for the BB-
 - The opening image visibly matches the iris petal and dew composition. The closing image remains a purple petal with luminous droplets; it is compositionally related to the supplied end frame, but not an exact match to the single-soft-orb instruction.
 - Result: **first/last image mode confirmed; 10-second duration and exact end-frame adherence failed this test.** No additional pilot clips were generated.
 - VideoExpress did not show a numeric credit charge or price in the generation interface, so the consumed amount cannot be reported from the observed UI.
+
+
+## BB-002 workflow verification · 2026-10-23
+
+- In Create Video From Prompt, Advanced Mode exposed “Manual Video Length, sec”; it was enabled and set to **10**. The image type was “Photorealistic (Cinematic)” and aspect ratio 16:9.
+- Generated one photorealistic violet iris image as the base and one 10-second macro video (video ID: `e988ac91-3941-4a2c-9a7d-8e8aa94b521a`). The player visibly reported **0:10 / 0:10**.
+- Added the MP4 to the timeline. At playhead **00:00:10**, used **Save current frame**, named the saved image `BB-001_IRIS_LAST_FRAME_10S`. VideoExpress confirmed it was saved to **My AI Images**; the image list showed `BB-001_IRIS_LAST_FRAME_10S.png` at 1920×1080.
+- Opened a new Create Video From Prompt form and selected that saved frame with **Use from Library**. It appeared as the form's image reference, confirming it is reusable as the next clip's start. No second chained video was generated.
+- Verified route: **10-second prompt video → Add to Timeline → seek to clip end → Save Current Frame → select saved image as next prompt-video reference**.
