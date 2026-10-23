@@ -4,14 +4,17 @@
   "project_id": "REPLACE_WITH_PROJECT_ID",
   "phase": "not_started",
   "approval": {
-    "go": false,
-    "approved_budget": null,
-    "currency": null
+    "paid_membership_generations_authorized": false,
+    "credit_topups_or_upgrades_authorized": false
   },
   "tool_capabilities": {
     "artistly_verified": false,
-    "videoexpress_verified": false,
-    "last_frame_reference_verified": false,
+    "videoexpress_prompt_manual_10s_verified": true,
+    "videoexpress_first_last_mode_10s_verified": false,
+    "editor_add_to_timeline_verified": true,
+    "editor_save_current_frame_verified": true,
+    "next_clip_reference_selection_verified": true,
+    "chained_next_clip_adherence_pending": true,
     "editor_export_verified": false
   },
   "pilot": {
@@ -20,11 +23,13 @@
     "approved": false
   },
   "generation": {
-    "desired_batch_size": 5,
-    "actual_verified_batch_size": null,
+    "desired_batch_size": 1,
+    "actual_verified_batch_size": 1,
     "completed_scene_ids": [],
     "failed_scene_ids": [],
-    "submitted_jobs": []
+    "submitted_jobs": [],
+    "retry_policy": "one targeted retry after diagnosing a specific defect; never repeat unchanged prompt",
+    "sequence_policy": "generate dependent clips sequentially and checkpoint each saved endpoint"
   },
   "audio": {
     "source": null,
@@ -41,10 +46,12 @@
   "spending": {
     "estimated": null,
     "observed": null,
+    "included_membership_credits_only": true,
+    "topups_or_upgrades_authorized": false,
     "retries": 0
   },
   "last_completed_action": null,
-  "next_safe_action": "Complete project intake",
+  "next_safe_action": "Check membership allowance and existing assets; then generate one approved scene and checkpoint its actual endpoint",
   "errors": [],
   "updated_at": null
 }
