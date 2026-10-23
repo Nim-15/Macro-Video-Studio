@@ -1,20 +1,17 @@
-# Credits, cost controls, and production gates
+# Membership credits, generation efficiency, and production controls
 
-Never invent Artistly, VideoExpress or CloneVoice pricing. Inspect the actual signed-in account and note plan limits, per-image cost, per-clip cost, retries, batch concurrency, generation duration, and export costs before offering a budget.
+Use the user's existing paid membership for the pilot. Treat included credits as available for authorized production, while tracking actual use whenever VideoExpress or Artistly exposes it. No top-up, upgrade, or new subscription without explicit user authorization. Do not invent per-generation prices or assume the membership is unlimited.
 
-## Estimate
-- Base video renders = number of approved scenes.
-- Image renders = number of scene references plus revised images.
-- Gross credits = (video renders × measured video unit cost) + (image renders × measured image unit cost) + audio/assembly costs + approved retry reserve.
-- Film output duration = sum of usable clips − overlaps − trims + inserted holds.
-- 60 minutes = 3,600 seconds. 360 ten-second clips assumes zero overlaps and zero trims.
+## Efficient generation plan
+- Inspect existing My AI Images and My AI Videos first. Reuse an approved image or endpoint whenever it fits the shot.
+- Generate only the initial still needed to establish the first scene. For chained scenes, save each finished clip's endpoint in the editor and reuse it from My AI Images as the next clip's image reference.
+- Use the tested VideoExpress route: Create Video From Prompt, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length = 10 seconds.
+- Produce dependent clips sequentially, one at a time; each actual endpoint is needed before setting the following clip's start reference.
+- Before each render, verify scene ID, reference image, both prompt fields, settings and transition handoff. This catches avoidable renders caused by placeholder text or the wrong settings.
+- Review each output before proceeding. Record actual runtime, visible credit use, asset IDs and QA result. Never rerun an unchanged prompt.
+- If a render has a specific defect, make one targeted correction and retry at most once before rethinking the shot.
 
-## Safety gates
-1. Do an initial three-to-five-clip pilot and judge output before production scale.
-2. Show estimated total and user-defined hard cap before paid actions; require explicit GO.
-3. Check remaining credits before each verified batch.
-4. Pause when cost, feature availability or output quality deviates from assumptions.
-5. Separate *estimated* credit costs, *observed* charges, and *remaining* budget in run-state records.
-
-## Production safety
-Never start subscriptions, buy credits, delete historical assets, publish outputs or disclose private workspace data without explicit authorization.
+## Planning math
+- Five 10-second pilot clips = 50 seconds of generated footage before trims and overlaps.
+- A 60-minute program at 10 seconds per clip would require 360 usable clips only if there are no trims or overlaps; calculate final runtime from the actual timeline.
+- Estimate expected membership-credit use from the account's current usage display and observed generation cost when available. Separate observed use from estimates; if no numeric cost is exposed, state that clearly.
