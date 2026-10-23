@@ -100,17 +100,17 @@
       "scene_number": 4,
       "transition_in": "Warm rim-light sweep over the rose endpoint, amber glint and focus reveal a separate calendula.",
       "duration_seconds": 10,
-      "status": "v3_prompt_ready_after_previous_endpoint",
-      "image_asset_uri": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
-      "video_asset_uri": "9725abe9-0160-4b10-a305-770a5f2ef303",
+      "status": "v32_render_pending_visual_review",
+      "image_asset_uri": "BB-003_ROSE_LAST_FRAME_10S_V3_2",
+      "video_asset_uri": "ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7",
       "actual_credits": null,
-      "qa_observation": "10s, 1920x1080; 2.36 MB. Revised prompt used a full-black cut to isolate the orange flower. At 00:02–00:06 a single orange flower with clear radial grooves is visible without rose overlap. At 00:10 it closes to a small dark orange-green bud, not the planned amber bokeh. Added at 00:30–00:40; endpoint save confirmed in My AI Images; project saved.",
-      "saved_last_frame": "BB-004_CALENDULA_LAST_FRAME_10S",
+      "qa_observation": "Submitted BB-004 using the verified BB-003 saved endpoint, 16:9, Photorealistic (Cinematic), Advanced Mode, Manual Video Length=10s; automatic prompt enhancement off. Job ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7. Pending render and opening/endpoint QA.",
+      "saved_last_frame": null,
       "video_size_mb": 2.36,
       "retry_count": 3,
       "transition_in_type": "in_clip_optical_or_light_effect",
       "transition_out_type": "in_clip_optical_or_light_effect",
-      "revised_prompt_version": "v3_user_example_single_image_chain",
+      "revised_prompt_version": "v3.2_locked_camera_light_reveal",
       "target_visual": "Extreme realistic macro studio photograph of the thin curled edge of a single golden-orange calendula petal on seamless black; a delicate soft crescent-shaped pale-amber rim highlight occupies right third corresponding to previous rose glow; petal cuticle grooves and natural pollen grains, directional professional studio rim light upper left, muted honey-amber tonality with no oversaturation, organic dimensional texture and natural shallow depth of field, 16:9.",
       "image_generation_required": false
     },
@@ -338,9 +338,9 @@
   },
   "resume_checkpoint": {
     "current_scene": "BB-004",
-    "next_action": "Prepare BB-004 from BB-003_ROSE_LAST_FRAME_10S_V3_2. Treat the actual endpoint as the source of truth: preserve its violet petal/droplet and cream background flower, keep camera/focus/exposure stable, and use localized warm amber light to introduce a distinct calendula without morphing or abrupt composition change.",
+    "next_action": "Wait for BB-004 job ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7 in My AI Videos. Review opening against BB-003_ROSE_LAST_FRAME_10S_V3_2 and inspect 0:10 for stable sharp detail before saving its endpoint or preparing BB-005.",
     "do_not_generate_before_review": true,
     "artistly_master_image": "Generated once in Artistly at 16:9; visible in Artistly Personal Designs. It is not yet available in VideoExpress My Artistly Images.",
-    "browser_status": "BB-003 job 59555434-96aa-4a5d-84f7-df39577de405 completed and was checked at opening/end, 10s 1920x1080, 4.27 MB. Saved verified endpoint BB-003_ROSE_LAST_FRAME_10S_V3_2. BB-004 can proceed from this actual endpoint; composition drift is noted."
+    "browser_status": "BB-004 job ccd9bc50-68fe-4ab8-bea6-260c1f45f8a7 submitted from verified BB-003 endpoint; pending render."
   }
 }
