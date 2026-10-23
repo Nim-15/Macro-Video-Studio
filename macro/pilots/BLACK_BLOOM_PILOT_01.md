@@ -1,10 +1,10 @@
 # BLACK BLOOM · Pilot production 01
 
-**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v2 prompt pass is prepared; the existing renders have not yet been regenerated under the new rules.
+**Status:** The first pass contains five 10-second clips on the saved timeline from 00:00 to 00:50. The user reviewed them and requested transition and subject-stability corrections. A v3 prompt pass now follows the user's copy-ready structure and one-image chaining rule. Two BB-001 v3 candidates were generated; review is incomplete.
 
 ## Goal
 
-Produce five connected 10-second macro clips with visible in-clip entry and exit effects on a pure black background. Keep each effect within its clip duration. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct cuts. Timeline overlaps reduce runtime.
+Produce five connected 10-second macro clips with visible in-clip entry and exit effects on a pure black background. Keep each effect within its clip duration. Style: premium botanical studio macro, realistic water droplets, very shallow optical focus, professional upper-left lighting, restrained motion. Nominal sequence length: **50 seconds** using direct adjacency; in-clip transition effects mark boundaries and no editor-side transitions are added.
 
 ## Verified VideoExpress route
 
@@ -21,7 +21,7 @@ For each dependent clip:
 ## Generation discipline
 
 - Reuse assets already in My AI Images/My AI Videos before creating replacements.
-- Generate only the missing source image for the first clip. For later clips, use the preceding saved endpoint as the next reference; create a new still only when the transition cannot be reached plausibly.
+- Generate one approved master still for BB-001 only. For every later clip, use the preceding clip's saved endpoint; create a replacement still only if that endpoint is missing or unusable.
 - Run one clip at a time because each next input depends on the actual preceding output.
 - Check prompt, reference, aspect ratio, and 10-second setting before submitting.
 - Never rerun an unchanged prompt. For a failed clip, record the defect, change only the relevant prompt or reference, and allow at most one targeted retry before revising the scene plan.
@@ -30,7 +30,7 @@ For each dependent clip:
 
 ## Transition chain and current observations
 
-The revised v2 prompt book is authoritative. Every clip must begin and end with a gradual in-clip light or optical effect; place clips directly adjacent with no editor-side cut, dissolve, wipe, fade, or separate transition duration. Preserve each subject's identity, species, silhouette, anatomy, proportions, texture, and position. Any color or subject change must happen gradually through plausible light, focus, refraction, bokeh, or shadow; reveal a new subject as distinct, never morph one into another. All effects fit inside the 10-second clip.
+The revised v3 prompt book is authoritative. Every clip must begin and end with a gradual in-clip light or optical effect; place clips directly adjacent with no editor-side cut, dissolve, wipe, fade, or separate transition duration. Preserve each subject's identity, species, silhouette, anatomy, proportions, texture, and position. Any color or subject change must happen gradually through plausible light, focus, refraction, bokeh, or shadow; reveal a new subject as distinct, never morph one into another. All effects fit inside the 10-second clip.
 
 | Clip | Timeline | Current result | QA note |
 |---|---:|---|---|
@@ -55,7 +55,7 @@ A 60-minute timeline made only from contiguous 10-second clips would require 360
 `pilot_state.example.json` contains the render IDs, current statuses, endpoint names, and verified workflow. This pilot is managed through the Artistly and VideoExpress interfaces; the repository does not contain an API integration. Keep credentials out of the repository.
 
 
-## User correction · transition standard v2
+## User correction · one-image chain and transition prompt v3
 
 The first-pass review identified four requirements for the corrected run:
 
@@ -64,4 +64,10 @@ The first-pass review identified four requirements for the corrected run:
 3. A subject or color change may occur within a clip through a creative but realistic light/optical effect.
 4. The paired in-clip effects alone mark adjacent scene boundaries. Place clips directly together and add no editor-side transition or extra duration.
 
-The default 10-second pacing is 0–2s entry effect, 2–7s stable macro observation (with an optional gradual subject/color reveal), and 7–10s exit effect. The existing v1 renders do not satisfy this new rule consistently. The updated prompts are in `pilot_prompt_book.json`; re-render only after the user chooses which clips to correct first. Resume with one dependent clip at a time and save each actual endpoint.
+The copy-ready video prompt uses the exact section order and timing the user supplied: **ENTRY TRANSITION, 0–2s; MAIN ACTION, 2–8s; EXIT TRANSITION, 8–10s**. Generate only the BB-001 master still; each subsequent clip uses the actual last frame of the previous clip.
+
+The Artistly master still generated for BB-001 is visible in Artistly Personal Designs, but the VideoExpress **My Artistly Images** folder was empty, so it was not available as a source for the video render. The two v3 jobs instead used the already available `BB-001_IRIS_LAST_FRAME_10S.png` in **My AI Images**.
+
+Two v3 candidates are present in **My AI Videos** (6.17 MB and 4.73 MB; the UI did not map their IDs to file sizes). The first displayed candidate was reviewed: its final 0:10 frame is too soft/defocused to use as a chain endpoint. The second candidate remains unreviewed because the CUA browser session disconnected. Neither candidate was added to the timeline; no endpoint was saved. A duplicate submission occurred when the page's accessibility indices shifted; do not generate again before reviewing the remaining candidate.
+
+**Resume:** reopen VideoExpress when browser access is available, review the second candidate, and save its final frame only if it is stable and detailed enough to start BB-002. If it fails, diagnose before any further generation.
