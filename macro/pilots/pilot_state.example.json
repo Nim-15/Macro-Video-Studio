@@ -1,6 +1,6 @@
 {
   "project_id": "BLACK-BLOOM-PILOT-001",
-  "run_status": "three_clip_chain_plus_BB003_retry_pending_visual_review",
+  "run_status": "three_clip_chain_with_BB004_candidates_rejected_for_visual_continuity",
   "membership_policy": {
     "existing_membership_generations_authorized": true,
     "credit_topups_or_upgrades_authorized": false,
@@ -71,13 +71,16 @@
     },
     {
       "scene_id": "BB-003-R1",
-      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reference BB-002 saved endpoint",
+      "route": "Create Video From Prompt + Advanced Mode + Manual Video Length; reused BB-002 saved endpoint",
       "requested_seconds": 10,
-      "measured_seconds": null,
-      "resolution": null,
+      "measured_seconds": 10,
+      "resolution": "1920x1080",
       "video_asset_id": "8ebacb3e-4a65-496f-b12c-357270cf3eb5",
+      "video_size_mb": 3.82,
       "source_image": "BB-002_ORCHID_LAST_FRAME_10S.png",
-      "result": "VideoExpress displayed its successful-completion notification. Retrieval/visual review is pending because the item was not listed in My AI Videos or Videos; not added to the timeline."
+      "saved_last_frame": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
+      "saved_last_frame_size_mb": 1.36,
+      "result": "Retrieved from My AI Videos after closing creator. Opening matches violet droplet; rose is recognizable and focused mid/end. Exit is a warm close rose, not planned creamy crescent. Replaced original BB-003 at 00:20–00:30; project saved."
     }
   ],
   "production_scene_status": {
@@ -108,33 +111,39 @@
       ]
     },
     "BB-003": {
-      "status": "test_render_quality_review_required",
+      "status": "retry_selected_on_timeline_quality_review_required",
       "start_image": "BB-002_ORCHID_LAST_FRAME_10S.png",
-      "video": "d7b72c78-d88c-4d95-9aa1-b83ab6e98392",
-      "saved_last_frame": "BB-003_ROSE_LAST_FRAME_10S.png",
+      "video": "8ebacb3e-4a65-496f-b12c-357270cf3eb5",
+      "saved_last_frame": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
       "measured_runtime_seconds": 10,
       "visible_credits_used": null,
       "retry_count": 1,
       "qa_score": null,
       "observations": [
-        "1920x1080; 3.17 MB",
-        "opening matches the saved violet droplet endpoint and continues contiguously at 00:20",
-        "cream ivory layered petal forms appear by about 00:28 but remain soft focus; rose identity is only partly legible",
-        "Save Last Frame succeeded; endpoint appears in My AI Images at 545.04 KB",
-        "timeline boundary at 00:30 displays black after the clip ends",
-        "One targeted re-render submitted from BB-002 endpoint with revised focus/rose-identity prompt; VideoExpress reported successful completion, but the generated media item was not exposed in My AI Videos or Videos during retrieval, so it remains unreviewed and has not been added to the timeline."
+        "1920x1080; 3.82 MB; retrieved from My AI Videos after closing creator",
+        "opening matches BB-002 violet droplet; mid/end show a recognizable focused ivory rose",
+        "exit is a warm close rose against black rather than the planned creamy crescent",
+        "replaced original at 00:20–00:30; project Black Bloom Pilot 01 saved"
       ],
       "retry_video_candidate": "8ebacb3e-4a65-496f-b12c-357270cf3eb5"
     },
     "BB-004": {
-      "status": "not_generated",
-      "start_image": null,
+      "status": "two_candidates_rejected_for_visual_continuity",
+      "start_image": "BB-003_ROSE_RETRY_LAST_FRAME_10S.png",
       "video": null,
       "saved_last_frame": null,
-      "measured_runtime_seconds": null,
+      "measured_runtime_seconds": 10,
       "visible_credits_used": null,
-      "retry_count": 0,
-      "qa_score": null
+      "retry_count": 2,
+      "qa_score": null,
+      "observations": [
+        "Two 10-second 1920x1080 files in My AI Videos: 3.88 MB and 3.35 MB",
+        "3.88 MB preview showed rose and orange calendula-like tissue overlaid around 00:06",
+        "3.35 MB preview held rose longer, then began an orange edge; calendula not clearly resolved in observed preview",
+        "Neither candidate added to timeline or used as endpoint",
+        "Two job IDs observed: 18ce2235-8041-4ce5-b6fd-3f1f274af87a and bfb5d5dc-4cee-4d49-9e08-ed54bcac3b0d; exact mapping to files unavailable",
+        "Revise prompt for one distinct non-overlapping calendula specimen before another generation"
+      ]
     },
     "BB-005": {
       "status": "not_generated",
@@ -149,5 +158,5 @@
   },
   "estimated_credits": null,
   "actual_credits": null,
-  "next_safe_action": "Retrieve the completed BB-003 retry by job ID 8ebacb3e-4a65-496f-b12c-357270cf3eb5 from My Media, verify duration, opening, rose focus and endpoint; only then choose whether to replace the soft-focus BB-003 timeline clip and proceed to BB-004. Do not generate another replacement."
+  "next_safe_action": "Revise the BB-004 transition prompt to request a distinct calendula reveal with no overlap; review image/reference and prompt before a single targeted generation. Keep the three-clip timeline unchanged until visual approval."
 }
