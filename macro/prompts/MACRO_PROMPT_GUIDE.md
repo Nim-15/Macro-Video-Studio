@@ -5,13 +5,10 @@
 
 Example: “Extreme photorealistic macro photograph of a pale violet iris petal with fine veining and tiny realistic dew beads, emerging from seamless black velvet shadow; sculpted studio side light from upper left, delicate rim light, shallow focal plane crossing one droplet, tack-sharp surface microtexture, creamy optical bokeh, understated cinematic grading, negative space toward the right, 16:9, no lettering, no artificial geometry.”
 
-## Video prompt formula
-[REFERENCE IMAGE + SUBJECT LOCK] + [visible entry effect in first 0–2 seconds] + [stable macro action and camera movement in 2–7 seconds] + [optional gradual color/subject reveal through a realistic optical/light effect] + [visible exit effect in final 7–10 seconds] + [paired cue for next clip] + [negative constraints].
+## Video prompt formula: one master image, chained last frames
+Use one generated master still for the first clip. For every later clip, select the immediately preceding clip's actual saved final frame as its supplied reference; do not generate a separate scene still. Each video prompt follows the same copy-ready order: premium macro scene description, **ENTRY TRANSITION (0–2 seconds)**, **MAIN ACTION (2–8 seconds)**, **EXIT TRANSITION (8–10 seconds)**, and negative constraints.
 
-Every effect must fit inside the requested clip duration. For a 10-second shot, the default rhythm is:
-- 0–2s: transition-in effect.
-- 2–7s: stable macro observation; optional gradual color or subject reveal.
-- 7–10s: transition-out effect that prepares the next entry cue.
+The first prompt begins from the approved master still. Each next prompt begins by holding the exact composition of the previous saved last frame. The exit must finish on a clean, stable, detailed frame worth saving and using as the next starting image.
 
 ## Subject lock and realistic changes
 Explicitly preserve the principal subject's species/material, silhouette, anatomy, proportions, texture, and position. Limit it to plausible natural motion (for example, a subtle petal tremor or a droplet refracting light). Do not deform, stretch, duplicate, melt, or morph the subject. A new species or color may emerge through a gradual rack focus, moving light, realistic refraction/caustics, soft optical bokeh, or a plausible shadow/occlusion. Show the new subject as a separate object; do not turn the old subject into it.
@@ -28,7 +25,11 @@ Choose restrained effects grounded in professional macro photography:
 The effect must begin at the clip opening or finish at its ending, remain photorealistic, and visually pair with the adjacent clip. Avoid hard cuts, black slates, abrupt flashes, glitch effects, or added editor transitions.
 
 ## Copy-ready prompt skeleton
-“Animate the supplied reference image. Preserve the principal [subject/species] exactly: stable silhouette, anatomy, proportions, texture, and position; no morphing, deformation, duplication, or replacement. In 0–2 seconds, use a gradual [specific realistic light/optical effect] as the visible entry transition, matching [incoming shape/color/highlight] while the subject remains stable. In 2–7 seconds, hold a legible macro view with [one plausible action] and [one slow camera move]; [optional gradual color or separate-subject reveal using a physically plausible optical/light effect]. In 7–10 seconds, use a gradual [specific effect] as the visible exit transition, ending on [precise framing, palette, focus, and light cue] that matches the next clip's entry. Keep professional macro optics, realistic texture and stable exposure. All transitions stay inside this 10-second clip; place adjacent clips directly together with no added editor-side transition.”
+“Premium extreme macro [botanical/material] cinematography. [Describe the subject, black background, physical microtexture, studio light, palette and macro optics.]
+**ENTRY TRANSITION, 0–2 seconds:** Begin with the exact composition of the provided [master image / previous clip's saved last frame]. Hold the subject geometry, positions, texture and lighting completely stable for a brief moment. Start a very slow, smooth cinematic [camera move].
+**MAIN ACTION, 2–8 seconds:** [One precise, continuous camera move and one plausible physical or optical action.] Keep the principal subject recognizable and geometrically unchanged. [If the next subject or color must emerge, reveal it gradually through realistic focus, refraction, light, bokeh or shadow; show it as a distinct subject, never a transformation.]
+**EXIT TRANSITION, 8–10 seconds:** Finish on [precise framing, focus, composition and cue for the next clip]. Lock camera movement and hold a clean, stable, detailed frame suitable for direct use as the starting image of the next clip. [For the final clip, end on the intended closing composition.]
+[Negative constraints: no morphing, deformation, duplication, flicker, camera shake, artificial glitter, text, watermark.]”
 
 ## Quality checklist
 - Each clip visibly begins and ends with its own transition effect.
