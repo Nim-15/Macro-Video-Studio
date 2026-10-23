@@ -18,8 +18,8 @@ A. Intake → B. Visual bible → C. Scene map → D. Prompt book → E. Verify 
 
 ## Macro photographic and transition rules
 - Favor botanically and physically plausible microstructure, highlights, condensation and materials.
-- Lock the main subject's identity, silhouette, anatomy, proportions, texture and position. Do not deform, stretch, duplicate, melt, morph, or change the species of the main subject.
-- Use one primary camera movement and one subtle physical action per shot.
+- Preserve the main subject's identity, species/material, anatomy, proportions and physical texture. Do not deform, stretch, duplicate, melt, morph, or change the species of the principal subject. **Composition is allowed to change creatively:** extreme push-ins, tight crops, partial visibility and a subject naturally leaving frame are valid macro choices when motivated by camera movement, focus, light or occlusion.
+- Use one deliberate primary camera movement per shot (for example, push-in, lateral track, orbit, tilt or pull-back), supported by considered focus and lighting changes. Vary perspective, angle, scale and framing across the sequence rather than repeating the same centered view.
 - Generate one approved master still for the first clip. For every later clip, use the immediately preceding clip's actual saved last frame as its supplied starting reference; do not generate separate scene stills unless a verified endpoint is missing or unusable. Every clip begins with a visible, gradual **transition-in effect** and ends with a visible, gradual **transition-out effect**. These effects are part of the clip's own 10 seconds; do not add seconds in the editor.
 - Describe a three-part rhythm by default: 0–2s entry effect, 2–8s main action, 8–10s exit effect. A gradual subject or color change may take place within the middle interval when it serves the scene.
 - Build effects from plausible macro photography: a controlled light sweep, changing rim light or color temperature, realistic refraction/caustics, a soft lens bloom, optical bokeh, or a slow rack focus. Keep the effect elegant and physically credible.
