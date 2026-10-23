@@ -43,3 +43,7 @@ Rate each clip 0–5 on botanical realism, water physics, camera stability, ligh
 
 ## Run records
 Update `pilot_state.example.json` (or a project-local copy) after every clip. Record measured durations and actual credit use only when visible in the account. Planning files do not represent an Artistly/VideoExpress API integration; keep credentials out of this repository.
+
+
+### BB-003 targeted retry
+A single targeted retry was submitted from `BB-002_ORCHID_LAST_FRAME_10S.png` with explicit instructions to keep a recognizable layered ivory rose in focus. VideoExpress reported successful completion for job `8ebacb3e-4a65-496f-b12c-357270cf3eb5`, but the file was not exposed in the library’s `My AI Videos` or `Videos` folders during retrieval. It has not been visually reviewed or added to the timeline. Do not generate another retry; retrieve and inspect this candidate first.
